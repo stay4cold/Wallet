@@ -46,10 +46,11 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oeb-X8-QZQ" userLabel="Divider View">
-                                            <rect key="frame" x="186.5" y="45" width="1" height="60"/>
+                                            <rect key="frame" x="186.5" y="60" width="1" height="30"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="1" id="QZz-uj-0uR"/>
+                                                <constraint firstAttribute="height" constant="30" id="qle-oZ-IZQ"/>
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igd-Cb-NEl" userLabel="本月支出0">
@@ -80,9 +81,8 @@
                                         <constraint firstItem="grQ-Fi-WxN" firstAttribute="bottom" secondItem="FBj-Qt-gaL" secondAttribute="centerY" constant="-10" id="bnL-fH-e0O"/>
                                         <constraint firstItem="0sT-o9-PhX" firstAttribute="centerX" secondItem="FBj-Qt-gaL" secondAttribute="centerX" multiplier="1.5" id="cZQ-G6-QUx"/>
                                         <constraint firstItem="Igd-Cb-NEl" firstAttribute="top" secondItem="FBj-Qt-gaL" secondAttribute="centerY" id="f2W-dE-Cff"/>
-                                        <constraint firstItem="oeb-X8-QZQ" firstAttribute="top" secondItem="FBj-Qt-gaL" secondAttribute="top" constant="45" id="fAf-Qn-xhK"/>
                                         <constraint firstItem="0sT-o9-PhX" firstAttribute="top" secondItem="grQ-Fi-WxN" secondAttribute="top" id="h56-tX-l0h"/>
-                                        <constraint firstAttribute="bottom" secondItem="oeb-X8-QZQ" secondAttribute="bottom" constant="45" id="l7i-Ud-Qof"/>
+                                        <constraint firstItem="oeb-X8-QZQ" firstAttribute="centerY" secondItem="FBj-Qt-gaL" secondAttribute="centerY" id="mM3-3F-agn"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ma-dk-E0o" userLabel="Income View">
@@ -113,23 +113,23 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Lv-PH-zcA" userLabel="Divider View">
-                                            <rect key="frame" x="186.5" y="45" width="1" height="60"/>
+                                            <rect key="frame" x="186.5" y="60" width="1" height="30"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="Kwp-Av-hfU"/>
                                                 <constraint firstAttribute="width" constant="1" id="wu9-pK-JOI"/>
                                             </constraints>
                                         </view>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="9Lv-PH-zcA" firstAttribute="centerY" secondItem="8ma-dk-E0o" secondAttribute="centerY" id="1jg-Jg-1fp"/>
                                         <constraint firstItem="qgb-x6-vvg" firstAttribute="centerX" secondItem="8ma-dk-E0o" secondAttribute="centerX" multiplier="1.5" id="6u2-9D-kkL"/>
                                         <constraint firstItem="HWR-79-VLj" firstAttribute="centerX" secondItem="6q0-zt-rWq" secondAttribute="centerX" id="Af2-NH-Rex"/>
-                                        <constraint firstAttribute="bottom" secondItem="9Lv-PH-zcA" secondAttribute="bottom" constant="45" id="D2w-1J-6NG"/>
                                         <constraint firstItem="6q0-zt-rWq" firstAttribute="centerX" secondItem="8ma-dk-E0o" secondAttribute="centerX" multiplier="0.5" id="JIa-3c-fIa"/>
                                         <constraint firstItem="h0O-RG-uNE" firstAttribute="centerX" secondItem="8ma-dk-E0o" secondAttribute="centerX" multiplier="1.5" id="LZ0-lf-QB4"/>
                                         <constraint firstItem="HWR-79-VLj" firstAttribute="top" secondItem="8ma-dk-E0o" secondAttribute="centerY" id="Num-Qs-axT"/>
                                         <constraint firstItem="qgb-x6-vvg" firstAttribute="top" secondItem="HWR-79-VLj" secondAttribute="top" id="RPo-Nh-Xkl"/>
                                         <constraint firstItem="9Lv-PH-zcA" firstAttribute="centerX" secondItem="8ma-dk-E0o" secondAttribute="centerX" id="Ugl-wC-NC6"/>
-                                        <constraint firstItem="9Lv-PH-zcA" firstAttribute="top" secondItem="8ma-dk-E0o" secondAttribute="top" constant="45" id="boh-8D-ngO"/>
                                         <constraint firstItem="h0O-RG-uNE" firstAttribute="top" secondItem="6q0-zt-rWq" secondAttribute="top" id="cC7-X1-CZJ"/>
                                         <constraint firstItem="6q0-zt-rWq" firstAttribute="bottom" secondItem="8ma-dk-E0o" secondAttribute="centerY" constant="-10" id="oYe-Mm-9Z7"/>
                                     </constraints>
