@@ -17,4 +17,9 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 #define MainTextFont [UIFont systemFontOfSize:17]
 
+#define MainTextColor UIColorFromHex(0x202020)
+#define MainTextDisableColor UIColorFromHex(0xb3b0b0)
+#define MainTextHintColor UIColorFromHex(0x737373)
+
+
 #endif /* WalletMacro_h */

@@ -20,6 +20,8 @@
 		C3588F93214A0CDC00996E1A /* StatisticViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3588F91214A0CDC00996E1A /* StatisticViewController.xib */; };
 		C3588F97214A0E7000996E1A /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3588F95214A0E7000996E1A /* HomeTableViewCell.m */; };
 		C3588F98214A0E7000996E1A /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3588F96214A0E7000996E1A /* HomeTableViewCell.xib */; };
+		C376ACB7214A54BF005D378B /* ReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C376ACB5214A54BF005D378B /* ReviewViewController.m */; };
+		C376ACB8214A54BF005D378B /* ReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C376ACB6214A54BF005D378B /* ReviewViewController.xib */; };
 		C3BFAC512149014200326BD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BFAC502149014200326BD3 /* AppDelegate.m */; };
 		C3BFAC572149014200326BD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3BFAC552149014200326BD3 /* Main.storyboard */; };
 		C3BFAC592149014300326BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3BFAC582149014300326BD3 /* Assets.xcassets */; };
@@ -71,6 +73,9 @@
 		C3588F94214A0E7000996E1A /* HomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
 		C3588F95214A0E7000996E1A /* HomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
 		C3588F96214A0E7000996E1A /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		C376ACB4214A54BF005D378B /* ReviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReviewViewController.h; sourceTree = "<group>"; };
+		C376ACB5214A54BF005D378B /* ReviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReviewViewController.m; sourceTree = "<group>"; };
+		C376ACB6214A54BF005D378B /* ReviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewViewController.xib; sourceTree = "<group>"; };
 		C3BFAC4C2149014200326BD3 /* Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BFAC4F2149014200326BD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3BFAC502149014200326BD3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -179,6 +184,16 @@
 			path = Statistic;
 			sourceTree = "<group>";
 		};
+		C376ACB3214A549D005D378B /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				C376ACB4214A54BF005D378B /* ReviewViewController.h */,
+				C376ACB5214A54BF005D378B /* ReviewViewController.m */,
+				C376ACB6214A54BF005D378B /* ReviewViewController.xib */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
 		C3BFAC432149014200326BD3 = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +219,7 @@
 		C3BFAC4E2149014200326BD3 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				C376ACB3214A549D005D378B /* Review */,
 				C3588F89214A0C0300996E1A /* Statistic */,
 				C3588F88214A0BFB00996E1A /* Setting */,
 				C3588F7D2149F16D00996E1A /* Home */,
@@ -346,6 +362,7 @@
 			files = (
 				C3BFAC5C2149014300326BD3 /* LaunchScreen.storyboard in Resources */,
 				C3588F98214A0E7000996E1A /* HomeTableViewCell.xib in Resources */,
+				C376ACB8214A54BF005D378B /* ReviewViewController.xib in Resources */,
 				C3588F93214A0CDC00996E1A /* StatisticViewController.xib in Resources */,
 				C3588F8E214A0CCD00996E1A /* SettingViewController.xib in Resources */,
 				C3BFAC592149014300326BD3 /* Assets.xcassets in Resources */,
@@ -438,6 +455,7 @@
 				C3BFAC512149014200326BD3 /* AppDelegate.m in Sources */,
 				C3588F75214902D700996E1A /* NSObject+HUD.m in Sources */,
 				C3588F852149F48D00996E1A /* UIColor+HexColors.m in Sources */,
+				C376ACB7214A54BF005D378B /* ReviewViewController.m in Sources */,
 				C3588F812149F1C400996E1A /* HomeViewController.m in Sources */,
 				C3588F92214A0CDC00996E1A /* StatisticViewController.m in Sources */,
 				C3588F79214902D700996E1A /* UIScrollView+VTEmpty.m in Sources */,

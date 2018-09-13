@@ -27,6 +27,9 @@
     nc.navigationBar.translucent = NO;
     nc.navigationBar.barTintColor = ColorPrimary;
     nc.navigationBar.tintColor = [UIColor whiteColor];
+    //去除UINavigationBar底部1px的分隔线
+    nc.navigationBar.shadowImage = [UIImage new];
+    [nc.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     
     application.statusBarStyle = UIStatusBarStyleLightContent;
     

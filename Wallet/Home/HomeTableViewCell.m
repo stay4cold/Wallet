@@ -8,6 +8,16 @@
 
 #import "HomeTableViewCell.h"
 
+@interface HomeTableViewCell()
+
+@property (weak, nonatomic) IBOutlet UIImageView *typeImageView;
+@property (weak, nonatomic) IBOutlet UILabel *typeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *remarkLabel;
+@property (weak, nonatomic) IBOutlet UILabel *moneyLabel;
+
+
+@end
+
 @implementation HomeTableViewCell
 
 - (void)awakeFromNib {

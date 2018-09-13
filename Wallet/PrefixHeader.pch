@@ -26,5 +26,6 @@
 #import "NSObject+HUD.h"
 #import "UIView+Extension.h"
 #import "UIScrollView+VTEmpty.h"
+#import "UIColor+HexColors.h"
 
 #endif /* PrefixHeader_pch */
