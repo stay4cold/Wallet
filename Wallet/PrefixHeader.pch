@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  Wallet
+//
+//  Created by 王成浩 on 2018/9/12.
+//  Copyright © 2018年 evan. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//库
+#import "MBProgressHUD.h"
+#import <MJRefresh/MJRefresh.h>
+#import <MJExtension/MJExtension.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <Masonry/Masonry.h>
+
+//类别
+#import "NSObject+HUD.h"
+#import "UIView+Extension.h"
+#import "UIScrollView+VTEmpty.h"
+
+#endif /* PrefixHeader_pch */
