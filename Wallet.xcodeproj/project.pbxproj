@@ -11,8 +11,16 @@
 		C3588F75214902D700996E1A /* NSObject+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C3588F66214902D700996E1A /* NSObject+HUD.m */; };
 		C3588F76214902D700996E1A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C3588F68214902D700996E1A /* UIView+Extension.m */; };
 		C3588F79214902D700996E1A /* UIScrollView+VTEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = C3588F6C214902D700996E1A /* UIScrollView+VTEmpty.m */; };
+		C3588F812149F1C400996E1A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3588F7F2149F1C400996E1A /* HomeViewController.m */; };
+		C3588F822149F1C400996E1A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3588F802149F1C400996E1A /* HomeViewController.xib */; };
+		C3588F852149F48D00996E1A /* UIColor+HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = C3588F842149F48D00996E1A /* UIColor+HexColors.m */; };
+		C3588F8D214A0CCD00996E1A /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3588F8B214A0CCD00996E1A /* SettingViewController.m */; };
+		C3588F8E214A0CCD00996E1A /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3588F8C214A0CCD00996E1A /* SettingViewController.xib */; };
+		C3588F92214A0CDC00996E1A /* StatisticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3588F90214A0CDC00996E1A /* StatisticViewController.m */; };
+		C3588F93214A0CDC00996E1A /* StatisticViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3588F91214A0CDC00996E1A /* StatisticViewController.xib */; };
+		C3588F97214A0E7000996E1A /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3588F95214A0E7000996E1A /* HomeTableViewCell.m */; };
+		C3588F98214A0E7000996E1A /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3588F96214A0E7000996E1A /* HomeTableViewCell.xib */; };
 		C3BFAC512149014200326BD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BFAC502149014200326BD3 /* AppDelegate.m */; };
-		C3BFAC542149014200326BD3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BFAC532149014200326BD3 /* ViewController.m */; };
 		C3BFAC572149014200326BD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3BFAC552149014200326BD3 /* Main.storyboard */; };
 		C3BFAC592149014300326BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3BFAC582149014300326BD3 /* Assets.xcassets */; };
 		C3BFAC5C2149014300326BD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3BFAC5A2149014300326BD3 /* LaunchScreen.storyboard */; };
@@ -48,11 +56,24 @@
 		C3588F68214902D700996E1A /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		C3588F6C214902D700996E1A /* UIScrollView+VTEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+VTEmpty.m"; sourceTree = "<group>"; };
 		C3588F7C2149066B00996E1A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C3588F7E2149F1C400996E1A /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		C3588F7F2149F1C400996E1A /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		C3588F802149F1C400996E1A /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		C3588F832149F48D00996E1A /* UIColor+HexColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColors.h"; sourceTree = "<group>"; };
+		C3588F842149F48D00996E1A /* UIColor+HexColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColors.m"; sourceTree = "<group>"; };
+		C3588F872149F56700996E1A /* WalletMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletMacro.h; sourceTree = "<group>"; };
+		C3588F8A214A0CCD00996E1A /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		C3588F8B214A0CCD00996E1A /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		C3588F8C214A0CCD00996E1A /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		C3588F8F214A0CDC00996E1A /* StatisticViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatisticViewController.h; sourceTree = "<group>"; };
+		C3588F90214A0CDC00996E1A /* StatisticViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatisticViewController.m; sourceTree = "<group>"; };
+		C3588F91214A0CDC00996E1A /* StatisticViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticViewController.xib; sourceTree = "<group>"; };
+		C3588F94214A0E7000996E1A /* HomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		C3588F95214A0E7000996E1A /* HomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
+		C3588F96214A0E7000996E1A /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		C3BFAC4C2149014200326BD3 /* Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BFAC4F2149014200326BD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3BFAC502149014200326BD3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C3BFAC522149014200326BD3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C3BFAC532149014200326BD3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C3BFAC562149014200326BD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3BFAC582149014300326BD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3BFAC5B2149014300326BD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -113,6 +134,8 @@
 		C3588F52214902D700996E1A /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				C3588F832149F48D00996E1A /* UIColor+HexColors.h */,
+				C3588F842149F48D00996E1A /* UIColor+HexColors.m */,
 				C3588F58214902D700996E1A /* UIView+Extension.h */,
 				C3588F5A214902D700996E1A /* NSObject+HUD.h */,
 				C3588F5C214902D700996E1A /* UIScrollView+VTEmpty.h */,
@@ -121,6 +144,39 @@
 				C3588F6C214902D700996E1A /* UIScrollView+VTEmpty.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		C3588F7D2149F16D00996E1A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C3588F7E2149F1C400996E1A /* HomeViewController.h */,
+				C3588F7F2149F1C400996E1A /* HomeViewController.m */,
+				C3588F802149F1C400996E1A /* HomeViewController.xib */,
+				C3588F94214A0E7000996E1A /* HomeTableViewCell.h */,
+				C3588F95214A0E7000996E1A /* HomeTableViewCell.m */,
+				C3588F96214A0E7000996E1A /* HomeTableViewCell.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C3588F88214A0BFB00996E1A /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				C3588F8A214A0CCD00996E1A /* SettingViewController.h */,
+				C3588F8B214A0CCD00996E1A /* SettingViewController.m */,
+				C3588F8C214A0CCD00996E1A /* SettingViewController.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		C3588F89214A0C0300996E1A /* Statistic */ = {
+			isa = PBXGroup;
+			children = (
+				C3588F8F214A0CDC00996E1A /* StatisticViewController.h */,
+				C3588F90214A0CDC00996E1A /* StatisticViewController.m */,
+				C3588F91214A0CDC00996E1A /* StatisticViewController.xib */,
+			);
+			path = Statistic;
 			sourceTree = "<group>";
 		};
 		C3BFAC432149014200326BD3 = {
@@ -148,17 +204,19 @@
 		C3BFAC4E2149014200326BD3 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				C3588F89214A0C0300996E1A /* Statistic */,
+				C3588F88214A0BFB00996E1A /* Setting */,
+				C3588F7D2149F16D00996E1A /* Home */,
 				C3588F52214902D700996E1A /* Category */,
 				C3BFAC4F2149014200326BD3 /* AppDelegate.h */,
 				C3BFAC502149014200326BD3 /* AppDelegate.m */,
-				C3BFAC522149014200326BD3 /* ViewController.h */,
-				C3BFAC532149014200326BD3 /* ViewController.m */,
 				C3BFAC552149014200326BD3 /* Main.storyboard */,
 				C3BFAC582149014300326BD3 /* Assets.xcassets */,
 				C3BFAC5A2149014300326BD3 /* LaunchScreen.storyboard */,
 				C3BFAC5D2149014300326BD3 /* Info.plist */,
 				C3BFAC5E2149014300326BD3 /* main.m */,
 				C3588F7C2149066B00996E1A /* PrefixHeader.pch */,
+				C3588F872149F56700996E1A /* WalletMacro.h */,
 			);
 			path = Wallet;
 			sourceTree = "<group>";
@@ -287,8 +345,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3BFAC5C2149014300326BD3 /* LaunchScreen.storyboard in Resources */,
+				C3588F98214A0E7000996E1A /* HomeTableViewCell.xib in Resources */,
+				C3588F93214A0CDC00996E1A /* StatisticViewController.xib in Resources */,
+				C3588F8E214A0CCD00996E1A /* SettingViewController.xib in Resources */,
 				C3BFAC592149014300326BD3 /* Assets.xcassets in Resources */,
 				C3BFAC572149014200326BD3 /* Main.storyboard in Resources */,
+				C3588F822149F1C400996E1A /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,12 +432,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3BFAC542149014200326BD3 /* ViewController.m in Sources */,
 				C3588F76214902D700996E1A /* UIView+Extension.m in Sources */,
 				C3BFAC5F2149014300326BD3 /* main.m in Sources */,
+				C3588F97214A0E7000996E1A /* HomeTableViewCell.m in Sources */,
 				C3BFAC512149014200326BD3 /* AppDelegate.m in Sources */,
 				C3588F75214902D700996E1A /* NSObject+HUD.m in Sources */,
+				C3588F852149F48D00996E1A /* UIColor+HexColors.m in Sources */,
+				C3588F812149F1C400996E1A /* HomeViewController.m in Sources */,
+				C3588F92214A0CDC00996E1A /* StatisticViewController.m in Sources */,
 				C3588F79214902D700996E1A /* UIScrollView+VTEmpty.m in Sources */,
+				C3588F8D214A0CCD00996E1A /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
