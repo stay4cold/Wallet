@@ -14,4 +14,5 @@ target 'Wallet' do
     pod 'DZNEmptyDataSet'
     pod 'XLPagerTabStrip', '~> 3.0'
     pod 'SDCycleScrollView'
+    pod 'FMDB'
 end

@@ -14,6 +14,9 @@ green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 #define ColorPrimary UIColorFromHex(0x9576fc)
+#define ColorOutlay UIColorFromHex(0xFF6F6F)
+#define ColorIncome UIColorFromHex(0x02AE7C)
+
 
 #define MainTextFont [UIFont systemFontOfSize:17]
 

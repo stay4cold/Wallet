@@ -10,6 +10,10 @@
 #import "SettingViewController.h"
 #import "StatisticViewController.h"
 #import "HomeTableViewCell.h"
+#import "AddRecordViewController.h"
+#import "RecordTypeDao.h"
+#import "RecordDao.h"
+#import "DateUtils.h"
 
 static NSString *kCellId = @"cell";
 
@@ -22,6 +26,7 @@ static NSString *kCellId = @"cell";
 @property (weak, nonatomic) IBOutlet UIView *indicatorView1;
 @property (weak, nonatomic) IBOutlet UIView *indicatorView2;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIButton *addBtn;
 
 @property (strong, nonatomic) NSMutableArray *dataArray;
 @property (nonatomic, strong) UIView *footerView;
@@ -47,6 +52,15 @@ static NSString *kCellId = @"cell";
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([HomeTableViewCell class]) bundle:nil] forCellReuseIdentifier:kCellId];
     
     self.indicatorView2.alpha = 0.5;
+    
+    UILongPressGestureRecognizer *longGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(addSuccessiveAccount:)];
+    [self.addBtn addGestureRecognizer:longGesture];
+    UITapGestureRecognizer *budgetGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapBudget:)];
+    [self.budgetLabel addGestureRecognizer:budgetGesture];
+    UITapGestureRecognizer *propertyGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapProperty:)];
+    [self.propertyLabel addGestureRecognizer:propertyGesture];
+    
+    [self initData];
 }
 
 - (UIView *)footerView {
@@ -63,6 +77,16 @@ static NSString *kCellId = @"cell";
 
 //添加新账目
 - (IBAction)addAccount:(id)sender {
+    [self.navigationController pushViewController:[AddRecordViewController new] animated:YES];
+}
+
+//连续记账
+- (void)addSuccessiveAccount:(UILongPressGestureRecognizer *)gesture {
+    if (gesture.state == UIGestureRecognizerStateBegan) {
+        AddRecordViewController *avc = [AddRecordViewController new];
+        avc.successive = YES;
+        [self.navigationController pushViewController:avc animated:YES];
+    }
 }
 
 - (void)toSettingController {
@@ -75,6 +99,27 @@ static NSString *kCellId = @"cell";
     UIBarButtonItem *back = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:nil action:nil];
     self.navigationItem.backBarButtonItem = back;
     [self.navigationController pushViewController:[StatisticViewController new] animated:YES];
+}
+
+- (void)tapBudget:(UILabel *)sender {
+    NSLog(@"tap budget");
+}
+
+- (void)tapProperty:(UILabel *)sender {
+    NSLog(@"tap property");
+}
+
+- (void)initData {
+    //初始化type
+    if ([RecordTypeDao getRecordTypeCount] < 1) {
+        BOOL res = [RecordTypeDao initRecordTypes];
+        if (!res) {
+            NSLog(@"init record type failed !!!");
+        }
+    }
+    //获取当前月份的记账记录数据
+    self.dataArray = [RecordDao getRangeRecordWithTypesFrom:[DateUtils currentMonthStart] to:[DateUtils currentMonthEnd]];
+    [self.tableView reloadData];
 }
 
 #pragma mark - UIScrollViewDelegate
@@ -99,6 +144,17 @@ static NSString *kCellId = @"cell";
     return 75;
 }
 
+- (NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewRowAction *delete = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"删除" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        
+    }];
+    UITableViewRowAction *edit = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"修改" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        
+    }];
+    edit.backgroundColor = ColorPrimary;
+    return @[delete, edit];
+}
+
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -106,11 +162,12 @@ static NSString *kCellId = @"cell";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 100;
+    return self.dataArray.count;
 }
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     HomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellId forIndexPath:indexPath];
+    cell.model = [self.dataArray objectAtIndex:indexPath.row];
     return cell;
 }
 

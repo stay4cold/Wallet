@@ -43,6 +43,9 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加备注信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ze7-TJ-SS0">
                                 <rect key="frame" x="0.0" y="26" width="92" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="sB4-y4-qcz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.45098039215686275" green="0.45098039215686275" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -74,7 +77,9 @@
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
                 <outlet property="moneyLabel" destination="62C-VY-FW8" id="3ff-Gm-Afh"/>
+                <outlet property="remarkHeight" destination="sB4-y4-qcz" id="QAt-Nu-zsc"/>
                 <outlet property="remarkLabel" destination="ze7-TJ-SS0" id="iZl-9k-iNm"/>
+                <outlet property="remarkTopMargin" destination="tvU-hr-las" id="KT5-VH-Hqu"/>
                 <outlet property="typeImageView" destination="vI7-rA-nIO" id="LWm-bn-GnI"/>
                 <outlet property="typeLabel" destination="1ai-Iw-iQG" id="gNp-qG-Iso"/>
             </connections>

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RecordWithTypeModel.h"
 
 @interface HomeTableViewCell : UITableViewCell
+
+@property (nonatomic, strong) RecordWithTypeModel *model;
 
 @end

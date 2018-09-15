@@ -12,15 +12,20 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
 //宏
 #import "WalletMacro.h"
+#import "WalletEnumHeader.h"
 
 //库
-#import "MBProgressHUD.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 #import <MJRefresh/MJRefresh.h>
 #import <MJExtension/MJExtension.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <Masonry/Masonry.h>
+#import <FMDB/FMDB.h>
 
 //类别
 #import "NSObject+HUD.h"
