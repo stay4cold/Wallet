@@ -13,6 +13,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddRecordViewController">
             <connections>
+                <outlet property="incomeTypePageView" destination="mcr-Kn-Qto" id="bj2-3N-Dkl"/>
+                <outlet property="outlayTypePageView" destination="2d4-v0-Ycd" id="qmx-oD-grK"/>
+                <outlet property="typeControl" destination="Xud-Aw-18L" id="nE8-rd-F0P"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -31,6 +34,9 @@
                         <segment title="收入"/>
                     </segments>
                     <color key="tintColor" red="0.58431372549019611" green="0.46274509803921571" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="typeChanged:" destination="-1" eventType="valueChanged" id="S07-AN-6tF"/>
+                    </connections>
                 </segmentedControl>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVr-uQ-rJo" userLabel="Keyboard View" customClass="KeyboardView">
                     <rect key="frame" x="0.0" y="367" width="375" height="300"/>
@@ -41,7 +47,26 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ulL-AH-KXV" userLabel="Page View">
                     <rect key="frame" x="0.0" y="63" width="375" height="258"/>
-                    <color key="backgroundColor" red="0.25490196079999999" green="0.34509803919999998" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2d4-v0-Ycd" userLabel="Add Type Page View Outlay" customClass="AddTypePageView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="258"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcr-Kn-Qto" userLabel="Add Type Page View Income" customClass="AddTypePageView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="258"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="2d4-v0-Ycd" secondAttribute="bottom" id="7uf-Dl-4lQ"/>
+                        <constraint firstAttribute="trailing" secondItem="mcr-Kn-Qto" secondAttribute="trailing" id="BCB-45-8fX"/>
+                        <constraint firstAttribute="trailing" secondItem="2d4-v0-Ycd" secondAttribute="trailing" id="ENd-d0-HUP"/>
+                        <constraint firstItem="2d4-v0-Ycd" firstAttribute="leading" secondItem="ulL-AH-KXV" secondAttribute="leading" id="VKK-ex-ban"/>
+                        <constraint firstAttribute="bottom" secondItem="mcr-Kn-Qto" secondAttribute="bottom" id="jwI-uU-WNW"/>
+                        <constraint firstItem="mcr-Kn-Qto" firstAttribute="top" secondItem="ulL-AH-KXV" secondAttribute="top" id="lDN-Q5-0ex"/>
+                        <constraint firstItem="2d4-v0-Ycd" firstAttribute="top" secondItem="ulL-AH-KXV" secondAttribute="top" id="wVl-eW-DbB"/>
+                        <constraint firstItem="mcr-Kn-Qto" firstAttribute="leading" secondItem="ulL-AH-KXV" secondAttribute="leading" id="z0j-1C-M9L"/>
+                    </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="otJ-yu-lJB" userLabel="Remark View">
                     <rect key="frame" x="27" y="326" width="321.5" height="36"/>

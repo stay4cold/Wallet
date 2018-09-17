@@ -6,9 +6,9 @@
 //  Copyright © 2018年 evan. All rights reserved.
 //
 
-#import "AddRecordItemViewCell.h"
+#import "AddTypeItemViewCell.h"
 
-@interface AddRecordItemViewCell()
+@interface AddTypeItemViewCell()
 
 @property (weak, nonatomic) IBOutlet UIImageView *typeImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *checkImageView;
@@ -16,11 +16,17 @@
 
 @end
 
-@implementation AddRecordItemViewCell
+@implementation AddTypeItemViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+}
+
+- (void)setModel:(RecordTypeModel *)model {
+    self.typeLabel.text = model.name;
+    self.typeImageView.image = [UIImage imageNamed:model.img_name];
+    self.checkImageView.hidden = !model.isChecked;
 }
 
 @end

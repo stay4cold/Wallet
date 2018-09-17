@@ -7,8 +7,13 @@
 //
 
 #import "AddRecordViewController.h"
+#import "AddTypePageView.h"
+#import "RecordTypeDao.h"
 
 @interface AddRecordViewController ()
+@property (weak, nonatomic) IBOutlet UISegmentedControl *typeControl;
+@property (weak, nonatomic) IBOutlet AddTypePageView *outlayTypePageView;
+@property (weak, nonatomic) IBOutlet AddTypePageView *incomeTypePageView;
 
 @end
 
@@ -23,7 +28,12 @@
         self.title = @"记一笔";
     }
     
-//    self.title = @"新建";
+    self.outlayTypePageView.dataArray = [RecordTypeDao getAllRecordTypes];
+}
+
+- (IBAction)typeChanged:(UISegmentedControl *)sender {
+    self.outlayTypePageView.hidden = sender.selectedSegmentIndex == 1;
+    self.incomeTypePageView.hidden = sender.selectedSegmentIndex == 0;
 }
 
 @end
