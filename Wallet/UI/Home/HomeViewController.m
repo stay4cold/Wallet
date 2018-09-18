@@ -29,6 +29,7 @@ static NSString *kCellId = @"cell";
 @property (weak, nonatomic) IBOutlet UIButton *addBtn;
 
 @property (strong, nonatomic) NSMutableArray *dataArray;
+@property (nonatomic, strong) UILabel *emptyLabel;
 @property (nonatomic, strong) UIView *footerView;
 
 @end
@@ -48,9 +49,8 @@ static NSString *kCellId = @"cell";
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.tableView.tableFooterView = self.footerView;
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([HomeTableViewCell class]) bundle:nil] forCellReuseIdentifier:kCellId];
-    
+
     self.indicatorView2.alpha = 0.5;
     
     UILongPressGestureRecognizer *longGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(addSuccessiveAccount:)];
@@ -73,6 +73,18 @@ static NSString *kCellId = @"cell";
         _footerView = footerLabel;
     }
     return _footerView;
+}
+
+- (UILabel *)emptyLabel {
+    if (!_emptyLabel) {
+        _emptyLabel = [UILabel new];
+        _emptyLabel.numberOfLines = 0;
+        _emptyLabel.text = @"本月未开始记账\n\n点击加号，开始记账";
+        _emptyLabel.textColor = [UIColor grayColor];
+        _emptyLabel.textAlignment = NSTextAlignmentCenter;
+        _emptyLabel.font = [UIFont systemFontOfSize:16];
+    }
+    return _emptyLabel;
 }
 
 //添加新账目
@@ -110,6 +122,7 @@ static NSString *kCellId = @"cell";
 }
 
 - (void)initData {
+    self.tableView.loading = YES;
     //初始化type
     if ([RecordTypeDao getRecordTypeCount] < 1) {
         BOOL res = [RecordTypeDao initRecordTypes];
@@ -119,6 +132,14 @@ static NSString *kCellId = @"cell";
     }
     //获取当前月份的记账记录数据
     self.dataArray = [RecordDao getRangeRecordWithTypesFrom:[DateUtils currentMonthStart] to:[DateUtils currentMonthEnd]];
+    self.tableView.loading = NO;
+    self.tableView.tableFooterView = nil;
+    if (self.dataArray.count == 0) {
+        self.tableView.tableFooterView = [UIView new];
+        self.tableView.customViewForVTEmpty = self.emptyLabel;
+    } else if (self.dataArray.count > 5) {
+        self.tableView.tableFooterView = self.footerView;
+    }
     [self.tableView reloadData];
 }
 
@@ -170,5 +191,9 @@ static NSString *kCellId = @"cell";
     cell.model = [self.dataArray objectAtIndex:indexPath.row];
     return cell;
 }
+
+//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+//    return @"112";
+//}
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "AddTypePageViewCell.h"
-#import "AddTypeItemViewCell.h"
+#import "AddTypePageItemViewCell.h"
 
 @interface AddTypePageViewCell() <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
@@ -28,7 +28,7 @@
         _collectionView.dataSource = self;
         _collectionView.showsVerticalScrollIndicator = NO;
         _collectionView.showsHorizontalScrollIndicator = NO;
-        [_collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([AddTypeItemViewCell class]) bundle:nil] forCellWithReuseIdentifier:@"cell"];
+        [_collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([AddTypePageItemViewCell class]) bundle:nil] forCellWithReuseIdentifier:@"cell"];
         [self.contentView addSubview:_collectionView];
         [_collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.mas_equalTo(self.contentView);
@@ -52,7 +52,7 @@
 #pragma mark - UICollectionViewDataSource
 
 - (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    AddTypeItemViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    AddTypePageItemViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     cell.model = [self.dataArray objectAtIndex:indexPath.row];
     return cell;
 }
@@ -63,6 +63,15 @@
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
+}
+
+#pragma mark - UICollectionViewDelegate
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    RecordTypeModel *model = [self.dataArray objectAtIndex:indexPath.row];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(didSelectItemModel:atIndexPath:)]) {
+        [self.delegate didSelectItemModel:model atIndexPath:indexPath];
+    }
 }
 
 @end

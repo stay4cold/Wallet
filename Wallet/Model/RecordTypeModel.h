@@ -20,4 +20,8 @@
 @property (nonatomic, assign, getter=isChecked) BOOL checked;
 @property (nonatomic, assign, getter=isSetting) BOOL setting;
 
+- (instancetype) initWithId:(NSNumber *)ID name:(NSString *)name imgName:(NSString *)imgName type:(RecordType)type ranking:(NSNumber *)ranking state:(RecordState)state;
+
++ (instancetype) recordTypeWithModel:(RecordTypeModel *)model;
+
 @end

@@ -50,12 +50,21 @@
 		C3BFAC742149014300326BD3 /* WalletUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BFAC732149014300326BD3 /* WalletUITests.m */; };
 		C3EDF140214CA80200A64483 /* DateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF13F214CA80200A64483 /* DateUtils.m */; };
 		C3EDF143214CEC4E00A64483 /* TypeSumMoneyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF142214CEC4E00A64483 /* TypeSumMoneyModel.m */; };
-		C3EDF147214CF8F100A64483 /* AddTypeItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF145214CF8F100A64483 /* AddTypeItemViewCell.m */; };
-		C3EDF148214CF8F100A64483 /* AddTypeItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EDF146214CF8F100A64483 /* AddTypeItemViewCell.xib */; };
+		C3EDF147214CF8F100A64483 /* AddTypePageItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF145214CF8F100A64483 /* AddTypePageItemViewCell.m */; };
+		C3EDF148214CF8F100A64483 /* AddTypePageItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EDF146214CF8F100A64483 /* AddTypePageItemViewCell.xib */; };
 		C3EDF14B214D44AE00A64483 /* KeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF14A214D44AE00A64483 /* KeyboardView.m */; };
 		C3EDF14D214D58F700A64483 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EDF14C214D58F700A64483 /* KeyboardView.xib */; };
 		C3EDF153214F4E4D00A64483 /* AddTypePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF152214F4E4D00A64483 /* AddTypePageView.m */; };
 		C3EDF157214F561900A64483 /* AddTypePageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF155214F561900A64483 /* AddTypePageViewCell.m */; };
+		C3EDF164214FA2A700A64483 /* TypeManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF162214FA2A700A64483 /* TypeManagerViewController.m */; };
+		C3EDF165214FA2A700A64483 /* TypeManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EDF163214FA2A700A64483 /* TypeManagerViewController.xib */; };
+		C3EDF1682150942E00A64483 /* TypeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF1672150942E00A64483 /* TypeTableView.m */; };
+		C3EDF16C2150953400A64483 /* TypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF16A2150953400A64483 /* TypeTableViewCell.m */; };
+		C3EDF16D2150953400A64483 /* TypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EDF16B2150953400A64483 /* TypeTableViewCell.xib */; };
+		C3EDF1712150A44900A64483 /* AddTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF16F2150A44900A64483 /* AddTypeViewController.m */; };
+		C3EDF1722150A44900A64483 /* AddTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EDF1702150A44900A64483 /* AddTypeViewController.xib */; };
+		C3EDF1762150B07A00A64483 /* AddTypeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF1742150B07A00A64483 /* AddTypeViewCell.m */; };
+		C3EDF1772150B07A00A64483 /* AddTypeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EDF1752150B07A00A64483 /* AddTypeViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,9 +168,9 @@
 		C3EDF13F214CA80200A64483 /* DateUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateUtils.m; sourceTree = "<group>"; };
 		C3EDF141214CEC4E00A64483 /* TypeSumMoneyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeSumMoneyModel.h; sourceTree = "<group>"; };
 		C3EDF142214CEC4E00A64483 /* TypeSumMoneyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypeSumMoneyModel.m; sourceTree = "<group>"; };
-		C3EDF144214CF8F100A64483 /* AddTypeItemViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTypeItemViewCell.h; sourceTree = "<group>"; };
-		C3EDF145214CF8F100A64483 /* AddTypeItemViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddTypeItemViewCell.m; sourceTree = "<group>"; };
-		C3EDF146214CF8F100A64483 /* AddTypeItemViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTypeItemViewCell.xib; sourceTree = "<group>"; };
+		C3EDF144214CF8F100A64483 /* AddTypePageItemViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTypePageItemViewCell.h; sourceTree = "<group>"; };
+		C3EDF145214CF8F100A64483 /* AddTypePageItemViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddTypePageItemViewCell.m; sourceTree = "<group>"; };
+		C3EDF146214CF8F100A64483 /* AddTypePageItemViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTypePageItemViewCell.xib; sourceTree = "<group>"; };
 		C3EDF149214D44AE00A64483 /* KeyboardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardView.h; sourceTree = "<group>"; };
 		C3EDF14A214D44AE00A64483 /* KeyboardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardView.m; sourceTree = "<group>"; };
 		C3EDF14C214D58F700A64483 /* KeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
@@ -169,6 +178,20 @@
 		C3EDF152214F4E4D00A64483 /* AddTypePageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddTypePageView.m; sourceTree = "<group>"; };
 		C3EDF154214F561900A64483 /* AddTypePageViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTypePageViewCell.h; sourceTree = "<group>"; };
 		C3EDF155214F561900A64483 /* AddTypePageViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddTypePageViewCell.m; sourceTree = "<group>"; };
+		C3EDF161214FA2A700A64483 /* TypeManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeManagerViewController.h; sourceTree = "<group>"; };
+		C3EDF162214FA2A700A64483 /* TypeManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypeManagerViewController.m; sourceTree = "<group>"; };
+		C3EDF163214FA2A700A64483 /* TypeManagerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeManagerViewController.xib; sourceTree = "<group>"; };
+		C3EDF1662150942E00A64483 /* TypeTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeTableView.h; sourceTree = "<group>"; };
+		C3EDF1672150942E00A64483 /* TypeTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypeTableView.m; sourceTree = "<group>"; };
+		C3EDF1692150953400A64483 /* TypeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeTableViewCell.h; sourceTree = "<group>"; };
+		C3EDF16A2150953400A64483 /* TypeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypeTableViewCell.m; sourceTree = "<group>"; };
+		C3EDF16B2150953400A64483 /* TypeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeTableViewCell.xib; sourceTree = "<group>"; };
+		C3EDF16E2150A44900A64483 /* AddTypeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTypeViewController.h; sourceTree = "<group>"; };
+		C3EDF16F2150A44900A64483 /* AddTypeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddTypeViewController.m; sourceTree = "<group>"; };
+		C3EDF1702150A44900A64483 /* AddTypeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTypeViewController.xib; sourceTree = "<group>"; };
+		C3EDF1732150B07A00A64483 /* AddTypeViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTypeViewCell.h; sourceTree = "<group>"; };
+		C3EDF1742150B07A00A64483 /* AddTypeViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddTypeViewCell.m; sourceTree = "<group>"; };
+		C3EDF1752150B07A00A64483 /* AddTypeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTypeViewCell.xib; sourceTree = "<group>"; };
 		FA553738447CCD9FF921C36A /* Pods-Wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wallet/Pods-Wallet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -279,9 +302,9 @@
 				C376ACBA214A62D4005D378B /* AddRecordViewController.h */,
 				C376ACBB214A62D4005D378B /* AddRecordViewController.m */,
 				C376ACBC214A62D4005D378B /* AddRecordViewController.xib */,
-				C3EDF144214CF8F100A64483 /* AddTypeItemViewCell.h */,
-				C3EDF145214CF8F100A64483 /* AddTypeItemViewCell.m */,
-				C3EDF146214CF8F100A64483 /* AddTypeItemViewCell.xib */,
+				C3EDF144214CF8F100A64483 /* AddTypePageItemViewCell.h */,
+				C3EDF145214CF8F100A64483 /* AddTypePageItemViewCell.m */,
+				C3EDF146214CF8F100A64483 /* AddTypePageItemViewCell.xib */,
 				C3EDF149214D44AE00A64483 /* KeyboardView.h */,
 				C3EDF14A214D44AE00A64483 /* KeyboardView.m */,
 				C3EDF14C214D58F700A64483 /* KeyboardView.xib */,
@@ -327,7 +350,7 @@
 		C376ACC1214B55D8005D378B /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				C376ACB9214A62BF005D378B /* Add */,
+				C3EDF15E214FA22600A64483 /* Record */,
 				C376ACB3214A549D005D378B /* Review */,
 				C3588F89214A0C0300996E1A /* Statistic */,
 				C3588F88214A0BFB00996E1A /* Setting */,
@@ -424,6 +447,36 @@
 				C3EDF13F214CA80200A64483 /* DateUtils.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		C3EDF15E214FA22600A64483 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				C3EDF15F214FA24900A64483 /* Type */,
+				C376ACB9214A62BF005D378B /* Add */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		C3EDF15F214FA24900A64483 /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				C3EDF161214FA2A700A64483 /* TypeManagerViewController.h */,
+				C3EDF162214FA2A700A64483 /* TypeManagerViewController.m */,
+				C3EDF163214FA2A700A64483 /* TypeManagerViewController.xib */,
+				C3EDF1662150942E00A64483 /* TypeTableView.h */,
+				C3EDF1672150942E00A64483 /* TypeTableView.m */,
+				C3EDF1692150953400A64483 /* TypeTableViewCell.h */,
+				C3EDF16A2150953400A64483 /* TypeTableViewCell.m */,
+				C3EDF16B2150953400A64483 /* TypeTableViewCell.xib */,
+				C3EDF16E2150A44900A64483 /* AddTypeViewController.h */,
+				C3EDF16F2150A44900A64483 /* AddTypeViewController.m */,
+				C3EDF1702150A44900A64483 /* AddTypeViewController.xib */,
+				C3EDF1732150B07A00A64483 /* AddTypeViewCell.h */,
+				C3EDF1742150B07A00A64483 /* AddTypeViewCell.m */,
+				C3EDF1752150B07A00A64483 /* AddTypeViewCell.xib */,
+			);
+			path = Type;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -534,13 +587,17 @@
 				C3BFAC5C2149014300326BD3 /* LaunchScreen.storyboard in Resources */,
 				C3588F98214A0E7000996E1A /* HomeTableViewCell.xib in Resources */,
 				C3EDF14D214D58F700A64483 /* KeyboardView.xib in Resources */,
-				C3EDF148214CF8F100A64483 /* AddTypeItemViewCell.xib in Resources */,
+				C3EDF148214CF8F100A64483 /* AddTypePageItemViewCell.xib in Resources */,
 				C376ACB8214A54BF005D378B /* ReviewViewController.xib in Resources */,
 				C3588F93214A0CDC00996E1A /* StatisticViewController.xib in Resources */,
 				C3588F8E214A0CCD00996E1A /* SettingViewController.xib in Resources */,
 				C376ACBE214A62D4005D378B /* AddRecordViewController.xib in Resources */,
+				C3EDF1722150A44900A64483 /* AddTypeViewController.xib in Resources */,
 				C3BFAC592149014300326BD3 /* Assets.xcassets in Resources */,
+				C3EDF16D2150953400A64483 /* TypeTableViewCell.xib in Resources */,
+				C3EDF1772150B07A00A64483 /* AddTypeViewCell.xib in Resources */,
 				C3BFAC572149014200326BD3 /* Main.storyboard in Resources */,
+				C3EDF165214FA2A700A64483 /* TypeManagerViewController.xib in Resources */,
 				C3588F822149F1C400996E1A /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -629,16 +686,21 @@
 				C3BFAC5F2149014300326BD3 /* main.m in Sources */,
 				C3588F97214A0E7000996E1A /* HomeTableViewCell.m in Sources */,
 				C376ACE3214B6CC3005D378B /* Dao.m in Sources */,
-				C3EDF147214CF8F100A64483 /* AddTypeItemViewCell.m in Sources */,
+				C3EDF147214CF8F100A64483 /* AddTypePageItemViewCell.m in Sources */,
 				C376ACBD214A62D4005D378B /* AddRecordViewController.m in Sources */,
+				C3EDF1682150942E00A64483 /* TypeTableView.m in Sources */,
+				C3EDF1712150A44900A64483 /* AddTypeViewController.m in Sources */,
 				C3EDF14B214D44AE00A64483 /* KeyboardView.m in Sources */,
 				C3BFAC512149014200326BD3 /* AppDelegate.m in Sources */,
+				C3EDF1762150B07A00A64483 /* AddTypeViewCell.m in Sources */,
 				C376ACE6214B7A56005D378B /* RecordWithTypeModel.m in Sources */,
 				C376ACCA214B586F005D378B /* MonthSumMoneyModel.m in Sources */,
+				C3EDF16C2150953400A64483 /* TypeTableViewCell.m in Sources */,
 				C376ACC7214B57B2005D378B /* DaySumMoneyModel.m in Sources */,
 				C376ACF5214C8905005D378B /* AssetsTransferRecordDao.m in Sources */,
 				C3588F75214902D700996E1A /* NSObject+HUD.m in Sources */,
 				C376ACD3214B5FB8005D378B /* AssetsModel.m in Sources */,
+				C3EDF164214FA2A700A64483 /* TypeManagerViewController.m in Sources */,
 				C376ACCD214B5931005D378B /* SumMoneyModel.m in Sources */,
 				C3588F852149F48D00996E1A /* UIColor+HexColors.m in Sources */,
 				C376ACB7214A54BF005D378B /* ReviewViewController.m in Sources */,

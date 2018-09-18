@@ -13,8 +13,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddRecordViewController">
             <connections>
+                <outlet property="assetsImgView" destination="JDK-Gh-vDT" id="Prx-2a-pXQ"/>
+                <outlet property="assetsLabel" destination="XvO-X5-UIB" id="PrN-S6-nb5"/>
+                <outlet property="dateBtn" destination="kdB-MG-HcI" id="1f2-GG-eew"/>
                 <outlet property="incomeTypePageView" destination="mcr-Kn-Qto" id="bj2-3N-Dkl"/>
+                <outlet property="keyboardView" destination="UVr-uQ-rJo" id="C3V-6f-Yen"/>
                 <outlet property="outlayTypePageView" destination="2d4-v0-Ycd" id="qmx-oD-grK"/>
+                <outlet property="remarkField" destination="9Dj-JM-pU4" id="qK5-eB-l5K"/>
                 <outlet property="typeControl" destination="Xud-Aw-18L" id="nE8-rd-F0P"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -84,6 +89,9 @@
                                     <integer key="value" value="4"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="tapDateBtn:" destination="-1" eventType="touchUpInside" id="bEw-0c-E01"/>
+                            </connections>
                         </button>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入备注" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9Dj-JM-pU4">
                             <rect key="frame" x="80.5" y="3" width="155" height="30"/>

@@ -112,4 +112,42 @@
     return model;
 }
 
++ (NSArray *)getAllRecordTypeImgs:(RecordType)type {
+    if (type == RecordTypeOutlay) {
+        return @[@"type_eat",
+                 @"type_calendar",
+                 @"type_3c",
+                 @"type_clothes",
+                 @"type_candy",
+                 @"type_cigarette",
+                 @"type_humanity",
+                 @"type_pill",
+                 @"type_fitness",
+                 @"type_sim",
+                 @"type_study",
+                 @"type_pet",
+                 @"type_train",
+                 @"type_plain",
+                 @"type_bus",
+                 @"type_home",
+                 @"type_wifi",
+                 @"type_insure",
+                 @"type_outlay_red",
+                 @"type_adventure",
+                 @"type_movie",
+                 @"type_reduce",
+                 @"type_shopping",
+                 @"type_handling_fee",
+                 ];
+    } else {
+        return @[@"type_salary",
+                 @"type_pluralism",
+                 @"type_wallet",
+                 @"type_income_red",
+                 @"type_back_money",
+                 @"type_unexpected_income",
+                 @"type_interest"];
+    }
+}
+
 @end

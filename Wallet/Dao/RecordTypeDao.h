@@ -19,4 +19,5 @@
 + (BOOL)updateRecordTypes:(NSMutableArray<RecordTypeModel *> *)recordType;
 + (BOOL)deleteRecordType:(RecordTypeModel *)recordType;
 + (BOOL)initRecordTypes;
++ (NSArray *)getAllRecordTypeImgs:(RecordType)type;
 @end

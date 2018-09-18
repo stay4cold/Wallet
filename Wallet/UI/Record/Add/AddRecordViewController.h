@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RecordWithTypeModel.h"
 
 @interface AddRecordViewController : UIViewController
 
 @property (assign, nonatomic, getter=isSuccessive) BOOL successive;//连续记账
+@property (nonatomic, strong) RecordWithTypeModel *record;
 
 @end

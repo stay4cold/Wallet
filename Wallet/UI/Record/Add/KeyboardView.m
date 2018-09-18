@@ -55,7 +55,9 @@
     } else if (btnText.length == 1) {
         self.amountField.text = [self append:fieldText with:btnText];
     } else {
-        
+        if (self.delegate && [self.delegate respondsToSelector:@selector(keyboardView:confirm:)]) {
+            [self.delegate keyboardView:self confirm:fieldText];
+        }
     }
 }
 

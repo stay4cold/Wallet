@@ -6,9 +6,9 @@
 //  Copyright © 2018年 evan. All rights reserved.
 //
 
-#import "AddTypeItemViewCell.h"
+#import "AddTypePageItemViewCell.h"
 
-@interface AddTypeItemViewCell()
+@interface AddTypePageItemViewCell()
 
 @property (weak, nonatomic) IBOutlet UIImageView *typeImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *checkImageView;
@@ -16,7 +16,7 @@
 
 @end
 
-@implementation AddTypeItemViewCell
+@implementation AddTypePageItemViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

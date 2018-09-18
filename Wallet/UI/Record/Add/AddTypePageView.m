@@ -8,8 +8,9 @@
 
 #import "AddTypePageView.h"
 #import "AddTypePageViewCell.h"
+#import "TypeManagerViewController.h"
 
-@interface AddTypePageView() <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface AddTypePageView() <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, AddTypePageViewCellDelegate>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) UIPageControl *pageControl;
@@ -74,6 +75,7 @@
         _pageControl = [UIPageControl new];
         _pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
         _pageControl.currentPageIndicatorTintColor = [UIColor grayColor];
+        _pageControl.hidesForSinglePage = YES;
     }
     return _pageControl;
 }
@@ -132,8 +134,28 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     AddTypePageViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    cell.delegate = self;
     cell.dataArray = [self.sourceArray objectAtIndex:indexPath.row];
     return cell;
+}
+
+#pragma mark - AddTypePageViewCellDelegate
+
+- (void)didSelectItemModel:(RecordTypeModel *)model atIndexPath:(NSIndexPath *)indexPath {
+    if (model.isSetting) {
+        TypeManagerViewController *tvc = [TypeManagerViewController new];
+        UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:nil action:nil];
+        tvc.navigationItem.backBarButtonItem = backItem;
+        [((UINavigationController *)[[UIApplication sharedApplication].keyWindow rootViewController]) pushViewController:tvc animated:YES];
+    } else {
+        for (RecordTypeModel *item in self.dataArray) {
+            item.checked = NO;
+            if ([item.ID integerValue] == [model.ID integerValue]) {
+                item.checked = YES;
+            }
+        }
+        [self.collectionView reloadData];
+    }
 }
 
 #pragma mark - UIScrollViewDelegate

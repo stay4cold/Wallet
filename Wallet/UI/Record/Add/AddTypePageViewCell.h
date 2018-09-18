@@ -9,8 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "RecordTypeModel.h"
 
+@protocol AddTypePageViewCellDelegate <NSObject>
+
+- (void)didSelectItemModel:(RecordTypeModel *)model atIndexPath:(NSIndexPath *)indexPath;
+
+@end
+
 @interface AddTypePageViewCell : UICollectionViewCell
 
 @property (nonatomic, strong) NSMutableArray<RecordTypeModel *> *dataArray;
+@property (nonatomic, weak) id<AddTypePageViewCellDelegate> delegate;
 
 @end
