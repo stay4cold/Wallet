@@ -94,7 +94,7 @@
 #pragma mark - UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 50;
+    return 65;
 }
 
 - (NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -108,8 +108,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     AddTypeViewController *avc = [AddTypeViewController new];
     avc.model = [self.dataArray objectAtIndex:indexPath.row];
-    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:nil action:nil];
-    avc.navigationItem.backBarButtonItem = backItem;
     [(UINavigationController *)([UIApplication sharedApplication].keyWindow.rootViewController) pushViewController:avc animated:YES];
 }
 
@@ -142,7 +140,5 @@
     cell.model = [self.dataArray objectAtIndex:indexPath.row];
     return cell;
 }
-
-
 
 @end

@@ -11,7 +11,7 @@
 
 @interface AssetsModifyRecordDao : NSObject
 
-- (NSMutableArray<AssetsModifyRecordModel *> *)getAssetsRecordsById:(NSNumber *)ID;
-- (BOOL)insertAssetsRecords:(NSMutableArray<AssetsModifyRecordModel *> *)modifyRecord;
++ (NSMutableArray<AssetsModifyRecordModel *> *)getAssetsRecordsById:(NSNumber *)ID;
++ (BOOL)insertAssetsRecords:(NSMutableArray<AssetsModifyRecordModel *> *)modifyRecord;
 
 @end

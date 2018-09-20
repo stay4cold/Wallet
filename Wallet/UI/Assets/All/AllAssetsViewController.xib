@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AllAssetsViewController">
+            <connections>
+                <outlet property="investView" destination="MBc-E5-ze0" id="zo8-qq-vSG"/>
+                <outlet property="normalView" destination="GGm-I2-eXd" id="vZZ-H1-eCc"/>
+                <outlet property="typeControl" destination="i5N-wL-UQn" id="JhK-4Y-QKv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="i5N-wL-UQn">
+                    <rect key="frame" x="25" y="25" width="325" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="LTd-7V-yxv"/>
+                    </constraints>
+                    <segments>
+                        <segment title="资产"/>
+                        <segment title="投资"/>
+                    </segments>
+                    <color key="tintColor" red="0.58431372549019611" green="0.46274509803921571" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="typeChanged:" destination="-1" eventType="valueChanged" id="uh0-Eh-YeB"/>
+                    </connections>
+                </segmentedControl>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MBc-E5-ze0" userLabel="Invest View" customClass="AssetsListView">
+                    <rect key="frame" x="0.0" y="63" width="375" height="604"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGm-I2-eXd" userLabel="Normal View" customClass="AssetsListView">
+                    <rect key="frame" x="0.0" y="63" width="375" height="604"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MBc-E5-ze0" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="6J7-09-9As"/>
+                <constraint firstItem="GGm-I2-eXd" firstAttribute="bottom" secondItem="MBc-E5-ze0" secondAttribute="bottom" id="D9u-LO-p46"/>
+                <constraint firstItem="GGm-I2-eXd" firstAttribute="trailing" secondItem="MBc-E5-ze0" secondAttribute="trailing" id="FcI-Y4-zfZ"/>
+                <constraint firstItem="i5N-wL-UQn" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="5" id="UlS-Um-cVL"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="MBc-E5-ze0" secondAttribute="trailing" id="Zyb-D7-ZH0"/>
+                <constraint firstItem="MBc-E5-ze0" firstAttribute="top" secondItem="i5N-wL-UQn" secondAttribute="bottom" constant="5" id="a5o-kp-2Ou"/>
+                <constraint firstItem="GGm-I2-eXd" firstAttribute="top" secondItem="MBc-E5-ze0" secondAttribute="top" id="ahg-Zn-t37"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="MBc-E5-ze0" secondAttribute="bottom" id="fLv-Ew-x6h"/>
+                <constraint firstItem="i5N-wL-UQn" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="25" id="gif-5e-0FD"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="i5N-wL-UQn" secondAttribute="trailing" constant="25" id="lQG-Rj-hwI"/>
+                <constraint firstItem="GGm-I2-eXd" firstAttribute="leading" secondItem="MBc-E5-ze0" secondAttribute="leading" id="qZU-nz-UX2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

@@ -33,4 +33,9 @@
 #import "UIScrollView+VTEmpty.h"
 #import "UIColor+HexColors.h"
 
+//utils
+#import "DateUtils.h"
+#import "DecimalUtils.h"
+#import "ConfigManager.h"
+
 #endif /* PrefixHeader_pch */

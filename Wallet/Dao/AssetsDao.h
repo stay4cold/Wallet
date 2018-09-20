@@ -9,14 +9,18 @@
 #import <Foundation/Foundation.h>
 #import "AssetsModel.h"
 #import "AssetsMoneyModel.h"
+#import "AssetsTypeModel.h"
 
 @interface AssetsDao : NSObject
 
-- (NSMutableArray<AssetsModel *> *)getAllAssets;
-- (AssetsModel *)getAssetsById:(NSNumber *)ID;
-- (BOOL)insertAssets:(NSMutableArray<AssetsModel *> *)assets;
-- (BOOL)updateAssets:(NSMutableArray<AssetsModel *> *)assets;
-- (BOOL)deleteAssets:(AssetsModel *)assets;
-- (AssetsMoneyModel *)getAssetsMoney;
++ (NSMutableArray<AssetsModel *> *)getAllAssets;
++ (AssetsModel *)getAssetsById:(NSNumber *)ID;
++ (BOOL)insertAssets:(NSMutableArray<AssetsModel *> *)assets;
++ (BOOL)updateAssets:(NSMutableArray<AssetsModel *> *)assets;
++ (BOOL)deleteAssets:(AssetsModel *)assets;
++ (AssetsMoneyModel *)getAssetsMoney;
+
+//返回临时数据
++ (NSMutableArray<AssetsTypeModel *> *)getAllAssetsByType:(AssetsType)type;
 
 @end

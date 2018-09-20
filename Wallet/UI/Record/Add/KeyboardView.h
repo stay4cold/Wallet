@@ -17,6 +17,7 @@
 
 @interface KeyboardView : UIView
 
+@property (nonatomic, copy) NSString *text;
 @property (nonatomic, weak) id<KeyboardViewDelegate> delegate;
 
 @end

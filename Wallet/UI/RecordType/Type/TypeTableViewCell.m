@@ -27,4 +27,17 @@
     self.typeImageView.image = [UIImage imageNamed:model.img_name];
     self.typeLabel.text = model.name;
 }
+
+- (void)setAssets:(AssetsTypeModel *)assets {
+    _assets = assets;
+    self.typeImageView.image = [UIImage imageNamed:assets.imgName];
+    self.typeLabel.text = assets.name;
+}
+
+- (void)setBank:(BankModel *)bank {
+    _bank = bank;
+    self.typeImageView.image = [UIImage imageNamed:bank.imgName];
+    self.typeLabel.text = bank.name;
+}
+
 @end

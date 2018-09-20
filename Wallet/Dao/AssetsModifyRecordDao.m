@@ -11,7 +11,7 @@
 
 @implementation AssetsModifyRecordDao
 
-- (NSMutableArray<AssetsModifyRecordModel *> *)getAssetsRecordsById:(NSNumber *)ID {
++ (NSMutableArray<AssetsModifyRecordModel *> *)getAssetsRecordsById:(NSNumber *)ID {
     FMResultSet *result = [[Dao sharedDao] executeQuery:@"SELECT * FROM AssetsModifyRecord WHERE state = ? AND assets_id = ? ORDER BY create_time" withArgumentsInArray:@[@(0), ID]];
     NSMutableArray *arr = [NSMutableArray array];
     while ([result next]) {
@@ -27,7 +27,7 @@
     return arr;
 }
 
-- (BOOL)insertAssetsRecords:(NSMutableArray<AssetsModifyRecordModel *> *)modifyRecord {
++ (BOOL)insertAssetsRecords:(NSMutableArray<AssetsModifyRecordModel *> *)modifyRecord {
     [[Dao sharedDao] beginTransaction];
     for (AssetsModifyRecordModel *model in modifyRecord) {
         [[Dao sharedDao] executeUpdate:@"INSERT INTO AssetsModifyRecord(state, create_time, assets_id, money_before, money) VALUES(?,?,?,?,?)" withArgumentsInArray:@[@(model.state), model.create_time, model.assets_id, model.money_before, model.money]];

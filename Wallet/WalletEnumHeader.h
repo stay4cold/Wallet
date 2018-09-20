@@ -19,5 +19,11 @@ typedef NS_ENUM(NSInteger, RecordState) {
     RecordStateDeleted,//删除
 };
 
+typedef NS_ENUM(NSInteger, AssetsType) {
+    AssetsTypeAdd = -2,//新建账户
+    AssetsTypeNo = -1,//不选择账户
+    AssetsTypeNormal,//资产
+    AssetsTypeInvest,//投资
+};
 
 #endif /* WalletEnumHeader_h */

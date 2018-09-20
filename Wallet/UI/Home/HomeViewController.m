@@ -102,14 +102,10 @@ static NSString *kCellId = @"cell";
 }
 
 - (void)toSettingController {
-    UIBarButtonItem *back = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:nil action:nil];
-    self.navigationItem.backBarButtonItem = back;
     [self.navigationController pushViewController:[SettingViewController new] animated:YES];
 }
 
 - (void)toStatisticController {
-    UIBarButtonItem *back = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:nil action:nil];
-    self.navigationItem.backBarButtonItem = back;
     [self.navigationController pushViewController:[StatisticViewController new] animated:YES];
 }
 

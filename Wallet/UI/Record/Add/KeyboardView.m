@@ -61,6 +61,10 @@
     }
 }
 
+- (void)setText:(NSString *)text {
+    self.amountField.text = text;
+}
+
 - (NSString *)append:(NSString *)text with:(NSString *)input {
     if (text.length == 0) {
         if ([@"." isEqualToString:input]) {

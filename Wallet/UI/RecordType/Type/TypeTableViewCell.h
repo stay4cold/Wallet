@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "RecordTypeModel.h"
+#import "AssetsTypeModel.h"
+#import "BankModel.h"
 
 @interface TypeTableViewCell : UITableViewCell
 
 @property (nonatomic, strong) RecordTypeModel *model;
+@property (nonatomic, strong) AssetsTypeModel *assets;
+@property (nonatomic, strong) BankModel *bank;
 
 @end

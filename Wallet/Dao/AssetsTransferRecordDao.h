@@ -11,7 +11,7 @@
 
 @interface AssetsTransferRecordDao : NSObject
 
-- (NSMutableArray<AssetsTransferRecordWithAssetsModel *> *)getTransferRecordsById:(NSNumber *)ID;
-- (BOOL)insertTransferRecord:(NSMutableArray<AssetsTransferRecordModel *> *)assetsTransferRecord;
++ (NSMutableArray<AssetsTransferRecordWithAssetsModel *> *)getTransferRecordsById:(NSNumber *)ID;
++ (BOOL)insertTransferRecord:(NSMutableArray<AssetsTransferRecordModel *> *)assetsTransferRecord;
 
 @end

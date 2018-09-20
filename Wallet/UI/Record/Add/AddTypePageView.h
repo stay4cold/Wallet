@@ -9,11 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "RecordTypeModel.h"
 #import "RecordWithTypeModel.h"
+#import "RecordTypeDao.h"
 
 @interface AddTypePageView : UIView
 
-@property (nonatomic, strong) NSMutableArray<RecordTypeModel *> *dataArray;
 @property (nonatomic, assign) RecordType type;
 @property (nonatomic, strong) RecordWithTypeModel *record;
+@property (nonatomic, strong) NSNumber *checkID;
 
 @end

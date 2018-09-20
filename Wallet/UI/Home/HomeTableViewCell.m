@@ -21,18 +21,6 @@
 
 @implementation HomeTableViewCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-//    self.remarkHeight.constant = 0;
-//    self.remarkTopMargin.constant = 0;
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
-
 - (void)setModel:(RecordWithTypeModel *)model {
     _model = model;
     self.typeImageView.image = [UIImage imageNamed:_model.recordTypes[0].img_name];

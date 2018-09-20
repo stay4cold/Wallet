@@ -15,6 +15,7 @@
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) UIPageControl *pageControl;
 @property (nonatomic, strong) NSMutableArray *sourceArray;
+@property (nonatomic, strong) NSMutableArray *dataArray;
 
 @end
 
@@ -80,9 +81,32 @@
     return _pageControl;
 }
 
-- (void)setDataArray:(NSMutableArray<RecordTypeModel *> *)dataArray {
+- (void)setType:(RecordType)type {
+    _type = type;
+    self.dataArray = [RecordTypeDao getAllRecordTypes];
+}
+
+- (void)setRecord:(RecordWithTypeModel *)record {
+    if (self.checkID != nil) {
+        return;
+    }
+    if (record) {
+        self.checkID = record.recordTypes[0].ID;
+    } else {
+        RecordTypeModel *model = [self.dataArray objectAtIndex:0];
+        self.checkID = model.ID;
+    }
+    _sourceArray = nil;
+    [self.collectionView reloadData];
+}
+
+- (void)setDataArray:(NSMutableArray *)dataArray {
     _dataArray = [NSMutableArray array];
-    [_dataArray addObjectsFromArray:dataArray];
+    for (RecordTypeModel *model in dataArray) {
+        if (model.type == self.type) {
+            [_dataArray addObject:model];
+        }
+    }
     if (_dataArray.count > 0) {
         RecordTypeModel *setting = [RecordTypeModel new];
         setting.name = @"设置";
@@ -100,9 +124,12 @@
         _sourceArray = [NSMutableArray array];
         NSMutableArray *tmpArray = [NSMutableArray array];
         for (RecordTypeModel *model in self.dataArray) {
-            if (model.type == self.type) {
-                [tmpArray addObject:model];
+            if (self.checkID && ([self.checkID integerValue] == [model.ID integerValue])) {
+                model.checked = YES;
+            } else {
+                model.checked = NO;
             }
+            [tmpArray addObject:model];
             if (tmpArray.count == 8) {
                 [_sourceArray addObject:tmpArray];
                 tmpArray = [NSMutableArray array];
@@ -144,16 +171,10 @@
 - (void)didSelectItemModel:(RecordTypeModel *)model atIndexPath:(NSIndexPath *)indexPath {
     if (model.isSetting) {
         TypeManagerViewController *tvc = [TypeManagerViewController new];
-        UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:nil action:nil];
-        tvc.navigationItem.backBarButtonItem = backItem;
         [((UINavigationController *)[[UIApplication sharedApplication].keyWindow rootViewController]) pushViewController:tvc animated:YES];
     } else {
-        for (RecordTypeModel *item in self.dataArray) {
-            item.checked = NO;
-            if ([item.ID integerValue] == [model.ID integerValue]) {
-                item.checked = YES;
-            }
-        }
+        self.checkID = model.ID;
+        _sourceArray = nil;
         [self.collectionView reloadData];
     }
 }

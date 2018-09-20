@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		423FECE9B5639165A85A158D /* Pods_Wallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249520A6E6BEC7D3BEBE3808 /* Pods_Wallet.framework */; };
+		C32C68C72152421700249A74 /* ChooseAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32C68C62152421700249A74 /* ChooseAssetsViewController.m */; };
+		C32C68C9215243E000249A74 /* ChooseAssetsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C32C68C8215243E000249A74 /* ChooseAssetsViewCell.xib */; };
+		C32C68CC2152442C00249A74 /* ChooseAssetsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C32C68CB2152442C00249A74 /* ChooseAssetsViewCell.m */; };
+		C32C68CF215283D000249A74 /* ConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C32C68CE215283D000249A74 /* ConfigManager.m */; };
 		C3588F75214902D700996E1A /* NSObject+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C3588F66214902D700996E1A /* NSObject+HUD.m */; };
 		C3588F76214902D700996E1A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C3588F68214902D700996E1A /* UIView+Extension.m */; };
 		C3588F79214902D700996E1A /* UIScrollView+VTEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = C3588F6C214902D700996E1A /* UIScrollView+VTEmpty.m */; };
@@ -65,6 +69,16 @@
 		C3EDF1722150A44900A64483 /* AddTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EDF1702150A44900A64483 /* AddTypeViewController.xib */; };
 		C3EDF1762150B07A00A64483 /* AddTypeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF1742150B07A00A64483 /* AddTypeViewCell.m */; };
 		C3EDF1772150B07A00A64483 /* AddTypeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EDF1752150B07A00A64483 /* AddTypeViewCell.xib */; };
+		C3EDF17F2150FAD600A64483 /* AllAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF17D2150FAD600A64483 /* AllAssetsViewController.m */; };
+		C3EDF1802150FAD600A64483 /* AllAssetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EDF17E2150FAD600A64483 /* AllAssetsViewController.xib */; };
+		C3EDF1832150FF6C00A64483 /* AssetsListView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF1822150FF6C00A64483 /* AssetsListView.m */; };
+		C3EDF18621513E6900A64483 /* AssetsTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF18521513E6900A64483 /* AssetsTypeModel.m */; };
+		C3EDF18B2151D51300A64483 /* AddAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF1892151D51300A64483 /* AddAssetsViewController.m */; };
+		C3EDF18C2151D51300A64483 /* AddAssetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EDF18A2151D51300A64483 /* AddAssetsViewController.xib */; };
+		C3EDF18F2152005200A64483 /* BankModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF18E2152005200A64483 /* BankModel.m */; };
+		C3EDF192215200BC00A64483 /* BankCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF191215200BC00A64483 /* BankCreator.m */; };
+		C3EDF1962152042B00A64483 /* BankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF1952152042B00A64483 /* BankViewController.m */; };
+		C3EDF19E2152200E00A64483 /* DecimalUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF19D2152200E00A64483 /* DecimalUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +101,13 @@
 /* Begin PBXFileReference section */
 		1EA1B438440BFA3A3C800084 /* Pods-Wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wallet/Pods-Wallet.debug.xcconfig"; sourceTree = "<group>"; };
 		249520A6E6BEC7D3BEBE3808 /* Pods_Wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32C68C52152421700249A74 /* ChooseAssetsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseAssetsViewController.h; sourceTree = "<group>"; };
+		C32C68C62152421700249A74 /* ChooseAssetsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseAssetsViewController.m; sourceTree = "<group>"; };
+		C32C68C8215243E000249A74 /* ChooseAssetsViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChooseAssetsViewCell.xib; sourceTree = "<group>"; };
+		C32C68CA2152442C00249A74 /* ChooseAssetsViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseAssetsViewCell.h; sourceTree = "<group>"; };
+		C32C68CB2152442C00249A74 /* ChooseAssetsViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseAssetsViewCell.m; sourceTree = "<group>"; };
+		C32C68CD215283D000249A74 /* ConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigManager.h; sourceTree = "<group>"; };
+		C32C68CE215283D000249A74 /* ConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigManager.m; sourceTree = "<group>"; };
 		C3588F58214902D700996E1A /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		C3588F5A214902D700996E1A /* NSObject+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HUD.h"; sourceTree = "<group>"; };
 		C3588F5C214902D700996E1A /* UIScrollView+VTEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+VTEmpty.h"; sourceTree = "<group>"; };
@@ -192,6 +213,24 @@
 		C3EDF1732150B07A00A64483 /* AddTypeViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTypeViewCell.h; sourceTree = "<group>"; };
 		C3EDF1742150B07A00A64483 /* AddTypeViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddTypeViewCell.m; sourceTree = "<group>"; };
 		C3EDF1752150B07A00A64483 /* AddTypeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTypeViewCell.xib; sourceTree = "<group>"; };
+		C3EDF17C2150FAD600A64483 /* AllAssetsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllAssetsViewController.h; sourceTree = "<group>"; };
+		C3EDF17D2150FAD600A64483 /* AllAssetsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllAssetsViewController.m; sourceTree = "<group>"; };
+		C3EDF17E2150FAD600A64483 /* AllAssetsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllAssetsViewController.xib; sourceTree = "<group>"; };
+		C3EDF1812150FF6C00A64483 /* AssetsListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetsListView.h; sourceTree = "<group>"; };
+		C3EDF1822150FF6C00A64483 /* AssetsListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetsListView.m; sourceTree = "<group>"; };
+		C3EDF18421513E6900A64483 /* AssetsTypeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetsTypeModel.h; sourceTree = "<group>"; };
+		C3EDF18521513E6900A64483 /* AssetsTypeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetsTypeModel.m; sourceTree = "<group>"; };
+		C3EDF1882151D51300A64483 /* AddAssetsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddAssetsViewController.h; sourceTree = "<group>"; };
+		C3EDF1892151D51300A64483 /* AddAssetsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddAssetsViewController.m; sourceTree = "<group>"; };
+		C3EDF18A2151D51300A64483 /* AddAssetsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAssetsViewController.xib; sourceTree = "<group>"; };
+		C3EDF18D2152005200A64483 /* BankModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankModel.h; sourceTree = "<group>"; };
+		C3EDF18E2152005200A64483 /* BankModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankModel.m; sourceTree = "<group>"; };
+		C3EDF190215200BC00A64483 /* BankCreator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankCreator.h; sourceTree = "<group>"; };
+		C3EDF191215200BC00A64483 /* BankCreator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankCreator.m; sourceTree = "<group>"; };
+		C3EDF1942152042B00A64483 /* BankViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankViewController.h; sourceTree = "<group>"; };
+		C3EDF1952152042B00A64483 /* BankViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankViewController.m; sourceTree = "<group>"; };
+		C3EDF19C2152200E00A64483 /* DecimalUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecimalUtils.h; sourceTree = "<group>"; };
+		C3EDF19D2152200E00A64483 /* DecimalUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecimalUtils.m; sourceTree = "<group>"; };
 		FA553738447CCD9FF921C36A /* Pods-Wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wallet/Pods-Wallet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -236,6 +275,18 @@
 				FA553738447CCD9FF921C36A /* Pods-Wallet.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C32C68C4215241F400249A74 /* Choose */ = {
+			isa = PBXGroup;
+			children = (
+				C32C68C52152421700249A74 /* ChooseAssetsViewController.h */,
+				C32C68C62152421700249A74 /* ChooseAssetsViewController.m */,
+				C32C68C8215243E000249A74 /* ChooseAssetsViewCell.xib */,
+				C32C68CA2152442C00249A74 /* ChooseAssetsViewCell.h */,
+				C32C68CB2152442C00249A74 /* ChooseAssetsViewCell.m */,
+			);
+			path = Choose;
 			sourceTree = "<group>";
 		};
 		C3588F52214902D700996E1A /* Category */ = {
@@ -343,6 +394,10 @@
 				C376ACF1214C8896005D378B /* AssetsTransferRecordWithAssetsModel.m */,
 				C3EDF141214CEC4E00A64483 /* TypeSumMoneyModel.h */,
 				C3EDF142214CEC4E00A64483 /* TypeSumMoneyModel.m */,
+				C3EDF18421513E6900A64483 /* AssetsTypeModel.h */,
+				C3EDF18521513E6900A64483 /* AssetsTypeModel.m */,
+				C3EDF18D2152005200A64483 /* BankModel.h */,
+				C3EDF18E2152005200A64483 /* BankModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -350,6 +405,8 @@
 		C376ACC1214B55D8005D378B /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				C3EDF17A2150FAAA00A64483 /* Assets */,
+				C3EDF1782150FA6C00A64483 /* RecordType */,
 				C3EDF15E214FA22600A64483 /* Record */,
 				C376ACB3214A549D005D378B /* Review */,
 				C3588F89214A0C0300996E1A /* Statistic */,
@@ -445,6 +502,10 @@
 			children = (
 				C3EDF13E214CA80200A64483 /* DateUtils.h */,
 				C3EDF13F214CA80200A64483 /* DateUtils.m */,
+				C3EDF19C2152200E00A64483 /* DecimalUtils.h */,
+				C3EDF19D2152200E00A64483 /* DecimalUtils.m */,
+				C32C68CD215283D000249A74 /* ConfigManager.h */,
+				C32C68CE215283D000249A74 /* ConfigManager.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -452,7 +513,6 @@
 		C3EDF15E214FA22600A64483 /* Record */ = {
 			isa = PBXGroup;
 			children = (
-				C3EDF15F214FA24900A64483 /* Type */,
 				C376ACB9214A62BF005D378B /* Add */,
 			);
 			path = Record;
@@ -469,6 +529,22 @@
 				C3EDF1692150953400A64483 /* TypeTableViewCell.h */,
 				C3EDF16A2150953400A64483 /* TypeTableViewCell.m */,
 				C3EDF16B2150953400A64483 /* TypeTableViewCell.xib */,
+			);
+			path = Type;
+			sourceTree = "<group>";
+		};
+		C3EDF1782150FA6C00A64483 /* RecordType */ = {
+			isa = PBXGroup;
+			children = (
+				C3EDF1792150FA9400A64483 /* Add */,
+				C3EDF15F214FA24900A64483 /* Type */,
+			);
+			path = RecordType;
+			sourceTree = "<group>";
+		};
+		C3EDF1792150FA9400A64483 /* Add */ = {
+			isa = PBXGroup;
+			children = (
 				C3EDF16E2150A44900A64483 /* AddTypeViewController.h */,
 				C3EDF16F2150A44900A64483 /* AddTypeViewController.m */,
 				C3EDF1702150A44900A64483 /* AddTypeViewController.xib */,
@@ -476,7 +552,51 @@
 				C3EDF1742150B07A00A64483 /* AddTypeViewCell.m */,
 				C3EDF1752150B07A00A64483 /* AddTypeViewCell.xib */,
 			);
-			path = Type;
+			path = Add;
+			sourceTree = "<group>";
+		};
+		C3EDF17A2150FAAA00A64483 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C32C68C4215241F400249A74 /* Choose */,
+				C3EDF193215203F800A64483 /* Bank */,
+				C3EDF1872151D49800A64483 /* Add */,
+				C3EDF17B2150FAB600A64483 /* All */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C3EDF17B2150FAB600A64483 /* All */ = {
+			isa = PBXGroup;
+			children = (
+				C3EDF17C2150FAD600A64483 /* AllAssetsViewController.h */,
+				C3EDF17D2150FAD600A64483 /* AllAssetsViewController.m */,
+				C3EDF17E2150FAD600A64483 /* AllAssetsViewController.xib */,
+				C3EDF1812150FF6C00A64483 /* AssetsListView.h */,
+				C3EDF1822150FF6C00A64483 /* AssetsListView.m */,
+			);
+			path = All;
+			sourceTree = "<group>";
+		};
+		C3EDF1872151D49800A64483 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				C3EDF1882151D51300A64483 /* AddAssetsViewController.h */,
+				C3EDF1892151D51300A64483 /* AddAssetsViewController.m */,
+				C3EDF18A2151D51300A64483 /* AddAssetsViewController.xib */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		C3EDF193215203F800A64483 /* Bank */ = {
+			isa = PBXGroup;
+			children = (
+				C3EDF1942152042B00A64483 /* BankViewController.h */,
+				C3EDF1952152042B00A64483 /* BankViewController.m */,
+				C3EDF190215200BC00A64483 /* BankCreator.h */,
+				C3EDF191215200BC00A64483 /* BankCreator.m */,
+			);
+			path = Bank;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -586,13 +706,16 @@
 			files = (
 				C3BFAC5C2149014300326BD3 /* LaunchScreen.storyboard in Resources */,
 				C3588F98214A0E7000996E1A /* HomeTableViewCell.xib in Resources */,
+				C32C68C9215243E000249A74 /* ChooseAssetsViewCell.xib in Resources */,
 				C3EDF14D214D58F700A64483 /* KeyboardView.xib in Resources */,
 				C3EDF148214CF8F100A64483 /* AddTypePageItemViewCell.xib in Resources */,
 				C376ACB8214A54BF005D378B /* ReviewViewController.xib in Resources */,
 				C3588F93214A0CDC00996E1A /* StatisticViewController.xib in Resources */,
 				C3588F8E214A0CCD00996E1A /* SettingViewController.xib in Resources */,
+				C3EDF1802150FAD600A64483 /* AllAssetsViewController.xib in Resources */,
 				C376ACBE214A62D4005D378B /* AddRecordViewController.xib in Resources */,
 				C3EDF1722150A44900A64483 /* AddTypeViewController.xib in Resources */,
+				C3EDF18C2151D51300A64483 /* AddAssetsViewController.xib in Resources */,
 				C3BFAC592149014300326BD3 /* Assets.xcassets in Resources */,
 				C3EDF16D2150953400A64483 /* TypeTableViewCell.xib in Resources */,
 				C3EDF1772150B07A00A64483 /* AddTypeViewCell.xib in Resources */,
@@ -686,18 +809,26 @@
 				C3BFAC5F2149014300326BD3 /* main.m in Sources */,
 				C3588F97214A0E7000996E1A /* HomeTableViewCell.m in Sources */,
 				C376ACE3214B6CC3005D378B /* Dao.m in Sources */,
+				C3EDF1832150FF6C00A64483 /* AssetsListView.m in Sources */,
 				C3EDF147214CF8F100A64483 /* AddTypePageItemViewCell.m in Sources */,
 				C376ACBD214A62D4005D378B /* AddRecordViewController.m in Sources */,
 				C3EDF1682150942E00A64483 /* TypeTableView.m in Sources */,
+				C3EDF17F2150FAD600A64483 /* AllAssetsViewController.m in Sources */,
+				C3EDF19E2152200E00A64483 /* DecimalUtils.m in Sources */,
 				C3EDF1712150A44900A64483 /* AddTypeViewController.m in Sources */,
+				C3EDF192215200BC00A64483 /* BankCreator.m in Sources */,
 				C3EDF14B214D44AE00A64483 /* KeyboardView.m in Sources */,
 				C3BFAC512149014200326BD3 /* AppDelegate.m in Sources */,
+				C32C68CC2152442C00249A74 /* ChooseAssetsViewCell.m in Sources */,
 				C3EDF1762150B07A00A64483 /* AddTypeViewCell.m in Sources */,
 				C376ACE6214B7A56005D378B /* RecordWithTypeModel.m in Sources */,
+				C3EDF18621513E6900A64483 /* AssetsTypeModel.m in Sources */,
 				C376ACCA214B586F005D378B /* MonthSumMoneyModel.m in Sources */,
+				C3EDF18F2152005200A64483 /* BankModel.m in Sources */,
 				C3EDF16C2150953400A64483 /* TypeTableViewCell.m in Sources */,
 				C376ACC7214B57B2005D378B /* DaySumMoneyModel.m in Sources */,
 				C376ACF5214C8905005D378B /* AssetsTransferRecordDao.m in Sources */,
+				C3EDF1962152042B00A64483 /* BankViewController.m in Sources */,
 				C3588F75214902D700996E1A /* NSObject+HUD.m in Sources */,
 				C376ACD3214B5FB8005D378B /* AssetsModel.m in Sources */,
 				C3EDF164214FA2A700A64483 /* TypeManagerViewController.m in Sources */,
@@ -706,12 +837,14 @@
 				C376ACB7214A54BF005D378B /* ReviewViewController.m in Sources */,
 				C376ACE0214B6B08005D378B /* AssetsModifyRecordDao.m in Sources */,
 				C3588F812149F1C400996E1A /* HomeViewController.m in Sources */,
+				C3EDF18B2151D51300A64483 /* AddAssetsViewController.m in Sources */,
 				C376ACC4214B5616005D378B /* RecordModel.m in Sources */,
 				C376ACEC214B7C2D005D378B /* RecordTypeDao.m in Sources */,
 				C3EDF153214F4E4D00A64483 /* AddTypePageView.m in Sources */,
 				C3EDF140214CA80200A64483 /* DateUtils.m in Sources */,
 				C3EDF157214F561900A64483 /* AddTypePageViewCell.m in Sources */,
 				C3588F92214A0CDC00996E1A /* StatisticViewController.m in Sources */,
+				C32C68C72152421700249A74 /* ChooseAssetsViewController.m in Sources */,
 				C3EDF143214CEC4E00A64483 /* TypeSumMoneyModel.m in Sources */,
 				C376ACF2214C8896005D378B /* AssetsTransferRecordWithAssetsModel.m in Sources */,
 				C376ACD6214B6196005D378B /* AssetsModifyRecordModel.m in Sources */,
@@ -722,6 +855,7 @@
 				C376ACDA214B6820005D378B /* AssetsDao.m in Sources */,
 				C3588F79214902D700996E1A /* UIScrollView+VTEmpty.m in Sources */,
 				C3588F8D214A0CCD00996E1A /* SettingViewController.m in Sources */,
+				C32C68CF215283D000249A74 /* ConfigManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

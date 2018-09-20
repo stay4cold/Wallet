@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddAssetsViewController">
+            <connections>
+                <outlet property="nameField" destination="dN6-D0-ftZ" id="mDK-mr-48t"/>
+                <outlet property="remainField" destination="rtv-BI-l61" id="ZqP-4S-jd2"/>
+                <outlet property="remarkField" destination="ceL-f9-7ZA" id="2QL-jO-bOS"/>
+                <outlet property="typeImageView" destination="me1-BK-dda" id="5K5-VM-6f0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="assets_alipay" translatesAutoresizingMaskIntoConstraints="NO" id="me1-BK-dda">
+                    <rect key="frame" x="15" y="50" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="14I-bX-nRp"/>
+                        <constraint firstAttribute="height" constant="35" id="bEc-Hb-LyN"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入账户名称" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dN6-D0-ftZ">
+                    <rect key="frame" x="65" y="52.5" width="295" height="30"/>
+                    <color key="textColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="备注：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjA-ty-XXu">
+                    <rect key="frame" x="15" y="115" width="49" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.45098039215686275" green="0.45098039215686275" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="可不填" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ceL-f9-7ZA">
+                    <rect key="frame" x="65" y="110" width="295" height="30"/>
+                    <color key="textColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="余额：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ah9-SY-XCj">
+                    <rect key="frame" x="15" y="165" width="49" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.45098039215686275" green="0.45098039215686275" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="精确到小数点后两位" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rtv-BI-l61">
+                    <rect key="frame" x="65" y="160" width="295" height="30"/>
+                    <color key="textColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="lZJ-cv-frn"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yjA-ty-XXu" firstAttribute="top" secondItem="me1-BK-dda" secondAttribute="bottom" constant="30" id="7IY-tj-25T"/>
+                <constraint firstItem="rtv-BI-l61" firstAttribute="trailing" secondItem="ceL-f9-7ZA" secondAttribute="trailing" id="CKV-xn-7DU"/>
+                <constraint firstItem="ah9-SY-XCj" firstAttribute="top" secondItem="yjA-ty-XXu" secondAttribute="bottom" constant="30" id="Jbb-gc-pWO"/>
+                <constraint firstItem="dN6-D0-ftZ" firstAttribute="centerY" secondItem="me1-BK-dda" secondAttribute="centerY" id="PLN-QV-cKz"/>
+                <constraint firstItem="dN6-D0-ftZ" firstAttribute="leading" secondItem="me1-BK-dda" secondAttribute="trailing" constant="15" id="U4U-p0-NsT"/>
+                <constraint firstItem="me1-BK-dda" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="30" id="bNa-zo-dgI"/>
+                <constraint firstItem="ah9-SY-XCj" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="eXD-xY-92W"/>
+                <constraint firstItem="rtv-BI-l61" firstAttribute="leading" secondItem="ceL-f9-7ZA" secondAttribute="leading" id="hlD-fd-lK9"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="dN6-D0-ftZ" secondAttribute="trailing" constant="15" id="jGX-Ge-M9o"/>
+                <constraint firstItem="me1-BK-dda" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="lMS-If-uLu"/>
+                <constraint firstItem="ceL-f9-7ZA" firstAttribute="centerY" secondItem="yjA-ty-XXu" secondAttribute="centerY" id="nkl-2r-dQf"/>
+                <constraint firstItem="ceL-f9-7ZA" firstAttribute="leading" secondItem="dN6-D0-ftZ" secondAttribute="leading" id="onF-tp-i8I"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="ceL-f9-7ZA" secondAttribute="trailing" constant="15" id="pqS-gU-YVL"/>
+                <constraint firstItem="rtv-BI-l61" firstAttribute="centerY" secondItem="ah9-SY-XCj" secondAttribute="centerY" id="rli-fl-MXP"/>
+                <constraint firstItem="yjA-ty-XXu" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="wdr-kg-GZ1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="assets_alipay" width="66" height="66"/>
+    </resources>
+</document>

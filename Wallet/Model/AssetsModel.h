@@ -14,7 +14,7 @@
 @property (nonatomic, strong) NSNumber *ID;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *img_name;
-@property (nonatomic, assign) RecordType type;
+@property (nonatomic, assign) NSInteger type;
 @property (nonatomic, assign) RecordState state;
 @property (nonatomic, copy) NSString *remark;//备注信息
 @property (nonatomic, strong) NSDate *create_time;
