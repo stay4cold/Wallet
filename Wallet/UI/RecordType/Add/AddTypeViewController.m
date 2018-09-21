@@ -78,7 +78,7 @@
 }
 
 - (NSNumber *)ranking {
-    return [NSNumber numberWithDouble:[[NSDate date] timeIntervalSince1970] * 1000];
+    return [NSNumber numberWithDouble:[[NSDate date] timeIntervalSince1970]];
 }
 
 - (void)save {

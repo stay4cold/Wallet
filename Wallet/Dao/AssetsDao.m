@@ -22,9 +22,9 @@
         model.type = [result longForColumn:@"type"];
         model.state = [result longForColumn:@"state"];
         model.remark = [result stringForColumn:@"remark"];
-        model.create_time = [result objectForColumn:@"create_time"];
-        model.money = [result objectForColumn:@"money"];
-        model.money_init = [result objectForColumn:@"money_init"];
+        model.create_time = [result dateForColumn:@"create_time"];
+        model.money = [NSDecimalNumber decimalNumberWithString:[result stringForColumn:@"money"]];
+        model.money_init = [NSDecimalNumber decimalNumberWithString:[result stringForColumn:@"money_init"]];
         [arr addObject:model];
     }
     return arr;
@@ -40,9 +40,9 @@
         model.type = [result longForColumn:@"type"];
         model.state = [result longForColumn:@"state"];
         model.remark = [result stringForColumn:@"remark"];
-        model.create_time = [result objectForColumn:@"create_time"];
-        model.money = [result objectForColumn:@"money"];
-        model.money_init = [result objectForColumn:@"money_init"];
+        model.create_time = [result dateForColumn:@"create_time"];
+        model.money = [NSDecimalNumber decimalNumberWithString:[result stringForColumn:@"money"]];
+        model.money_init = [NSDecimalNumber decimalNumberWithString:[result stringForColumn:@"money_init"]];
         return model;
     }
     return nil;
@@ -72,9 +72,9 @@
     FMResultSet *result = [[Dao sharedDao] executeQuery:@"SELECT SUM(Assets.money) AS netAssets, SUM(CASE WHEN Assets.money > 0 THEN Assets.money ELSE 0 END) AS allAssets, SUM(CASE WHEN Assets.money < 0 THEN Assets.money ELSE 0 END) AS liabilityAssets FROM Assets WHERE Assets.state = 0"];
     if ([result next]) {
         AssetsMoneyModel *model = [AssetsMoneyModel new];
-        model.netAssets = [result objectForColumn:@"netAssets"];
-        model.allAssets = [result objectForColumn:@"allAssets"];
-        model.liabilityAssets = [result objectForColumn:@"liabilityAssets"];
+        model.netAssets = [NSDecimalNumber decimalNumberWithString:[result stringForColumn:@"netAssets"]];
+        model.allAssets = [NSDecimalNumber decimalNumberWithString:[result stringForColumn:@"allAssets"]];
+        model.liabilityAssets = [NSDecimalNumber decimalNumberWithString:[result stringForColumn:@"liabilityAssets"]];
         return model;
     }
     return nil;

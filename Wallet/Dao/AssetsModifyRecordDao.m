@@ -18,10 +18,10 @@
         AssetsModifyRecordModel *model = [AssetsModifyRecordModel new];
         model.ID = [result objectForColumn:@"ID"];
         model.state = [result longForColumn:@"state"];
-        model.create_time = [result objectForColumn:@"create_time"];
+        model.create_time = [result dateForColumn:@"create_time"];
         model.assets_id = [result objectForColumn:@"assets_id"];
-        model.money_before = [result objectForColumn:@"money_before"];
-        model.money = [result objectForColumn:@"money"];
+        model.money_before = [NSDecimalNumber decimalNumberWithString:[result stringForColumn:@"money_before"]];
+        model.money = [NSDecimalNumber decimalNumberWithString:[result stringForColumn:@"money"]];;
         [arr addObject:model];
     }
     return arr;

@@ -12,68 +12,95 @@
 @implementation RecordDao
 
 + (NSMutableArray<RecordWithTypeModel *> *)getRangeRecordWithTypesFrom:(NSDate *)from to:(NSDate *)to {
-    FMResultSet *result = [[Dao sharedDao] executeQuery:@"SELECT * from Record WHERE time BETWEEN ? AND ? ORDER BY time DESC, create_time DESC" withArgumentsInArray:@[from, to]];
+    FMResultSet *result = [[Dao sharedDao] executeQuery:@"SELECT Record.*, RecordType.ID as r_ID, RecordType.name as r_name, RecordType.img_name as r_img_name, RecordType.type as r_type, RecordType.state as r_state, RecordType.ranking as r_ranking from Record LEFT JOIN RecordType ON Record.record_type_id=r_ID WHERE time BETWEEN ? AND ? ORDER BY time DESC, create_time DESC" withArgumentsInArray:@[from, to]];
     NSMutableArray *arr = [NSMutableArray array];
     while ([result next]) {
         RecordWithTypeModel *model = [RecordWithTypeModel new];
         model.ID = [result objectForColumn:@"ID"];
-        model.money = [result objectForColumn:@"money"];
+        model.money = [NSDecimalNumber decimalNumberWithString:[result stringForColumn:@"money"]];
         model.remark = [result stringForColumn:@"remark"];
-        model.time = [result objectForColumn:@"time"];
-        model.create_time = [result objectForColumn:@"create_time"];
+        model.time = [result dateForColumn:@"time"];
+        model.create_time = [result dateForColumn:@"create_time"];
         model.record_type_id = [result objectForColumn:@"record_type_id"];
         model.assets_id = [result objectForColumn:@"assets_id"];
+        RecordTypeModel *typeModel = [RecordTypeModel new];
+        typeModel.ID = [result objectForColumn:@"r_ID"];
+        typeModel.name = [result stringForColumn:@"r_name"];
+        typeModel.img_name = [result stringForColumn:@"r_img_name"];
+        typeModel.type = [result longForColumn:@"r_type"];
+        typeModel.state = [result longForColumn:@"r_state"];
+        typeModel.ranking = [result objectForColumn:@"r_ranking"];
+        model.recordTypes = [NSMutableArray arrayWithObject:typeModel];
         [arr addObject:model];
     }
     return arr;
                            
 }
 + (NSMutableArray<RecordWithTypeModel *> *)getRangeRecordWithTypesFrom:(NSDate *)from to:(NSDate *)to type:(RecordType)type {
-    FMResultSet *result = [[Dao sharedDao] executeQuery:@"SELECT Record.* from Record LEFT JOIN RecordType ON Record.record_type_id=RecordType.ID WHERE (RecordType.type=? AND time BETWEEN ? AND ?) ORDER BY time DESC, create_time DESC" withArgumentsInArray:@[@(type), from, to]];
+    FMResultSet *result = [[Dao sharedDao] executeQuery:@"SELECT Record.*, RecordType.ID as r_ID, RecordType.name as r_name, RecordType.img_name as r_img_name, RecordType.type as r_type, RecordType.state as r_state, RecordType.ranking as r_ranking from Record LEFT JOIN RecordType ON Record.record_type_id=RecordType.r_ID WHERE (RecordType.r_type=? AND time BETWEEN ? AND ?) ORDER BY time DESC, create_time DESC" withArgumentsInArray:@[@(type), from, to]];
     NSMutableArray *arr = [NSMutableArray array];
     while ([result next]) {
         RecordWithTypeModel *model = [RecordWithTypeModel new];
         model.ID = [result objectForColumn:@"ID"];
-        model.money = [result objectForColumn:@"money"];
-        model.remark = [result stringForColumn:@"remark"];
-        model.time = [result objectForColumn:@"time"];
-        model.create_time = [result objectForColumn:@"create_time"];
+model.money = [NSDecimalNumber decimalNumberWithString:[result stringForColumn:@"money"]];        model.remark = [result stringForColumn:@"remark"];
+        model.time = [result dateForColumn:@"time"];
+        model.create_time = [result dateForColumn:@"create_time"];
         model.record_type_id = [result objectForColumn:@"record_type_id"];
         model.assets_id = [result objectForColumn:@"assets_id"];
-        
+        RecordTypeModel *typeModel = [RecordTypeModel new];
+        typeModel.ID = [result objectForColumn:@"r_ID"];
+        typeModel.name = [result stringForColumn:@"r_name"];
+        typeModel.img_name = [result stringForColumn:@"r_img_name"];
+        typeModel.type = [result longForColumn:@"r_type"];
+        typeModel.state = [result longForColumn:@"r_state"];
+        typeModel.ranking = [result objectForColumn:@"r_ranking"];
+        model.recordTypes = [NSMutableArray arrayWithObject:typeModel];
         [arr addObject:model];
     }
     return arr;
 }
 + (NSMutableArray<RecordWithTypeModel *> *)getRangeRecordWithTypesFrom:(NSDate *)from to:(NSDate *)to type:(RecordType)type typeId:(NSNumber *)typeId {
-    FMResultSet *result = [[Dao sharedDao] executeQuery:@"SELECT Record.* from Record LEFT JOIN RecordType ON Record.record_type_id=RecordType.ID WHERE (RecordType.type=? AND Record.record_type_id=? AND time BETWEEN ? AND ?) ORDER BY time DESC, create_time DESC" withArgumentsInArray:@[@(type),typeId, from, to]];
+    FMResultSet *result = [[Dao sharedDao] executeQuery:@"SELECT Record.*, RecordType.ID as r_ID, RecordType.name as r_name, RecordType.img_name as r_img_name, RecordType.type as r_type, RecordType.state as r_state, RecordType.ranking as r_ranking from Record LEFT JOIN RecordType ON Record.record_type_id=RecordType.r_ID from Record LEFT JOIN RecordType ON Record.record_type_id=RecordType.r_ID WHERE (RecordType.r_type=? AND Record.record_type_id=? AND time BETWEEN ? AND ?) ORDER BY time DESC, create_time DESC" withArgumentsInArray:@[@(type),typeId, from, to]];
     NSMutableArray *arr = [NSMutableArray array];
     while ([result next]) {
         RecordWithTypeModel *model = [RecordWithTypeModel new];
         model.ID = [result objectForColumn:@"ID"];
-        model.money = [result objectForColumn:@"money"];
-        model.remark = [result stringForColumn:@"remark"];
-        model.time = [result objectForColumn:@"time"];
-        model.create_time = [result objectForColumn:@"create_time"];
+model.money = [NSDecimalNumber decimalNumberWithString:[result stringForColumn:@"money"]];        model.remark = [result stringForColumn:@"remark"];
+        model.time = [result dateForColumn:@"time"];
+        model.create_time = [result dateForColumn:@"create_time"];
         model.record_type_id = [result objectForColumn:@"record_type_id"];
         model.assets_id = [result objectForColumn:@"assets_id"];
-        
+        RecordTypeModel *typeModel = [RecordTypeModel new];
+        typeModel.ID = [result objectForColumn:@"r_ID"];
+        typeModel.name = [result stringForColumn:@"r_name"];
+        typeModel.img_name = [result stringForColumn:@"r_img_name"];
+        typeModel.type = [result longForColumn:@"r_type"];
+        typeModel.state = [result longForColumn:@"r_state"];
+        typeModel.ranking = [result objectForColumn:@"r_ranking"];
+        model.recordTypes = [NSMutableArray arrayWithObject:typeModel];
         [arr addObject:model];
     }
     return arr;
 }
 + (NSMutableArray<RecordWithTypeModel *> *)getRecordWithTypesSortMoneyFrom:(NSDate *)from to:(NSDate *)to type:(RecordType)type typeId:(NSNumber *)typeId {
-    FMResultSet *result = [[Dao sharedDao] executeQuery:@"SELECT Record.* from Record LEFT JOIN RecordType ON Record.record_type_id=RecordType.ID WHERE (RecordType.type=? AND Record.record_type_id=? AND time BETWEEN ? AND ?) ORDER BY money DESC, create_time DESC" withArgumentsInArray:@[@(type), typeId, from, to]];
+    FMResultSet *result = [[Dao sharedDao] executeQuery:@"SELECT Record.*, RecordType.ID as r_ID, RecordType.name as r_name, RecordType.img_name as r_img_name, RecordType.type as r_type, RecordType.state as r_state, RecordType.ranking as r_ranking from Record LEFT JOIN RecordType ON Record.record_type_id=RecordType.r_ID from Record LEFT JOIN RecordType ON Record.record_type_id=RecordType.r_ID WHERE (RecordType.r_type=? AND Record.record_type_id=? AND time BETWEEN ? AND ?) ORDER BY money DESC, create_time DESC" withArgumentsInArray:@[@(type), typeId, from, to]];
     NSMutableArray *arr = [NSMutableArray array];
     while ([result next]) {
         RecordWithTypeModel *model = [RecordWithTypeModel new];
         model.ID = [result objectForColumn:@"ID"];
-        model.money = [result objectForColumn:@"money"];
-        model.remark = [result stringForColumn:@"remark"];
-        model.time = [result objectForColumn:@"time"];
-        model.create_time = [result objectForColumn:@"create_time"];
+model.money = [NSDecimalNumber decimalNumberWithString:[result stringForColumn:@"money"]];        model.remark = [result stringForColumn:@"remark"];
+        model.time = [result dateForColumn:@"time"];
+        model.create_time = [result dateForColumn:@"create_time"];
         model.record_type_id = [result objectForColumn:@"record_type_id"];
         model.assets_id = [result objectForColumn:@"assets_id"];
+        RecordTypeModel *typeModel = [RecordTypeModel new];
+        typeModel.ID = [result objectForColumn:@"r_ID"];
+        typeModel.name = [result stringForColumn:@"r_name"];
+        typeModel.img_name = [result stringForColumn:@"r_img_name"];
+        typeModel.type = [result longForColumn:@"r_type"];
+        typeModel.state = [result longForColumn:@"r_state"];
+        typeModel.ranking = [result objectForColumn:@"r_ranking"];
+        model.recordTypes = [NSMutableArray arrayWithObject:typeModel];
         [arr addObject:model];
     }
     return arr;
@@ -92,7 +119,7 @@
 }
 
 + (BOOL)deleteRecord:(RecordModel *)record {
-    return [[Dao sharedDao] executeUpdate:@"DELETE * FROM Record WHERE ID = ?" withArgumentsInArray:@[record.ID]];
+    return [[Dao sharedDao] executeUpdate:@"DELETE FROM Record WHERE ID = ?" withArgumentsInArray:@[record.ID]];
 }
 
 + (NSMutableArray<SumMoneyModel *> *)getSumMoneyFrom:(NSDate *)from to:(NSDate *)to {
@@ -101,7 +128,7 @@
     while ([result next]) {
         SumMoneyModel *model = [SumMoneyModel new];
         model.type = [result longForColumn:@"type"];
-        model.sum_money = [result objectForColumn:@"sumMoney"];
+        model.sum_money = [NSDecimalNumber decimalNumberWithString:[result stringForColumn:@"sumMoney"]];
         [arr addObject:model];
     }
     return arr;
@@ -119,10 +146,9 @@
     while ([result next]) {
         RecordModel *model = [RecordModel new];
         model.ID = [result objectForColumn:@"ID"];
-        model.money = [result objectForColumn:@"money"];
-        model.remark = [result stringForColumn:@"remark"];
-        model.time = [result objectForColumn:@"time"];
-        model.create_time = [result objectForColumn:@"create_time"];
+model.money = [NSDecimalNumber decimalNumberWithString:[result stringForColumn:@"money"]];        model.remark = [result stringForColumn:@"remark"];
+        model.time = [result dateForColumn:@"time"];
+        model.create_time = [result dateForColumn:@"create_time"];
         model.record_type_id = [result objectForColumn:@"record_type_id"];
         model.assets_id = [result objectForColumn:@"assets_id"];
         [arr addObject:model];
@@ -136,8 +162,8 @@
     while ([result next]) {
         DaySumMoneyModel *model = [DaySumMoneyModel new];
         model.type = [result longForColumn:@"type"];
-        model.time = [result objectForColumn:@"time"];
-        model.daySumMoney = [result objectForColumn:@"daySumMoney"];
+        model.time = [result dateForColumn:@"time"];
+        model.daySumMoney = [NSDecimalNumber decimalNumberWithString:[result stringForColumn:@"daySumMoney"]];
         [arr addObject:model];
     }
     return arr;
@@ -150,7 +176,7 @@
         TypeSumMoneyModel *model = [TypeSumMoneyModel new];
         model.imgName = [result stringForColumn:@"imgName"];
         model.typeName = [result stringForColumn:@"typeName"];
-        model.typeSumMoney = [result objectForColumn:@"typeSumMoney"];
+        model.typeSumMoney = [NSDecimalNumber decimalNumberWithString:[result stringForColumn:@"typeSumMoney"]];
         model.typeId = [result objectForColumn:@"typeId"];
         model.type = [result longForColumn:@"type"];
         model.count = [result longForColumn:@"count"];
@@ -166,7 +192,7 @@
         MonthSumMoneyModel *model = [MonthSumMoneyModel new];
         model.type = [result longForColumn:@"type"];
         model.month = [result stringForColumn:@"month"];
-        model.sumMoney = [result objectForColumn:@"sumMoney"];
+        model.sumMoney = [NSDecimalNumber decimalNumberWithString:[result stringForColumn:@"sumMoney"]];
         [arr addObject:model];
     }
     return arr;
@@ -178,8 +204,8 @@
     while ([result next]) {
         DaySumMoneyModel *model = [DaySumMoneyModel new];
         model.type = [result longForColumn:@"type"];
-        model.time = [result objectForColumn:@"time"];
-        model.daySumMoney = [result objectForColumn:@"daySumMoney"];
+        model.time = [result dateForColumn:@"time"];
+        model.daySumMoney = [NSDecimalNumber decimalNumberWithString:[result stringForColumn:@"daySumMoney"]];
         [arr addObject:model];
     }
     return arr;

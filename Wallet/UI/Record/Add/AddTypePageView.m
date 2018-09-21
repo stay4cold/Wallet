@@ -16,6 +16,8 @@
 @property (nonatomic, strong) UIPageControl *pageControl;
 @property (nonatomic, strong) NSMutableArray *sourceArray;
 @property (nonatomic, strong) NSMutableArray *dataArray;
+@property (nonatomic, assign) RecordType type;
+@property (nonatomic, strong) RecordWithTypeModel *record;
 
 @end
 
@@ -81,40 +83,52 @@
     return _pageControl;
 }
 
-- (void)setType:(RecordType)type {
-    _type = type;
-    self.dataArray = [RecordTypeDao getAllRecordTypes];
-}
-
-- (void)setRecord:(RecordWithTypeModel *)record {
-    if (self.checkID != nil) {
-        return;
-    }
-    if (record) {
-        self.checkID = record.recordTypes[0].ID;
-    } else {
-        RecordTypeModel *model = [self.dataArray objectAtIndex:0];
-        self.checkID = model.ID;
-    }
-    _sourceArray = nil;
-    [self.collectionView reloadData];
-}
-
-- (void)setDataArray:(NSMutableArray *)dataArray {
-    _dataArray = [NSMutableArray array];
-    for (RecordTypeModel *model in dataArray) {
-        if (model.type == self.type) {
-            [_dataArray addObject:model];
+- (void)addRecord:(RecordWithTypeModel *)record withType:(RecordType)type {
+    self.type = type;
+    self.dataArray = [NSMutableArray array];
+    for (RecordTypeModel *model in [RecordTypeDao getAllRecordTypes]) {
+        if (model.type == type) {
+            [self.dataArray addObject:model];
         }
     }
-    if (_dataArray.count > 0) {
+    if (self.dataArray.count > 0) {
         RecordTypeModel *setting = [RecordTypeModel new];
         setting.name = @"设置";
         setting.img_name = @"type_item_setting";
         setting.type = self.type;
         setting.setting = YES;
-        [_dataArray addObject:setting];
+        [self.dataArray addObject:setting];
     }
+    self.record = record;
+    if (self.checkID == nil) {//第一次进入
+        if (self.record != nil && self.record.recordTypes[0].type == self.type) {//更新
+            BOOL exist = NO;
+            for (RecordTypeModel *rt in self.dataArray) {
+                if ([record.recordTypes[0].ID integerValue] == [rt.ID integerValue]) {
+                    self.checkID = rt.ID;
+                    exist = YES;
+                    break;
+                }
+            }
+            if (!exist) {
+                RecordTypeModel *rm = [self.dataArray objectAtIndex:0];
+                self.checkID = rm.ID;
+                [self showHUDInView:self.viewForLastBaselineLayout justWithText:@"该记录的类型已经被删除，已默认选择了第一个类型" disMissAfterDelay:2];
+            }
+        } else {
+            RecordTypeModel *rm = [self.dataArray objectAtIndex:0];
+            self.checkID = rm.ID;
+        }
+    }
+    
+    for (RecordTypeModel *r in self.dataArray) {
+        if ([r.ID integerValue] == [self.checkID integerValue]) {
+            r.checked = YES;
+        } else {
+            r.checked = NO;
+        }
+    }
+    
     _sourceArray = nil;
     [self.collectionView reloadData];
 }
@@ -185,3 +199,4 @@
     self.pageControl.currentPage = scrollView.contentOffset.x / scrollView.frame.size.width;
 }
 @end
+

@@ -13,8 +13,8 @@
 
 @interface AddTypePageView : UIView
 
-@property (nonatomic, assign) RecordType type;
-@property (nonatomic, strong) RecordWithTypeModel *record;
 @property (nonatomic, strong) NSNumber *checkID;
+
+- (void)addRecord:(RecordWithTypeModel *)record withType:(RecordType)type;
 
 @end

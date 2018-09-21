@@ -49,7 +49,15 @@
 
 - (AssetsModel *)selectedModel {
     if (!_selectedModel) {
-        _selectedModel = [self.dataArray objectAtIndex:0];
+        for (AssetsModel *assets in self.dataArray) {
+            if ([assets.ID integerValue] == [self.checkedID integerValue]) {
+                _selectedModel = assets;
+                break;
+            }
+        }
+        if (!_selectedModel) {
+            _selectedModel = [self.dataArray objectAtIndex:0];
+        }
     }
     return _selectedModel;
 }

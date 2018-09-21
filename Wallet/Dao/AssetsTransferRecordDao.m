@@ -18,12 +18,12 @@
         AssetsTransferRecordWithAssetsModel *model = [AssetsTransferRecordWithAssetsModel new];
         model.ID = [result objectForColumn:@"ID"];
         model.state = [result longForColumn:@"state"];
-        model.create_time = [result objectForColumn:@"create_time"];
-        model.time = [result objectForColumn:@"time"];
+        model.create_time = [result dateForColumn:@"create_time"];
+        model.time = [result dateForColumn:@"time"];
         model.assets_id_from = [result objectForColumn:@"assets_id_from"];
         model.assets_id_to = [result objectForColumn:@"assets_id_to"];
         model.remark = [result stringForColumn:@"remark"];
-        model.money = [result objectForColumn:@"money"];
+        model.money = [NSDecimalNumber decimalNumberWithString:[result stringForColumn:@"money"]];
         model.assetsNameFrom = [result stringForColumn:@"assetsNameFrom"];
         model.assetsNameTo = [result stringForColumn:@"assetsNameTo"];
         [arr addObject:model];

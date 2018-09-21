@@ -19,6 +19,7 @@
 
 @interface ChooseAssetsViewController : UITableViewController
 
+@property (nonatomic, strong) NSNumber *checkedID;
 @property (nonatomic, weak) id<ChooseAssetsDelegate> delegate;
 
 @end

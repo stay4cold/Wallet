@@ -12,5 +12,13 @@
 
 + (NSNumber *)getAssetsId;
 + (void)setAssetsId:(NSNumber *)ID;
++ (NSString *)getCurrentSymbol;
++ (void)setCurrentSymbol:(NSString *)symbol;
++ (NSArray<NSString *> *)getSymbol;
++ (NSArray<NSString *> *)getSimpleSymbol;
++ (NSInteger)getBudget;
++ (void)setBudget:(NSInteger)budget;
++ (BOOL)isFast;
++ (void)setFast:(BOOL)fast;
 
 @end

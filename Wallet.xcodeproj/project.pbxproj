@@ -12,14 +12,13 @@
 		C32C68C9215243E000249A74 /* ChooseAssetsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C32C68C8215243E000249A74 /* ChooseAssetsViewCell.xib */; };
 		C32C68CC2152442C00249A74 /* ChooseAssetsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C32C68CB2152442C00249A74 /* ChooseAssetsViewCell.m */; };
 		C32C68CF215283D000249A74 /* ConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C32C68CE215283D000249A74 /* ConfigManager.m */; };
+		C32C68D22153903100249A74 /* TimeRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C32C68D12153903100249A74 /* TimeRecordModel.m */; };
 		C3588F75214902D700996E1A /* NSObject+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C3588F66214902D700996E1A /* NSObject+HUD.m */; };
 		C3588F76214902D700996E1A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C3588F68214902D700996E1A /* UIView+Extension.m */; };
 		C3588F79214902D700996E1A /* UIScrollView+VTEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = C3588F6C214902D700996E1A /* UIScrollView+VTEmpty.m */; };
 		C3588F812149F1C400996E1A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3588F7F2149F1C400996E1A /* HomeViewController.m */; };
 		C3588F822149F1C400996E1A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3588F802149F1C400996E1A /* HomeViewController.xib */; };
 		C3588F852149F48D00996E1A /* UIColor+HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = C3588F842149F48D00996E1A /* UIColor+HexColors.m */; };
-		C3588F8D214A0CCD00996E1A /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3588F8B214A0CCD00996E1A /* SettingViewController.m */; };
-		C3588F8E214A0CCD00996E1A /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3588F8C214A0CCD00996E1A /* SettingViewController.xib */; };
 		C3588F92214A0CDC00996E1A /* StatisticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3588F90214A0CDC00996E1A /* StatisticViewController.m */; };
 		C3588F93214A0CDC00996E1A /* StatisticViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3588F91214A0CDC00996E1A /* StatisticViewController.xib */; };
 		C3588F97214A0E7000996E1A /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3588F95214A0E7000996E1A /* HomeTableViewCell.m */; };
@@ -45,6 +44,12 @@
 		C376ACEF214B8D1B005D378B /* AssetsTransferRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C376ACEE214B8D1B005D378B /* AssetsTransferRecordModel.m */; };
 		C376ACF2214C8896005D378B /* AssetsTransferRecordWithAssetsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C376ACF1214C8896005D378B /* AssetsTransferRecordWithAssetsModel.m */; };
 		C376ACF5214C8905005D378B /* AssetsTransferRecordDao.m in Sources */ = {isa = PBXBuildFile; fileRef = C376ACF4214C8905005D378B /* AssetsTransferRecordDao.m */; };
+		C3859A3721547EB7007A39E0 /* SettingNormalViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A3521547EB7007A39E0 /* SettingNormalViewCell.m */; };
+		C3859A3821547EB7007A39E0 /* SettingNormalViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859A3621547EB7007A39E0 /* SettingNormalViewCell.xib */; };
+		C3859A402154825F007A39E0 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A3F2154825F007A39E0 /* SettingViewController.m */; };
+		C3859A472154941A007A39E0 /* BudgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A462154941A007A39E0 /* BudgetViewController.m */; };
+		C3859A4D21549C09007A39E0 /* AssetsManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A4B21549C09007A39E0 /* AssetsManagerViewController.m */; };
+		C3859A4E21549C09007A39E0 /* AssetsManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859A4C21549C09007A39E0 /* AssetsManagerViewController.xib */; };
 		C3BFAC512149014200326BD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BFAC502149014200326BD3 /* AppDelegate.m */; };
 		C3BFAC572149014200326BD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3BFAC552149014200326BD3 /* Main.storyboard */; };
 		C3BFAC592149014300326BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3BFAC582149014300326BD3 /* Assets.xcassets */; };
@@ -108,6 +113,8 @@
 		C32C68CB2152442C00249A74 /* ChooseAssetsViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseAssetsViewCell.m; sourceTree = "<group>"; };
 		C32C68CD215283D000249A74 /* ConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigManager.h; sourceTree = "<group>"; };
 		C32C68CE215283D000249A74 /* ConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigManager.m; sourceTree = "<group>"; };
+		C32C68D02153903100249A74 /* TimeRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeRecordModel.h; sourceTree = "<group>"; };
+		C32C68D12153903100249A74 /* TimeRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeRecordModel.m; sourceTree = "<group>"; };
 		C3588F58214902D700996E1A /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		C3588F5A214902D700996E1A /* NSObject+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HUD.h"; sourceTree = "<group>"; };
 		C3588F5C214902D700996E1A /* UIScrollView+VTEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+VTEmpty.h"; sourceTree = "<group>"; };
@@ -121,9 +128,6 @@
 		C3588F832149F48D00996E1A /* UIColor+HexColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColors.h"; sourceTree = "<group>"; };
 		C3588F842149F48D00996E1A /* UIColor+HexColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColors.m"; sourceTree = "<group>"; };
 		C3588F872149F56700996E1A /* WalletMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletMacro.h; sourceTree = "<group>"; };
-		C3588F8A214A0CCD00996E1A /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
-		C3588F8B214A0CCD00996E1A /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
-		C3588F8C214A0CCD00996E1A /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		C3588F8F214A0CDC00996E1A /* StatisticViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatisticViewController.h; sourceTree = "<group>"; };
 		C3588F90214A0CDC00996E1A /* StatisticViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatisticViewController.m; sourceTree = "<group>"; };
 		C3588F91214A0CDC00996E1A /* StatisticViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticViewController.xib; sourceTree = "<group>"; };
@@ -171,6 +175,16 @@
 		C376ACF1214C8896005D378B /* AssetsTransferRecordWithAssetsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetsTransferRecordWithAssetsModel.m; sourceTree = "<group>"; };
 		C376ACF3214C8905005D378B /* AssetsTransferRecordDao.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetsTransferRecordDao.h; sourceTree = "<group>"; };
 		C376ACF4214C8905005D378B /* AssetsTransferRecordDao.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetsTransferRecordDao.m; sourceTree = "<group>"; };
+		C3859A3421547EB7007A39E0 /* SettingNormalViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingNormalViewCell.h; sourceTree = "<group>"; };
+		C3859A3521547EB7007A39E0 /* SettingNormalViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingNormalViewCell.m; sourceTree = "<group>"; };
+		C3859A3621547EB7007A39E0 /* SettingNormalViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingNormalViewCell.xib; sourceTree = "<group>"; };
+		C3859A3E2154825F007A39E0 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		C3859A3F2154825F007A39E0 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		C3859A452154941A007A39E0 /* BudgetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BudgetViewController.h; sourceTree = "<group>"; };
+		C3859A462154941A007A39E0 /* BudgetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BudgetViewController.m; sourceTree = "<group>"; };
+		C3859A4A21549C09007A39E0 /* AssetsManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetsManagerViewController.h; sourceTree = "<group>"; };
+		C3859A4B21549C09007A39E0 /* AssetsManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetsManagerViewController.m; sourceTree = "<group>"; };
+		C3859A4C21549C09007A39E0 /* AssetsManagerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetsManagerViewController.xib; sourceTree = "<group>"; };
 		C3BFAC4C2149014200326BD3 /* Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BFAC4F2149014200326BD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3BFAC502149014200326BD3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -320,9 +334,11 @@
 		C3588F88214A0BFB00996E1A /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				C3588F8A214A0CCD00996E1A /* SettingViewController.h */,
-				C3588F8B214A0CCD00996E1A /* SettingViewController.m */,
-				C3588F8C214A0CCD00996E1A /* SettingViewController.xib */,
+				C3859A3421547EB7007A39E0 /* SettingNormalViewCell.h */,
+				C3859A3521547EB7007A39E0 /* SettingNormalViewCell.m */,
+				C3859A3621547EB7007A39E0 /* SettingNormalViewCell.xib */,
+				C3859A3E2154825F007A39E0 /* SettingViewController.h */,
+				C3859A3F2154825F007A39E0 /* SettingViewController.m */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -398,6 +414,8 @@
 				C3EDF18521513E6900A64483 /* AssetsTypeModel.m */,
 				C3EDF18D2152005200A64483 /* BankModel.h */,
 				C3EDF18E2152005200A64483 /* BankModel.m */,
+				C32C68D02153903100249A74 /* TimeRecordModel.h */,
+				C32C68D12153903100249A74 /* TimeRecordModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -405,6 +423,7 @@
 		C376ACC1214B55D8005D378B /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				C3859A4421549405007A39E0 /* Budget */,
 				C3EDF17A2150FAAA00A64483 /* Assets */,
 				C3EDF1782150FA6C00A64483 /* RecordType */,
 				C3EDF15E214FA22600A64483 /* Record */,
@@ -433,6 +452,32 @@
 				C376ACF4214C8905005D378B /* AssetsTransferRecordDao.m */,
 			);
 			path = Dao;
+			sourceTree = "<group>";
+		};
+		C3859A4421549405007A39E0 /* Budget */ = {
+			isa = PBXGroup;
+			children = (
+				C3859A452154941A007A39E0 /* BudgetViewController.h */,
+				C3859A462154941A007A39E0 /* BudgetViewController.m */,
+			);
+			path = Budget;
+			sourceTree = "<group>";
+		};
+		C3859A4821549B69007A39E0 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		C3859A4921549BF2007A39E0 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C3859A4A21549C09007A39E0 /* AssetsManagerViewController.h */,
+				C3859A4B21549C09007A39E0 /* AssetsManagerViewController.m */,
+				C3859A4C21549C09007A39E0 /* AssetsManagerViewController.xib */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		C3BFAC432149014200326BD3 = {
@@ -558,6 +603,8 @@
 		C3EDF17A2150FAAA00A64483 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				C3859A4921549BF2007A39E0 /* Manager */,
+				C3859A4821549B69007A39E0 /* Detail */,
 				C32C68C4215241F400249A74 /* Choose */,
 				C3EDF193215203F800A64483 /* Bank */,
 				C3EDF1872151D49800A64483 /* Add */,
@@ -706,12 +753,12 @@
 			files = (
 				C3BFAC5C2149014300326BD3 /* LaunchScreen.storyboard in Resources */,
 				C3588F98214A0E7000996E1A /* HomeTableViewCell.xib in Resources */,
+				C3859A4E21549C09007A39E0 /* AssetsManagerViewController.xib in Resources */,
 				C32C68C9215243E000249A74 /* ChooseAssetsViewCell.xib in Resources */,
 				C3EDF14D214D58F700A64483 /* KeyboardView.xib in Resources */,
 				C3EDF148214CF8F100A64483 /* AddTypePageItemViewCell.xib in Resources */,
 				C376ACB8214A54BF005D378B /* ReviewViewController.xib in Resources */,
 				C3588F93214A0CDC00996E1A /* StatisticViewController.xib in Resources */,
-				C3588F8E214A0CCD00996E1A /* SettingViewController.xib in Resources */,
 				C3EDF1802150FAD600A64483 /* AllAssetsViewController.xib in Resources */,
 				C376ACBE214A62D4005D378B /* AddRecordViewController.xib in Resources */,
 				C3EDF1722150A44900A64483 /* AddTypeViewController.xib in Resources */,
@@ -722,6 +769,7 @@
 				C3BFAC572149014200326BD3 /* Main.storyboard in Resources */,
 				C3EDF165214FA2A700A64483 /* TypeManagerViewController.xib in Resources */,
 				C3588F822149F1C400996E1A /* HomeViewController.xib in Resources */,
+				C3859A3821547EB7007A39E0 /* SettingNormalViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -816,8 +864,10 @@
 				C3EDF17F2150FAD600A64483 /* AllAssetsViewController.m in Sources */,
 				C3EDF19E2152200E00A64483 /* DecimalUtils.m in Sources */,
 				C3EDF1712150A44900A64483 /* AddTypeViewController.m in Sources */,
+				C3859A402154825F007A39E0 /* SettingViewController.m in Sources */,
 				C3EDF192215200BC00A64483 /* BankCreator.m in Sources */,
 				C3EDF14B214D44AE00A64483 /* KeyboardView.m in Sources */,
+				C3859A3721547EB7007A39E0 /* SettingNormalViewCell.m in Sources */,
 				C3BFAC512149014200326BD3 /* AppDelegate.m in Sources */,
 				C32C68CC2152442C00249A74 /* ChooseAssetsViewCell.m in Sources */,
 				C3EDF1762150B07A00A64483 /* AddTypeViewCell.m in Sources */,
@@ -828,6 +878,7 @@
 				C3EDF16C2150953400A64483 /* TypeTableViewCell.m in Sources */,
 				C376ACC7214B57B2005D378B /* DaySumMoneyModel.m in Sources */,
 				C376ACF5214C8905005D378B /* AssetsTransferRecordDao.m in Sources */,
+				C32C68D22153903100249A74 /* TimeRecordModel.m in Sources */,
 				C3EDF1962152042B00A64483 /* BankViewController.m in Sources */,
 				C3588F75214902D700996E1A /* NSObject+HUD.m in Sources */,
 				C376ACD3214B5FB8005D378B /* AssetsModel.m in Sources */,
@@ -849,12 +900,13 @@
 				C376ACF2214C8896005D378B /* AssetsTransferRecordWithAssetsModel.m in Sources */,
 				C376ACD6214B6196005D378B /* AssetsModifyRecordModel.m in Sources */,
 				C376ACEF214B8D1B005D378B /* AssetsTransferRecordModel.m in Sources */,
+				C3859A4D21549C09007A39E0 /* AssetsManagerViewController.m in Sources */,
+				C3859A472154941A007A39E0 /* BudgetViewController.m in Sources */,
 				C376ACE9214B7C1D005D378B /* RecordDao.m in Sources */,
 				C376ACDD214B6A83005D378B /* AssetsMoneyModel.m in Sources */,
 				C376ACD0214B5A2D005D378B /* RecordTypeModel.m in Sources */,
 				C376ACDA214B6820005D378B /* AssetsDao.m in Sources */,
 				C3588F79214902D700996E1A /* UIScrollView+VTEmpty.m in Sources */,
-				C3588F8D214A0CCD00996E1A /* SettingViewController.m in Sources */,
 				C32C68CF215283D000249A74 /* ConfigManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

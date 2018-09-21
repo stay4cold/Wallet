@@ -57,7 +57,11 @@ static NSString *const kNoAccount = @"不选择账户";
         self.remarkField.text = self.recordWithType.remark;
         self.keyboardView.text = [DecimalUtils fen2YuanNoSeparator:self.recordWithType.money];
         self.currentDate = self.recordWithType.time;
-        self.typeControl.selectedSegmentIndex = self.recordWithType.recordTypes[0].type;
+        if (self.recordWithType.recordTypes[0].type == RecordTypeIncome) {
+            [self.typeControl setSelectedSegmentIndex:1];
+            self.outlayTypePageView.hidden = YES;
+            self.incomeTypePageView.hidden = NO;
+        }
         if (self.recordWithType.assets_id == nil || [self.recordWithType.assets_id integerValue] == AssetsTypeNo) {
             [self configAssetsName:kNoAccount withImg:nil];
         } else {
@@ -99,18 +103,17 @@ static NSString *const kNoAccount = @"不选择账户";
     self.pickerView.hidden = NO;
 }
 
+//选择Assets
 - (void)showAssets {
     ChooseAssetsViewController *avc = [ChooseAssetsViewController new];
     avc.delegate = self;
+    avc.checkedID = self.assets ? self.assets.ID : [NSNumber numberWithInt:AssetsTypeNo];
     [self.navigationController pushViewController:avc animated:YES];
 }
 
 - (void)loadTypePage {
-    self.incomeTypePageView.type = RecordTypeIncome;
-    self.incomeTypePageView.record = self.recordWithType;
-    self.outlayTypePageView.type = RecordTypeOutlay;
-    self.outlayTypePageView.record = self.recordWithType;
-
+    [self.incomeTypePageView addRecord:self.recordWithType withType:RecordTypeIncome];
+    [self.outlayTypePageView addRecord:self.recordWithType withType:RecordTypeOutlay];
 }
 
 - (void)configAssetsName:(NSString *)name withImg:(NSString *)imgName {
@@ -183,7 +186,7 @@ static NSString *const kNoAccount = @"不选择账户";
     record.time = self.currentDate;
     record.create_time = [NSDate date];
     record.record_type_id = self.typeControl.selectedSegmentIndex == 0 ? self.outlayTypePageView.checkID : self.incomeTypePageView.checkID;
-    record.assets_id = self.assets ? self.assets.ID : [NSNumber numberWithInt:-1];
+    record.assets_id = self.assets ? self.assets.ID : [NSNumber numberWithInt:AssetsTypeNo];
     BOOL state = [RecordDao insertRecord:record];
     if (state) {
         [ConfigManager setAssetsId:record.assets_id];
@@ -200,7 +203,103 @@ static NSString *const kNoAccount = @"不选择账户";
 }
 
 - (void)updateRecord:(NSString *)money {
-    
+    [self showHUDInView:self.view WithText:@"正在更新..."];
+    self.recordWithType.money = [DecimalUtils yuan2Fen:money];
+    self.recordWithType.remark = self.remarkField.text;
+    if (self.recordWithType.remark.length == 0) {
+        self.recordWithType.remark = @"";
+    }
+    self.recordWithType.time = self.currentDate;
+    self.recordWithType.record_type_id = self.typeControl.selectedSegmentIndex == 0 ? self.outlayTypePageView.checkID : self.incomeTypePageView.checkID;
+    self.recordWithType.assets_id = self.assets ? self.assets.ID : [NSNumber numberWithInt:AssetsTypeNo];
+    RecordType oldType = self.recordWithType.recordTypes[0].type;
+    //更新record
+    if ([RecordDao updateRecords:[NSMutableArray arrayWithObject:self.recordWithType]]) {
+        [self updateAssetsForModify:oldType type:self.typeControl.selectedSegmentIndex oldAssets:self.oldAssets assets:self.assets record:self.recordWithType];
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
+
+- (void)updateAssetsForModify:(RecordType)oldType type:(RecordType)type oldAssets:(AssetsModel *)oldAssets assets:(AssetsModel *)assets record:(RecordModel *)record {
+    if (oldType == type) {
+        if (oldAssets == nil) {
+            if (assets == nil) {
+                //不用更新资产
+            } else {
+                if (type == RecordTypeOutlay) {
+                    //减
+                    assets.money = [assets.money decimalNumberBySubtracting:record.money];
+                } else {
+                    //加
+                    assets.money = [assets.money decimalNumberByAdding:record.money];
+                }
+                [self updateAssets:assets other:nil];
+            }
+        } else {
+            if (assets == nil) {
+                if (type == RecordTypeOutlay) {
+                    //更新oldassets, 加
+                    oldAssets.money = [oldAssets.money decimalNumberByAdding:record.money];
+                } else {
+                    oldAssets.money = [oldAssets.money decimalNumberBySubtracting:record.money];
+                }
+                [self updateAssets:oldAssets other:nil];
+            } else {
+                if ([oldAssets.ID integerValue] == [assets.ID integerValue]) {
+                    //不用更新资产
+                } else {
+                    if (type == RecordTypeOutlay) {
+                        oldAssets.money = [oldAssets.money decimalNumberByAdding:record.money];
+                        assets.money = [assets.money decimalNumberBySubtracting:record.money];
+                    } else {
+                        oldAssets.money = [oldAssets.money decimalNumberBySubtracting:record.money];
+                        assets.money = [assets.money decimalNumberByAdding:record.money];
+                    }
+                    [self updateAssets:oldAssets other:assets];
+                }
+            }
+        }
+    } else {
+        if (oldAssets == nil) {
+            if (assets == nil) {
+                //不用更新资产
+            } else {
+                if (type == RecordTypeOutlay) {
+                    assets.money = [assets.money decimalNumberBySubtracting:record.money];
+                } else {
+                    assets.money = [assets.money decimalNumberByAdding:record.money];
+                }
+                [self updateAssets:assets other:nil];
+            }
+        } else {
+            if (assets == nil) {
+                if (oldType == RecordTypeOutlay) {
+                    oldAssets.money = [oldAssets.money decimalNumberByAdding:record.money];
+                } else {
+                    oldAssets.money = [oldAssets.money decimalNumberBySubtracting:record.money];
+                }
+                [self updateAssets:oldAssets other:nil];
+            } else {
+                if (type == RecordTypeOutlay) {
+                    oldAssets.money = [oldAssets.money decimalNumberBySubtracting:record.money];
+                    assets.money = [assets.money decimalNumberBySubtracting:record.money];
+                } else {
+                    oldAssets.money = [oldAssets.money decimalNumberByAdding:record.money];
+                    assets.money = [assets.money decimalNumberByAdding:record.money];
+                }
+                [self updateAssets:oldAssets other:assets];
+            }
+        }
+    }
+}
+
+- (void)updateAssets:(AssetsModel *)assets other:(AssetsModel *)otherAssets {
+    if (assets) {
+        [AssetsDao updateAssets:[NSMutableArray arrayWithObject:assets]];
+    }
+    if (otherAssets) {
+        [AssetsDao updateAssets:[NSMutableArray arrayWithObject:otherAssets]];
+    }
 }
 
 @end

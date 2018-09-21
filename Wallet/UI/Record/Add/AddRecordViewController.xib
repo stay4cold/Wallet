@@ -108,20 +108,20 @@
                             </connections>
                         </button>
                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付宝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XvO-X5-UIB">
-                            <rect key="frame" x="314" y="9" width="46" height="18"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <rect key="frame" x="308" y="8" width="52" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.36078431370000003" green="0.36078431370000003" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="assets_alipay" translatesAutoresizingMaskIntoConstraints="NO" id="JDK-Gh-vDT">
-                            <rect key="frame" x="289" y="7.5" width="20" height="20"/>
+                            <rect key="frame" x="283" y="7.5" width="20" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="20" id="VrN-ZC-DTi"/>
                                 <constraint firstAttribute="height" constant="20" id="lXK-MQ-FRx"/>
                             </constraints>
                         </imageView>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入备注" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9Dj-JM-pU4">
-                            <rect key="frame" x="78" y="3" width="206" height="30"/>
+                            <rect key="frame" x="78" y="3" width="200" height="30"/>
                             <color key="tintColor" red="0.58431372550000005" green="0.46274509800000002" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="textColor" red="0.36078431370000003" green="0.36078431370000003" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>

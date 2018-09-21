@@ -35,10 +35,11 @@
     }
     if (_model.recordTypes[0].type == RecordTypeOutlay) {
         self.moneyLabel.textColor = ColorOutlay;
+        self.moneyLabel.text = [NSString stringWithFormat:@"-%@", [DecimalUtils fen2Yuan:_model.money]];
     } else {
         self.moneyLabel.textColor = ColorIncome;
+        self.moneyLabel.text = [NSString stringWithFormat:@"+%@", [DecimalUtils fen2Yuan:_model.money]];
     }
-    self.moneyLabel.text = [NSString stringWithFormat:@"%@", _model.money];
 }
 
 @end
