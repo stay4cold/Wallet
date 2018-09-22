@@ -59,7 +59,7 @@
                     <rect key="frame" x="65" y="160" width="295" height="30"/>
                     <color key="textColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
                     <connections>
                         <outlet property="delegate" destination="-1" id="lZJ-cv-frn"/>
                     </connections>

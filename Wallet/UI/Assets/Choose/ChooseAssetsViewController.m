@@ -43,7 +43,9 @@
 
 - (void)loadData {
     self.dataArray = [AssetsDao getAllAssets];
-    [self.dataArray addObjectsFromArray:@[self.noAssets, self.addAssets]];
+    if (!self.noAndAddHidden) {
+        [self.dataArray addObjectsFromArray:@[self.noAssets, self.addAssets]];
+    }
     [self.tableView reloadData];
 }
 
@@ -86,7 +88,8 @@
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == self.dataArray.count - 1) {
+    AssetsModel *model = [self.dataArray objectAtIndex:indexPath.row];
+    if ([model isEqual:self.addAssets]) {
         [self.navigationController pushViewController:[AllAssetsViewController new] animated:YES];
     } else {
         self.selectedModel = [self.dataArray objectAtIndex:indexPath.row];

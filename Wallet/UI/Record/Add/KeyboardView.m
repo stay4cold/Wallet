@@ -55,8 +55,12 @@
     } else if (btnText.length == 1) {
         self.amountField.text = [self append:fieldText with:btnText];
     } else {
-        if (self.delegate && [self.delegate respondsToSelector:@selector(keyboardView:confirm:)]) {
-            [self.delegate keyboardView:self confirm:fieldText];
+        if (fieldText.length == 0 || [fieldText isEqualToString:@"0"] || [fieldText isEqualToString:@"0."] || [fieldText isEqualToString:@"0.0"] || [fieldText isEqualToString:@"0.00"]) {
+            [self showHUDInWindowJustWithText:@"请输入正确的金额" disMissAfterDelay:2];
+        } else {
+            if (self.delegate && [self.delegate respondsToSelector:@selector(keyboardView:confirm:)]) {
+                [self.delegate keyboardView:self confirm:fieldText];
+            }
         }
     }
 }
@@ -106,3 +110,4 @@
 }
 
 @end
+

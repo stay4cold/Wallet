@@ -118,10 +118,12 @@
 
 #pragma mark - UITextFieldDelegate
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
-    if ([textField.text containsString:@"."] && [string containsString:@"."]) {
-        return NO;
+    NSString *rs = [textField.text stringByReplacingCharactersInRange:range withString:string];
+    if (rs.length == 0 || [@"-" isEqualToString:rs]) {
+        return YES;
     }
-    if (textField.text.length - range.length + string.length > 50) {
+    NSRange r = [rs rangeOfString:@"^(\\-)?\\d{1,6}(\\.\\d{0,2})?$" options:NSRegularExpressionSearch];
+    if (r.location == NSNotFound) {
         return NO;
     }
     return YES;

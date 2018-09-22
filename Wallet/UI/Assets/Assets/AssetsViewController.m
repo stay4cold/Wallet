@@ -11,6 +11,7 @@
 #import "AssetsDao.h"
 #import "AllAssetsViewController.h"
 #import "AssetsDetailViewController.h"
+#import "TransferViewController.h"
 
 @interface AssetsViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -67,6 +68,7 @@
 }
 
 - (IBAction)transferAssets:(id)sender {
+    [self.navigationController pushViewController:[TransferViewController new] animated:YES];
 }
 
 - (UILabel *)emptyLabel {
