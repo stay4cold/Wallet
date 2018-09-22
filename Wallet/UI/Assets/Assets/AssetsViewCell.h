@@ -1,5 +1,5 @@
 //
-//  AssetsManagerViewController.h
+//  AssetsViewCell.h
 //  Wallet
 //
 //  Created by 王成浩 on 2018/9/21.
@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AssetsModel.h"
 
-@interface AssetsManagerViewController : UIViewController
+@interface AssetsViewCell : UITableViewCell
+
+@property (nonatomic, strong) AssetsModel *model;
 
 @end

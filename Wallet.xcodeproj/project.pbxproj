@@ -48,8 +48,15 @@
 		C3859A3821547EB7007A39E0 /* SettingNormalViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859A3621547EB7007A39E0 /* SettingNormalViewCell.xib */; };
 		C3859A402154825F007A39E0 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A3F2154825F007A39E0 /* SettingViewController.m */; };
 		C3859A472154941A007A39E0 /* BudgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A462154941A007A39E0 /* BudgetViewController.m */; };
-		C3859A4D21549C09007A39E0 /* AssetsManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A4B21549C09007A39E0 /* AssetsManagerViewController.m */; };
-		C3859A4E21549C09007A39E0 /* AssetsManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859A4C21549C09007A39E0 /* AssetsManagerViewController.xib */; };
+		C3859A4D21549C09007A39E0 /* AssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A4B21549C09007A39E0 /* AssetsViewController.m */; };
+		C3859A4E21549C09007A39E0 /* AssetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859A4C21549C09007A39E0 /* AssetsViewController.xib */; };
+		C3859A502154D599007A39E0 /* AssetsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859A4F2154D599007A39E0 /* AssetsViewCell.xib */; };
+		C3859A532154D5EF007A39E0 /* AssetsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A522154D5EF007A39E0 /* AssetsViewCell.m */; };
+		C3859A572154DFED007A39E0 /* AssetsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A552154DFED007A39E0 /* AssetsDetailViewController.m */; };
+		C3859A582154DFED007A39E0 /* AssetsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859A562154DFED007A39E0 /* AssetsDetailViewController.xib */; };
+		C3859A5B2154E8ED007A39E0 /* AssetsDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A5A2154E8ED007A39E0 /* AssetsDetailView.m */; };
+		C3859A5F2154EAC3007A39E0 /* AssetsDetailViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A5D2154EAC3007A39E0 /* AssetsDetailViewCell.m */; };
+		C3859A602154EAC3007A39E0 /* AssetsDetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859A5E2154EAC3007A39E0 /* AssetsDetailViewCell.xib */; };
 		C3BFAC512149014200326BD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BFAC502149014200326BD3 /* AppDelegate.m */; };
 		C3BFAC572149014200326BD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3BFAC552149014200326BD3 /* Main.storyboard */; };
 		C3BFAC592149014300326BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3BFAC582149014300326BD3 /* Assets.xcassets */; };
@@ -182,9 +189,20 @@
 		C3859A3F2154825F007A39E0 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		C3859A452154941A007A39E0 /* BudgetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BudgetViewController.h; sourceTree = "<group>"; };
 		C3859A462154941A007A39E0 /* BudgetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BudgetViewController.m; sourceTree = "<group>"; };
-		C3859A4A21549C09007A39E0 /* AssetsManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetsManagerViewController.h; sourceTree = "<group>"; };
-		C3859A4B21549C09007A39E0 /* AssetsManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetsManagerViewController.m; sourceTree = "<group>"; };
-		C3859A4C21549C09007A39E0 /* AssetsManagerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetsManagerViewController.xib; sourceTree = "<group>"; };
+		C3859A4A21549C09007A39E0 /* AssetsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetsViewController.h; sourceTree = "<group>"; };
+		C3859A4B21549C09007A39E0 /* AssetsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetsViewController.m; sourceTree = "<group>"; };
+		C3859A4C21549C09007A39E0 /* AssetsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetsViewController.xib; sourceTree = "<group>"; };
+		C3859A4F2154D599007A39E0 /* AssetsViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AssetsViewCell.xib; path = Wallet/UI/Assets/Assets/AssetsViewCell.xib; sourceTree = SOURCE_ROOT; };
+		C3859A512154D5EF007A39E0 /* AssetsViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetsViewCell.h; sourceTree = "<group>"; };
+		C3859A522154D5EF007A39E0 /* AssetsViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetsViewCell.m; sourceTree = "<group>"; };
+		C3859A542154DFED007A39E0 /* AssetsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetsDetailViewController.h; sourceTree = "<group>"; };
+		C3859A552154DFED007A39E0 /* AssetsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetsDetailViewController.m; sourceTree = "<group>"; };
+		C3859A562154DFED007A39E0 /* AssetsDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetsDetailViewController.xib; sourceTree = "<group>"; };
+		C3859A592154E8ED007A39E0 /* AssetsDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetsDetailView.h; sourceTree = "<group>"; };
+		C3859A5A2154E8ED007A39E0 /* AssetsDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetsDetailView.m; sourceTree = "<group>"; };
+		C3859A5C2154EAC3007A39E0 /* AssetsDetailViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetsDetailViewCell.h; sourceTree = "<group>"; };
+		C3859A5D2154EAC3007A39E0 /* AssetsDetailViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetsDetailViewCell.m; sourceTree = "<group>"; };
+		C3859A5E2154EAC3007A39E0 /* AssetsDetailViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetsDetailViewCell.xib; sourceTree = "<group>"; };
 		C3BFAC4C2149014200326BD3 /* Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BFAC4F2149014200326BD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3BFAC502149014200326BD3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -466,18 +484,29 @@
 		C3859A4821549B69007A39E0 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				C3859A542154DFED007A39E0 /* AssetsDetailViewController.h */,
+				C3859A552154DFED007A39E0 /* AssetsDetailViewController.m */,
+				C3859A562154DFED007A39E0 /* AssetsDetailViewController.xib */,
+				C3859A592154E8ED007A39E0 /* AssetsDetailView.h */,
+				C3859A5A2154E8ED007A39E0 /* AssetsDetailView.m */,
+				C3859A5C2154EAC3007A39E0 /* AssetsDetailViewCell.h */,
+				C3859A5D2154EAC3007A39E0 /* AssetsDetailViewCell.m */,
+				C3859A5E2154EAC3007A39E0 /* AssetsDetailViewCell.xib */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
 		};
-		C3859A4921549BF2007A39E0 /* Manager */ = {
+		C3859A4921549BF2007A39E0 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				C3859A4A21549C09007A39E0 /* AssetsManagerViewController.h */,
-				C3859A4B21549C09007A39E0 /* AssetsManagerViewController.m */,
-				C3859A4C21549C09007A39E0 /* AssetsManagerViewController.xib */,
+				C3859A4F2154D599007A39E0 /* AssetsViewCell.xib */,
+				C3859A4A21549C09007A39E0 /* AssetsViewController.h */,
+				C3859A4B21549C09007A39E0 /* AssetsViewController.m */,
+				C3859A4C21549C09007A39E0 /* AssetsViewController.xib */,
+				C3859A512154D5EF007A39E0 /* AssetsViewCell.h */,
+				C3859A522154D5EF007A39E0 /* AssetsViewCell.m */,
 			);
-			path = Manager;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		C3BFAC432149014200326BD3 = {
@@ -603,7 +632,7 @@
 		C3EDF17A2150FAAA00A64483 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				C3859A4921549BF2007A39E0 /* Manager */,
+				C3859A4921549BF2007A39E0 /* Assets */,
 				C3859A4821549B69007A39E0 /* Detail */,
 				C32C68C4215241F400249A74 /* Choose */,
 				C3EDF193215203F800A64483 /* Bank */,
@@ -751,12 +780,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3859A602154EAC3007A39E0 /* AssetsDetailViewCell.xib in Resources */,
 				C3BFAC5C2149014300326BD3 /* LaunchScreen.storyboard in Resources */,
 				C3588F98214A0E7000996E1A /* HomeTableViewCell.xib in Resources */,
-				C3859A4E21549C09007A39E0 /* AssetsManagerViewController.xib in Resources */,
+				C3859A4E21549C09007A39E0 /* AssetsViewController.xib in Resources */,
 				C32C68C9215243E000249A74 /* ChooseAssetsViewCell.xib in Resources */,
 				C3EDF14D214D58F700A64483 /* KeyboardView.xib in Resources */,
 				C3EDF148214CF8F100A64483 /* AddTypePageItemViewCell.xib in Resources */,
+				C3859A582154DFED007A39E0 /* AssetsDetailViewController.xib in Resources */,
 				C376ACB8214A54BF005D378B /* ReviewViewController.xib in Resources */,
 				C3588F93214A0CDC00996E1A /* StatisticViewController.xib in Resources */,
 				C3EDF1802150FAD600A64483 /* AllAssetsViewController.xib in Resources */,
@@ -769,6 +800,7 @@
 				C3BFAC572149014200326BD3 /* Main.storyboard in Resources */,
 				C3EDF165214FA2A700A64483 /* TypeManagerViewController.xib in Resources */,
 				C3588F822149F1C400996E1A /* HomeViewController.xib in Resources */,
+				C3859A502154D599007A39E0 /* AssetsViewCell.xib in Resources */,
 				C3859A3821547EB7007A39E0 /* SettingNormalViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -854,6 +886,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3588F76214902D700996E1A /* UIView+Extension.m in Sources */,
+				C3859A532154D5EF007A39E0 /* AssetsViewCell.m in Sources */,
 				C3BFAC5F2149014300326BD3 /* main.m in Sources */,
 				C3588F97214A0E7000996E1A /* HomeTableViewCell.m in Sources */,
 				C376ACE3214B6CC3005D378B /* Dao.m in Sources */,
@@ -868,6 +901,8 @@
 				C3EDF192215200BC00A64483 /* BankCreator.m in Sources */,
 				C3EDF14B214D44AE00A64483 /* KeyboardView.m in Sources */,
 				C3859A3721547EB7007A39E0 /* SettingNormalViewCell.m in Sources */,
+				C3859A5B2154E8ED007A39E0 /* AssetsDetailView.m in Sources */,
+				C3859A572154DFED007A39E0 /* AssetsDetailViewController.m in Sources */,
 				C3BFAC512149014200326BD3 /* AppDelegate.m in Sources */,
 				C32C68CC2152442C00249A74 /* ChooseAssetsViewCell.m in Sources */,
 				C3EDF1762150B07A00A64483 /* AddTypeViewCell.m in Sources */,
@@ -900,11 +935,12 @@
 				C376ACF2214C8896005D378B /* AssetsTransferRecordWithAssetsModel.m in Sources */,
 				C376ACD6214B6196005D378B /* AssetsModifyRecordModel.m in Sources */,
 				C376ACEF214B8D1B005D378B /* AssetsTransferRecordModel.m in Sources */,
-				C3859A4D21549C09007A39E0 /* AssetsManagerViewController.m in Sources */,
+				C3859A4D21549C09007A39E0 /* AssetsViewController.m in Sources */,
 				C3859A472154941A007A39E0 /* BudgetViewController.m in Sources */,
 				C376ACE9214B7C1D005D378B /* RecordDao.m in Sources */,
 				C376ACDD214B6A83005D378B /* AssetsMoneyModel.m in Sources */,
 				C376ACD0214B5A2D005D378B /* RecordTypeModel.m in Sources */,
+				C3859A5F2154EAC3007A39E0 /* AssetsDetailViewCell.m in Sources */,
 				C376ACDA214B6820005D378B /* AssetsDao.m in Sources */,
 				C3588F79214902D700996E1A /* UIScrollView+VTEmpty.m in Sources */,
 				C32C68CF215283D000249A74 /* ConfigManager.m in Sources */,

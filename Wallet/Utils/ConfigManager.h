@@ -17,6 +17,7 @@
 + (NSArray<NSString *> *)getSymbol;
 + (NSArray<NSString *> *)getSimpleSymbol;
 + (NSInteger)getBudget;
+//设置预算，元为单位
 + (void)setBudget:(NSInteger)budget;
 + (BOOL)isFast;
 + (void)setFast:(BOOL)fast;

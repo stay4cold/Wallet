@@ -24,7 +24,6 @@
                 <outlet property="indicatorView2" destination="QLU-nr-eoB" id="W01-XG-mPX"/>
                 <outlet property="propertyLabel" destination="qgb-x6-vvg" id="Ef1-jJ-GNJ"/>
                 <outlet property="propertyTitleLabel" destination="h0O-RG-uNE" id="L5O-yW-Q86"/>
-                <outlet property="scrollView" destination="xoN-LW-dSj" id="HrH-eq-aXr"/>
                 <outlet property="tableView" destination="hon-gN-rxN" id="hgI-t4-Pwh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -199,7 +198,7 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" red="0.58431372550000005" green="0.46274509800000002" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.58431372549019611" green="0.46274509803921571" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="ii6-wi-IM1" firstAttribute="leading" secondItem="xoN-LW-dSj" secondAttribute="leading" id="0Vv-Gd-j7w"/>
                         <constraint firstAttribute="trailing" secondItem="ii6-wi-IM1" secondAttribute="trailing" id="7vW-ar-DEV"/>
@@ -209,6 +208,9 @@
                         <constraint firstItem="ii6-wi-IM1" firstAttribute="centerY" secondItem="xoN-LW-dSj" secondAttribute="centerY" id="YZq-Jy-VWH"/>
                         <constraint firstItem="ii6-wi-IM1" firstAttribute="width" secondItem="xoN-LW-dSj" secondAttribute="width" multiplier="2" id="yMk-D4-7Z2"/>
                     </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="pSJ-NH-Dme"/>
+                    </connections>
                 </scrollView>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZmR-cs-FG1" userLabel="Indicator View1">
                     <rect key="frame" x="180" y="155" width="5" height="5"/>
@@ -239,10 +241,14 @@
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hon-gN-rxN">
                     <rect key="frame" x="0.0" y="170" width="375" height="497"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="JI1-f3-MYD"/>
+                        <outlet property="delegate" destination="-1" id="Zyu-Ao-K9e"/>
+                    </connections>
                 </tableView>
                 <button opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOe-G4-2Kq" userLabel="Add">
                     <rect key="frame" x="159.5" y="586" width="56" height="56"/>
-                    <color key="backgroundColor" red="0.58431372549019611" green="0.46274509803921571" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.58431372549019611" green="0.46274509803921571" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="56" id="8KN-YY-Lnn"/>
                         <constraint firstAttribute="height" constant="56" id="8MP-T0-wc1"/>

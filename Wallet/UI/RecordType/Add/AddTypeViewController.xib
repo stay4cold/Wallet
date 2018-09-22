@@ -41,7 +41,7 @@
                         </textField>
                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ITh-4g-FGy" userLabel="Divider View">
                             <rect key="frame" x="65" y="53" width="118.5" height="2"/>
-                            <color key="backgroundColor" red="0.58431372549019611" green="0.46274509803921571" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.58431372549019611" green="0.46274509803921571" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="2" id="CXh-V5-Fhj"/>
                             </constraints>

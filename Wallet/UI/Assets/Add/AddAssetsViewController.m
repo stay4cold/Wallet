@@ -10,6 +10,7 @@
 #import "BankViewController.h"
 #import "AssetsDao.h"
 #import "ChooseAssetsViewController.h"
+#import "AssetsModifyRecordDao.h"
 
 @interface AddAssetsViewController () <BankViewDelegate, UITextFieldDelegate>
 
@@ -40,7 +41,7 @@
         self.title = @"修改资产账户";
         self.typeImageView.image = [UIImage imageNamed:self.assetsModel.img_name];
         self.nameField.text = self.assetsModel.name;
-        self.remainField.text = self.assetsModel.remark;
+        self.remarkField.text = self.assetsModel.remark;
         self.remainField.text = [DecimalUtils fen2YuanNoSeparator:self.assetsModel.money];
         if (self.assetsModel.type == 2) {
             [self.typeImageView addGestureRecognizer:self.tapGesture];
@@ -67,7 +68,7 @@
         [self showHUDInView:self.view justWithText:@"请输入资产名称" disMissAfterDelay:2];
         return;
     }
-    NSString *remarkName = [self.remainField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    NSString *remarkName = [self.remarkField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     NSDecimalNumber *money = [DecimalUtils yuan2Fen:[self.remainField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]]];
     if (self.assetsTypeModel) {//新建
         AssetsModel *assets = [AssetsModel new];
@@ -79,16 +80,22 @@
         assets.money = money;
         assets.money_init = money;
         [AssetsDao insertAssets:[NSMutableArray arrayWithObject:assets]];
-        for (UIViewController *vc in self.navigationController.viewControllers) {
-            if ([vc isKindOfClass:[ChooseAssetsViewController class]]) {
-                [self.navigationController popToViewController:vc animated:YES];
-            }
-        }
+        UIViewController *target = [self.navigationController.viewControllers objectAtIndex:(self.navigationController.viewControllers.count -3)];
+        [self.navigationController popToViewController:target animated:YES];
     } else {//更新
         self.assetsModel.name = name;
         self.assetsModel.remark = remarkName;
+        NSDecimalNumber *moneyBefore = self.assetsModel.money;
         self.assetsModel.money = money;
         [AssetsDao updateAssets:[NSMutableArray arrayWithObject:self.assetsModel]];
+        if (![money isEqual:moneyBefore]) {
+            AssetsModifyRecordModel *modifyModel = [AssetsModifyRecordModel new];
+            modifyModel.assets_id = self.assetsModel.ID;
+            modifyModel.money_before = moneyBefore;
+            modifyModel.money = self.assetsModel.money;
+            modifyModel.create_time = [NSDate date];
+            [AssetsModifyRecordDao insertAssetsRecords:[NSMutableArray arrayWithObject:modifyModel]];
+        }
         [self.navigationController popViewControllerAnimated:YES];
     }
 }

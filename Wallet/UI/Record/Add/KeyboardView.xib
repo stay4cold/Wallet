@@ -70,7 +70,7 @@
                 </button>
                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRl-MK-63T">
                     <rect key="frame" x="282" y="400.5" width="93" height="266.5"/>
-                    <color key="backgroundColor" red="0.58431372550000005" green="0.46274509800000002" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.58431372549019611" green="0.46274509803921571" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
                     <state key="normal" title="确定">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -40,7 +40,7 @@
                         <segment title="支出"/>
                         <segment title="收入"/>
                     </segments>
-                    <color key="tintColor" red="0.58431372549019611" green="0.46274509803921571" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" red="0.58431372549019611" green="0.46274509803921571" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <connections>
                         <action selector="typeChanged:" destination="-1" eventType="valueChanged" id="S07-AN-6tF"/>
                     </connections>

@@ -12,7 +12,7 @@
 @implementation AssetsTransferRecordDao
 
 + (NSMutableArray<AssetsTransferRecordWithAssetsModel *> *)getTransferRecordsById:(NSNumber *)ID {
-    FMResultSet *result = [[Dao sharedDao] executeQuery:@"SELECT transfer_record.*, assets_from.name AS assetsNameFrom, assets_to.name AS assetsNameTo FROM Assets AS assets_from, Assets AS assets_to, AssetsTransferRecord AS transfer_record WHERE assets_from.ID = transfer_record.assets_id_from AND assets_to.ID = transfer_record.assets_id_to AND (transfer_record.assets_id_form= ? OR transfer_record.assets_id_to= ?) ORDER BY transfer_record.time DESC, transfer_record.create_time DESC" withArgumentsInArray:@[ID, ID]];
+    FMResultSet *result = [[Dao sharedDao] executeQuery:@"SELECT transfer_record.*, assets_from.name AS assetsNameFrom, assets_to.name AS assetsNameTo FROM Assets AS assets_from, Assets AS assets_to, AssetsTransferRecord AS transfer_record WHERE assets_from.ID = transfer_record.assets_id_from AND assets_to.ID = transfer_record.assets_id_to AND (transfer_record.assets_id_from= ? OR transfer_record.assets_id_to= ?) ORDER BY transfer_record.time DESC, transfer_record.create_time DESC" withArgumentsInArray:@[ID, ID]];
     NSMutableArray *arr = [NSMutableArray array];
     while ([result next]) {
         AssetsTransferRecordWithAssetsModel *model = [AssetsTransferRecordWithAssetsModel new];

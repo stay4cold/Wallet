@@ -15,14 +15,13 @@
 #import "RecordDao.h"
 #import "DateUtils.h"
 #import "TimeRecordModel.h"
-#import "AssetsManagerViewController.h"
+#import "AssetsViewController.h"
 #import "AssetsDao.h"
 
 static NSString *kCellId = @"cell";
 
 @interface HomeViewController ()<UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
 
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UILabel *expendTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *expendLabel;
 @property (weak, nonatomic) IBOutlet UILabel *budgetTitleLabel;
@@ -52,11 +51,16 @@ static NSString *kCellId = @"cell";
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"settings"] style:UIBarButtonItemStyleDone target:self action:@selector(toSettingController)];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"statistics"] style:UIBarButtonItemStyleDone target:self action:@selector(toStatisticController)];
     
-    self.scrollView.delegate = self;
-    self.scrollView.backgroundColor = ColorPrimary;
+    //初始化type
+    if ([RecordTypeDao getRecordTypeCount] < 1) {
+        BOOL res = [RecordTypeDao initRecordTypes];
+        if (!res) {
+            NSLog(@"init record type failed !!!");
+        }
+    }
     
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
+    self.tableView.emptyDataSetSource = self.tableView;
+    self.tableView.emptyDataSetDelegate = self.tableView;
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([HomeTableViewCell class]) bundle:nil] forCellReuseIdentifier:kCellId];
     
     self.indicatorView2.alpha = 0.5;
@@ -68,15 +72,6 @@ static NSString *kCellId = @"cell";
     UITapGestureRecognizer *propertyGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapProperty:)];
     [self.propertyLabel addGestureRecognizer:propertyGesture];
     
-    self.tableView.loading = YES;
-    //初始化type
-    if ([RecordTypeDao getRecordTypeCount] < 1) {
-        BOOL res = [RecordTypeDao initRecordTypes];
-        if (!res) {
-            NSLog(@"init record type failed !!!");
-        }
-    }
-    self.tableView.loading = NO;
     if ([ConfigManager isFast]) {
         [self.navigationController pushViewController:[AddRecordViewController new] animated:YES];
     }
@@ -92,10 +87,14 @@ static NSString *kCellId = @"cell";
     [self.tableView reloadData];
     
     //更新支出
-     self.expendTitleLabel.text = [NSString stringWithFormat:@"本月支出(%@)", [ConfigManager getCurrentSymbol]];
-    self.budgetTitleLabel.text = [NSString stringWithFormat:@"剩余预算(%@)", [ConfigManager getCurrentSymbol]];
-    self.incomeTitleLabel.text = [NSString stringWithFormat:@"本月收入(%@)", [ConfigManager getCurrentSymbol]];
-    self.propertyTitleLabel.text = [NSString stringWithFormat:@"净资产(%@)", [ConfigManager getCurrentSymbol]];
+    NSString *symbol = [ConfigManager getCurrentSymbol];
+    if (symbol.length != 0) {
+        symbol = [NSString stringWithFormat:@"(%@)", symbol];
+    }
+     self.expendTitleLabel.text = [NSString stringWithFormat:@"本月支出%@", symbol];
+    self.budgetTitleLabel.text = [NSString stringWithFormat:@"剩余预算%@", symbol];
+    self.incomeTitleLabel.text = [NSString stringWithFormat:@"本月收入%@", symbol];
+    self.propertyTitleLabel.text = [NSString stringWithFormat:@"净资产%@", symbol];
     NSDecimalNumber *outlaySum = [NSDecimalNumber zero];
     NSDecimalNumber *incomeSum = [NSDecimalNumber zero];
     for (SumMoneyModel *sumMoney in [self currentMonthSumMoney]) {
@@ -111,7 +110,7 @@ static NSString *kCellId = @"cell";
         self.budgetLabel.font = [UIFont systemFontOfSize:22];
     } else {
         NSDecimalNumber *budget = [NSDecimalNumber decimalNumberWithString:[NSString stringWithFormat:@"%ld", [ConfigManager getBudget]]];
-        self.budgetLabel.text = [DecimalUtils fen2Yuan:[[budget decimalNumberByMultiplyingBy:[NSDecimalNumber decimalNumberWithString:@"10"]] decimalNumberBySubtracting:outlaySum]];
+        self.budgetLabel.text = [DecimalUtils fen2Yuan:[[budget decimalNumberByMultiplyingBy:[NSDecimalNumber decimalNumberWithString:@"100"]] decimalNumberBySubtracting:outlaySum]];
         self.budgetLabel.font = [UIFont systemFontOfSize:30];
     }
     self.incomeLabel.text = [DecimalUtils fen2Yuan:incomeSum];
@@ -173,7 +172,7 @@ static NSString *kCellId = @"cell";
 }
 
 - (void)tapProperty:(UILabel *)sender {
-    [self.navigationController pushViewController:[AssetsManagerViewController new] animated:YES];
+    [self.navigationController pushViewController:[AssetsViewController new] animated:YES];
 }
 
 - (NSMutableArray<TimeRecordModel *> *)dataArray {

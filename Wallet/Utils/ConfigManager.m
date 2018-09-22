@@ -28,7 +28,7 @@ static NSString *const kSymbol = @"symbol";
 + (NSString *)getCurrentSymbol {
     NSString *symbol = [[NSUserDefaults standardUserDefaults] stringForKey:kSymbol];
     if (symbol.length == 0) {
-        symbol = [self getSimpleSymbol][0];
+        symbol = [self getSimpleSymbol][8];
         [self setCurrentSymbol:symbol];
     }
     return symbol;

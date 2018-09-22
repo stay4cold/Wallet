@@ -10,7 +10,7 @@
 #import "SettingNormalViewCell.h"
 #import "TypeManagerViewController.h"
 #import "BudgetViewController.h"
-#import "AssetsManagerViewController.h"
+#import "AssetsViewController.h"
 
 @implementation NormalItem
 
@@ -48,6 +48,8 @@
     
     self.title = @"设置";
     
+    self.tableView.estimatedRowHeight = 70;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([SettingNormalViewCell class]) bundle:nil] forCellReuseIdentifier:@"cell"];
 }
 
@@ -85,7 +87,7 @@
             [self showBudget];
             break;
         case 1:
-            [self.navigationController pushViewController:[AssetsManagerViewController new] animated:YES];
+            [self.navigationController pushViewController:[AssetsViewController new] animated:YES];
             break;
         case 2:
             [self.navigationController pushViewController:[BudgetViewController new] animated:YES];
@@ -124,7 +126,10 @@
     WS(ws);
     UIAlertController *ac = [UIAlertController alertControllerWithTitle:@"设置预算" message:nil preferredStyle:UIAlertControllerStyleAlert];
     [ac addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
-        textField.text = [NSString stringWithFormat:@"%ld", [ConfigManager getBudget]];
+        NSInteger budget = [ConfigManager getBudget];
+        if (budget != 0) {
+            textField.text = [NSString stringWithFormat:@"%ld", [ConfigManager getBudget]];
+        }
         textField.keyboardType = UIKeyboardTypeNumberPad;
     }];
     

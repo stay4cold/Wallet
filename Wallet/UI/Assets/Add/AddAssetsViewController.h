@@ -14,4 +14,5 @@
 
 @property (nonatomic, strong) AssetsTypeModel *assetsTypeModel;
 @property (nonatomic, strong) AssetsModel *assetsModel;
+
 @end

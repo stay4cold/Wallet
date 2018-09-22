@@ -13,6 +13,9 @@
 //分转化为元
 + (NSString *)fen2Yuan:(NSDecimalNumber *)fen {
     if (fen) {
+        if ([fen isEqual:NSDecimalNumber.notANumber]) {
+            fen = NSDecimalNumber.zero;
+        }
         NSDecimalNumber *yuan = [fen decimalNumberByDividingBy:[NSDecimalNumber decimalNumberWithString:@"100"]];
         NSNumberFormatter *f = [NSNumberFormatter new];
         f.groupingSeparator = @"";
@@ -25,6 +28,9 @@
 
 + (NSString *)formatNum:(NSString *)num {
     NSDecimalNumber *dn = [NSDecimalNumber decimalNumberWithString:num];
+    if ([dn isEqual:NSDecimalNumber.notANumber]) {
+        dn = NSDecimalNumber.zero;
+    }
     return [[self formatter:num] stringFromNumber:dn];
 }
 
@@ -35,13 +41,14 @@
 
 //元转换为分
 + (NSDecimalNumber *)yuan2Fen:(NSString *)yuan {
-    if (yuan.length == 0) {
-        return [NSDecimalNumber decimalNumberWithString:@"0"];
+    NSDecimalNumber *yuanNum = [NSDecimalNumber decimalNumberWithString:yuan];
+    if ([yuanNum isEqual:NSDecimalNumber.notANumber]) {
+        return NSDecimalNumber.zero;
     } else {
         // 元最多两位小数，可直接去掉小数位
         NSDecimalNumber *multi = [NSDecimalNumber decimalNumberWithString:@"100"];
         NSDecimalNumberHandler *handler = [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode:NSRoundDown scale:0 raiseOnExactness:NO raiseOnOverflow:NO raiseOnUnderflow:NO raiseOnDivideByZero:YES];
-        return [[NSDecimalNumber decimalNumberWithString:yuan] decimalNumberByMultiplyingBy:multi withBehavior:handler];
+        return [yuanNum decimalNumberByMultiplyingBy:multi withBehavior:handler];
     }
 }
 

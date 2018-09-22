@@ -87,7 +87,13 @@
             return [text stringByAppendingString:input];
         }
     } else {
-        return [text stringByAppendingString:input];
+        if ([@"." isEqualToString:input]) {
+            return [text stringByAppendingString:input];
+        } else {
+            if (text.length + input.length <= 6) {
+                return [text stringByAppendingString:input];
+            }
+        }
     }
     return text;
 }

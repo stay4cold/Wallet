@@ -33,7 +33,7 @@
                         <segment title="支出"/>
                         <segment title="收入"/>
                     </segments>
-                    <color key="tintColor" red="0.58431372549019611" green="0.46274509803921571" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" red="0.58431372549019611" green="0.46274509803921571" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <connections>
                         <action selector="typeChanged:" destination="-1" eventType="valueChanged" id="Lqp-N8-JUi"/>
                     </connections>
@@ -48,7 +48,7 @@
                 </view>
                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDz-3e-D2Z">
                     <rect key="frame" x="159.5" y="586" width="56" height="56"/>
-                    <color key="backgroundColor" red="0.58431372549019611" green="0.46274509803921571" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.58431372549019611" green="0.46274509803921571" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="56" id="6Fk-Ie-uB8"/>
                         <constraint firstAttribute="width" constant="56" id="97U-SR-aok"/>
