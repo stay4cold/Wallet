@@ -59,6 +59,7 @@
 		C3859A602154EAC3007A39E0 /* AssetsDetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859A5E2154EAC3007A39E0 /* AssetsDetailViewCell.xib */; };
 		C3859A6521566563007A39E0 /* TransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A6321566563007A39E0 /* TransferViewController.m */; };
 		C3859A6621566563007A39E0 /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859A6421566563007A39E0 /* TransferViewController.xib */; };
+		C3859A6C21588673007A39E0 /* UIViewController+BackItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A6B21588673007A39E0 /* UIViewController+BackItem.m */; };
 		C3BFAC512149014200326BD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BFAC502149014200326BD3 /* AppDelegate.m */; };
 		C3BFAC572149014200326BD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3BFAC552149014200326BD3 /* Main.storyboard */; };
 		C3BFAC592149014300326BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3BFAC582149014300326BD3 /* Assets.xcassets */; };
@@ -208,6 +209,8 @@
 		C3859A6221566563007A39E0 /* TransferViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferViewController.h; sourceTree = "<group>"; };
 		C3859A6321566563007A39E0 /* TransferViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransferViewController.m; sourceTree = "<group>"; };
 		C3859A6421566563007A39E0 /* TransferViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
+		C3859A6A21588673007A39E0 /* UIViewController+BackItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackItem.h"; sourceTree = "<group>"; };
+		C3859A6B21588673007A39E0 /* UIViewController+BackItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackItem.m"; sourceTree = "<group>"; };
 		C3BFAC4C2149014200326BD3 /* Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BFAC4F2149014200326BD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3BFAC502149014200326BD3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -337,6 +340,8 @@
 				C3588F66214902D700996E1A /* NSObject+HUD.m */,
 				C3588F68214902D700996E1A /* UIView+Extension.m */,
 				C3588F6C214902D700996E1A /* UIScrollView+VTEmpty.m */,
+				C3859A6A21588673007A39E0 /* UIViewController+BackItem.h */,
+				C3859A6B21588673007A39E0 /* UIViewController+BackItem.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -916,6 +921,7 @@
 				C3EDF1712150A44900A64483 /* AddTypeViewController.m in Sources */,
 				C3859A402154825F007A39E0 /* SettingViewController.m in Sources */,
 				C3EDF192215200BC00A64483 /* BankCreator.m in Sources */,
+				C3859A6C21588673007A39E0 /* UIViewController+BackItem.m in Sources */,
 				C3EDF14B214D44AE00A64483 /* KeyboardView.m in Sources */,
 				C3859A3721547EB7007A39E0 /* SettingNormalViewCell.m in Sources */,
 				C3859A5B2154E8ED007A39E0 /* AssetsDetailView.m in Sources */,
