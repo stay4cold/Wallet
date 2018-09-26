@@ -15,4 +15,5 @@ target 'Wallet' do
     pod 'XLPagerTabStrip', '~> 3.0'
     pod 'SDCycleScrollView'
     pod 'FMDB'
+    pod 'Charts'
 end

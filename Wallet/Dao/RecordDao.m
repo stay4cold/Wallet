@@ -37,7 +37,7 @@
                            
 }
 + (NSMutableArray<RecordWithTypeModel *> *)getRangeRecordWithTypesFrom:(NSDate *)from to:(NSDate *)to type:(RecordType)type {
-    FMResultSet *result = [[Dao sharedDao] executeQuery:@"SELECT Record.*, RecordType.ID as r_ID, RecordType.name as r_name, RecordType.img_name as r_img_name, RecordType.type as r_type, RecordType.state as r_state, RecordType.ranking as r_ranking from Record LEFT JOIN RecordType ON Record.record_type_id=RecordType.r_ID WHERE (RecordType.r_type=? AND time BETWEEN ? AND ?) ORDER BY time DESC, create_time DESC" withArgumentsInArray:@[@(type), from, to]];
+    FMResultSet *result = [[Dao sharedDao] executeQuery:@"SELECT Record.*, RecordType.ID as r_ID, RecordType.name as r_name, RecordType.img_name as r_img_name, RecordType.type as r_type, RecordType.state as r_state, RecordType.ranking as r_ranking from Record LEFT JOIN RecordType ON Record.record_type_id=r_ID WHERE (r_type=? AND time BETWEEN ? AND ?) ORDER BY time DESC, create_time DESC" withArgumentsInArray:@[@(type), from, to]];
     NSMutableArray *arr = [NSMutableArray array];
     while ([result next]) {
         RecordWithTypeModel *model = [RecordWithTypeModel new];
@@ -60,7 +60,7 @@ model.money = [NSDecimalNumber decimalNumberWithString:[result stringForColumn:@
     return arr;
 }
 + (NSMutableArray<RecordWithTypeModel *> *)getRangeRecordWithTypesFrom:(NSDate *)from to:(NSDate *)to type:(RecordType)type typeId:(NSNumber *)typeId {
-    FMResultSet *result = [[Dao sharedDao] executeQuery:@"SELECT Record.*, RecordType.ID as r_ID, RecordType.name as r_name, RecordType.img_name as r_img_name, RecordType.type as r_type, RecordType.state as r_state, RecordType.ranking as r_ranking from Record LEFT JOIN RecordType ON Record.record_type_id=RecordType.r_ID from Record LEFT JOIN RecordType ON Record.record_type_id=RecordType.r_ID WHERE (RecordType.r_type=? AND Record.record_type_id=? AND time BETWEEN ? AND ?) ORDER BY time DESC, create_time DESC" withArgumentsInArray:@[@(type),typeId, from, to]];
+    FMResultSet *result = [[Dao sharedDao] executeQuery:@"SELECT Record.*, RecordType.ID as r_ID, RecordType.name as r_name, RecordType.img_name as r_img_name, RecordType.type as r_type, RecordType.state as r_state, RecordType.ranking as r_ranking from Record LEFT JOIN RecordType ON Record.record_type_id=r_ID WHERE (r_type=? AND Record.record_type_id=? AND time BETWEEN ? AND ?) ORDER BY time DESC, create_time DESC" withArgumentsInArray:@[@(type),typeId, from, to]];
     NSMutableArray *arr = [NSMutableArray array];
     while ([result next]) {
         RecordWithTypeModel *model = [RecordWithTypeModel new];
@@ -83,7 +83,7 @@ model.money = [NSDecimalNumber decimalNumberWithString:[result stringForColumn:@
     return arr;
 }
 + (NSMutableArray<RecordWithTypeModel *> *)getRecordWithTypesSortMoneyFrom:(NSDate *)from to:(NSDate *)to type:(RecordType)type typeId:(NSNumber *)typeId {
-    FMResultSet *result = [[Dao sharedDao] executeQuery:@"SELECT Record.*, RecordType.ID as r_ID, RecordType.name as r_name, RecordType.img_name as r_img_name, RecordType.type as r_type, RecordType.state as r_state, RecordType.ranking as r_ranking from Record LEFT JOIN RecordType ON Record.record_type_id=RecordType.r_ID from Record LEFT JOIN RecordType ON Record.record_type_id=RecordType.r_ID WHERE (RecordType.r_type=? AND Record.record_type_id=? AND time BETWEEN ? AND ?) ORDER BY money DESC, create_time DESC" withArgumentsInArray:@[@(type), typeId, from, to]];
+    FMResultSet *result = [[Dao sharedDao] executeQuery:@"SELECT Record.*, RecordType.ID as r_ID, RecordType.name as r_name, RecordType.img_name as r_img_name, RecordType.type as r_type, RecordType.state as r_state, RecordType.ranking as r_ranking from Record LEFT JOIN RecordType ON Record.record_type_id=r_ID WHERE (r_type=? AND Record.record_type_id=? AND time BETWEEN ? AND ?) ORDER BY money DESC, create_time DESC" withArgumentsInArray:@[@(type), typeId, from, to]];
     NSMutableArray *arr = [NSMutableArray array];
     while ([result next]) {
         RecordWithTypeModel *model = [RecordWithTypeModel new];

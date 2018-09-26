@@ -60,6 +60,17 @@
 		C3859A6521566563007A39E0 /* TransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A6321566563007A39E0 /* TransferViewController.m */; };
 		C3859A6621566563007A39E0 /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859A6421566563007A39E0 /* TransferViewController.xib */; };
 		C3859A6C21588673007A39E0 /* UIViewController+BackItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A6B21588673007A39E0 /* UIViewController+BackItem.m */; };
+		C3859A752158A338007A39E0 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3859A742158A338007A39E0 /* Wallet.swift */; };
+		C3859A812158C7AA007A39E0 /* BillView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A802158C7AA007A39E0 /* BillView.m */; };
+		C3859A852158C7BD007A39E0 /* ReportView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A842158C7BD007A39E0 /* ReportView.m */; };
+		C3859A872159C425007A39E0 /* BillView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859A862159C424007A39E0 /* BillView.xib */; };
+		C3859A8D215B34C3007A39E0 /* ReportView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859A8C215B34C3007A39E0 /* ReportView.xib */; };
+		C3859A91215B3796007A39E0 /* ReportViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A8F215B3796007A39E0 /* ReportViewCell.m */; };
+		C3859A92215B3796007A39E0 /* ReportViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859A90215B3796007A39E0 /* ReportViewCell.xib */; };
+		C3859A95215B69EB007A39E0 /* PercentFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A94215B69EB007A39E0 /* PercentFormatter.m */; };
+		C3859A9A215B72B4007A39E0 /* TypeRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A98215B72B4007A39E0 /* TypeRecordViewController.m */; };
+		C3859A9B215B72B4007A39E0 /* TypeRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859A99215B72B4007A39E0 /* TypeRecordViewController.xib */; };
+		C3859A9E215B7AE9007A39E0 /* TypeRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A9D215B7AE9007A39E0 /* TypeRecordView.m */; };
 		C3BFAC512149014200326BD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BFAC502149014200326BD3 /* AppDelegate.m */; };
 		C3BFAC572149014200326BD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3BFAC552149014200326BD3 /* Main.storyboard */; };
 		C3BFAC592149014300326BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3BFAC582149014300326BD3 /* Assets.xcassets */; };
@@ -211,6 +222,24 @@
 		C3859A6421566563007A39E0 /* TransferViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
 		C3859A6A21588673007A39E0 /* UIViewController+BackItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackItem.h"; sourceTree = "<group>"; };
 		C3859A6B21588673007A39E0 /* UIViewController+BackItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackItem.m"; sourceTree = "<group>"; };
+		C3859A732158A338007A39E0 /* Wallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wallet-Bridging-Header.h"; sourceTree = "<group>"; };
+		C3859A742158A338007A39E0 /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		C3859A7F2158C7AA007A39E0 /* BillView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BillView.h; sourceTree = "<group>"; };
+		C3859A802158C7AA007A39E0 /* BillView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BillView.m; sourceTree = "<group>"; };
+		C3859A832158C7BD007A39E0 /* ReportView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReportView.h; sourceTree = "<group>"; };
+		C3859A842158C7BD007A39E0 /* ReportView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReportView.m; sourceTree = "<group>"; };
+		C3859A862159C424007A39E0 /* BillView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BillView.xib; sourceTree = "<group>"; };
+		C3859A8C215B34C3007A39E0 /* ReportView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReportView.xib; path = Wallet/UI/Statistic/Report/ReportView.xib; sourceTree = SOURCE_ROOT; };
+		C3859A8E215B3796007A39E0 /* ReportViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReportViewCell.h; sourceTree = "<group>"; };
+		C3859A8F215B3796007A39E0 /* ReportViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReportViewCell.m; sourceTree = "<group>"; };
+		C3859A90215B3796007A39E0 /* ReportViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportViewCell.xib; sourceTree = "<group>"; };
+		C3859A93215B69EB007A39E0 /* PercentFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PercentFormatter.h; sourceTree = "<group>"; };
+		C3859A94215B69EB007A39E0 /* PercentFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PercentFormatter.m; sourceTree = "<group>"; };
+		C3859A97215B72B4007A39E0 /* TypeRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeRecordViewController.h; sourceTree = "<group>"; };
+		C3859A98215B72B4007A39E0 /* TypeRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypeRecordViewController.m; sourceTree = "<group>"; };
+		C3859A99215B72B4007A39E0 /* TypeRecordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeRecordViewController.xib; sourceTree = "<group>"; };
+		C3859A9C215B7AE9007A39E0 /* TypeRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeRecordView.h; sourceTree = "<group>"; };
+		C3859A9D215B7AE9007A39E0 /* TypeRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypeRecordView.m; sourceTree = "<group>"; };
 		C3BFAC4C2149014200326BD3 /* Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BFAC4F2149014200326BD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3BFAC502149014200326BD3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -374,6 +403,8 @@
 		C3588F89214A0C0300996E1A /* Statistic */ = {
 			isa = PBXGroup;
 			children = (
+				C3859A822158C7B1007A39E0 /* Report */,
+				C3859A7E2158C631007A39E0 /* Bill */,
 				C3588F8F214A0CDC00996E1A /* StatisticViewController.h */,
 				C3588F90214A0CDC00996E1A /* StatisticViewController.m */,
 				C3588F91214A0CDC00996E1A /* StatisticViewController.xib */,
@@ -529,6 +560,43 @@
 			path = Transfer;
 			sourceTree = "<group>";
 		};
+		C3859A7E2158C631007A39E0 /* Bill */ = {
+			isa = PBXGroup;
+			children = (
+				C3859A7F2158C7AA007A39E0 /* BillView.h */,
+				C3859A802158C7AA007A39E0 /* BillView.m */,
+				C3859A862159C424007A39E0 /* BillView.xib */,
+			);
+			path = Bill;
+			sourceTree = "<group>";
+		};
+		C3859A822158C7B1007A39E0 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				C3859A832158C7BD007A39E0 /* ReportView.h */,
+				C3859A842158C7BD007A39E0 /* ReportView.m */,
+				C3859A8C215B34C3007A39E0 /* ReportView.xib */,
+				C3859A8E215B3796007A39E0 /* ReportViewCell.h */,
+				C3859A8F215B3796007A39E0 /* ReportViewCell.m */,
+				C3859A90215B3796007A39E0 /* ReportViewCell.xib */,
+				C3859A93215B69EB007A39E0 /* PercentFormatter.h */,
+				C3859A94215B69EB007A39E0 /* PercentFormatter.m */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		C3859A96215B7298007A39E0 /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				C3859A97215B72B4007A39E0 /* TypeRecordViewController.h */,
+				C3859A98215B72B4007A39E0 /* TypeRecordViewController.m */,
+				C3859A99215B72B4007A39E0 /* TypeRecordViewController.xib */,
+				C3859A9C215B7AE9007A39E0 /* TypeRecordView.h */,
+				C3859A9D215B7AE9007A39E0 /* TypeRecordView.m */,
+			);
+			path = Type;
+			sourceTree = "<group>";
+		};
 		C3BFAC432149014200326BD3 = {
 			isa = PBXGroup;
 			children = (
@@ -569,6 +637,8 @@
 				C3588F7C2149066B00996E1A /* PrefixHeader.pch */,
 				C3588F872149F56700996E1A /* WalletMacro.h */,
 				C376ACBF214B4C59005D378B /* WalletEnumHeader.h */,
+				C3859A742158A338007A39E0 /* Wallet.swift */,
+				C3859A732158A338007A39E0 /* Wallet-Bridging-Header.h */,
 			);
 			path = Wallet;
 			sourceTree = "<group>";
@@ -607,6 +677,7 @@
 		C3EDF15E214FA22600A64483 /* Record */ = {
 			isa = PBXGroup;
 			children = (
+				C3859A96215B7298007A39E0 /* Type */,
 				C376ACB9214A62BF005D378B /* Add */,
 			);
 			path = Record;
@@ -765,6 +836,7 @@
 				TargetAttributes = {
 					C3BFAC4B2149014200326BD3 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					C3BFAC632149014300326BD3 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -803,7 +875,9 @@
 			files = (
 				C3859A602154EAC3007A39E0 /* AssetsDetailViewCell.xib in Resources */,
 				C3BFAC5C2149014300326BD3 /* LaunchScreen.storyboard in Resources */,
+				C3859A92215B3796007A39E0 /* ReportViewCell.xib in Resources */,
 				C3588F98214A0E7000996E1A /* HomeTableViewCell.xib in Resources */,
+				C3859A872159C425007A39E0 /* BillView.xib in Resources */,
 				C3859A4E21549C09007A39E0 /* AssetsViewController.xib in Resources */,
 				C32C68C9215243E000249A74 /* ChooseAssetsViewCell.xib in Resources */,
 				C3EDF14D214D58F700A64483 /* KeyboardView.xib in Resources */,
@@ -812,6 +886,7 @@
 				C376ACB8214A54BF005D378B /* ReviewViewController.xib in Resources */,
 				C3859A6621566563007A39E0 /* TransferViewController.xib in Resources */,
 				C3588F93214A0CDC00996E1A /* StatisticViewController.xib in Resources */,
+				C3859A8D215B34C3007A39E0 /* ReportView.xib in Resources */,
 				C3EDF1802150FAD600A64483 /* AllAssetsViewController.xib in Resources */,
 				C376ACBE214A62D4005D378B /* AddRecordViewController.xib in Resources */,
 				C3EDF1722150A44900A64483 /* AddTypeViewController.xib in Resources */,
@@ -820,6 +895,7 @@
 				C3EDF16D2150953400A64483 /* TypeTableViewCell.xib in Resources */,
 				C3EDF1772150B07A00A64483 /* AddTypeViewCell.xib in Resources */,
 				C3BFAC572149014200326BD3 /* Main.storyboard in Resources */,
+				C3859A9B215B72B4007A39E0 /* TypeRecordViewController.xib in Resources */,
 				C3EDF165214FA2A700A64483 /* TypeManagerViewController.xib in Resources */,
 				C3588F822149F1C400996E1A /* HomeViewController.xib in Resources */,
 				C3859A502154D599007A39E0 /* AssetsViewCell.xib in Resources */,
@@ -852,6 +928,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Wallet/Pods-Wallet-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
 				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
@@ -866,6 +943,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
@@ -912,6 +990,7 @@
 				C3BFAC5F2149014300326BD3 /* main.m in Sources */,
 				C3588F97214A0E7000996E1A /* HomeTableViewCell.m in Sources */,
 				C376ACE3214B6CC3005D378B /* Dao.m in Sources */,
+				C3859A9A215B72B4007A39E0 /* TypeRecordViewController.m in Sources */,
 				C3EDF1832150FF6C00A64483 /* AssetsListView.m in Sources */,
 				C3EDF147214CF8F100A64483 /* AddTypePageItemViewCell.m in Sources */,
 				C376ACBD214A62D4005D378B /* AddRecordViewController.m in Sources */,
@@ -931,7 +1010,9 @@
 				C3EDF1762150B07A00A64483 /* AddTypeViewCell.m in Sources */,
 				C376ACE6214B7A56005D378B /* RecordWithTypeModel.m in Sources */,
 				C3EDF18621513E6900A64483 /* AssetsTypeModel.m in Sources */,
+				C3859A95215B69EB007A39E0 /* PercentFormatter.m in Sources */,
 				C3859A6521566563007A39E0 /* TransferViewController.m in Sources */,
+				C3859A9E215B7AE9007A39E0 /* TypeRecordView.m in Sources */,
 				C376ACCA214B586F005D378B /* MonthSumMoneyModel.m in Sources */,
 				C3EDF18F2152005200A64483 /* BankModel.m in Sources */,
 				C3EDF16C2150953400A64483 /* TypeTableViewCell.m in Sources */,
@@ -945,6 +1026,7 @@
 				C376ACCD214B5931005D378B /* SumMoneyModel.m in Sources */,
 				C3588F852149F48D00996E1A /* UIColor+HexColors.m in Sources */,
 				C376ACB7214A54BF005D378B /* ReviewViewController.m in Sources */,
+				C3859A91215B3796007A39E0 /* ReportViewCell.m in Sources */,
 				C376ACE0214B6B08005D378B /* AssetsModifyRecordDao.m in Sources */,
 				C3588F812149F1C400996E1A /* HomeViewController.m in Sources */,
 				C3EDF18B2151D51300A64483 /* AddAssetsViewController.m in Sources */,
@@ -953,6 +1035,7 @@
 				C3EDF153214F4E4D00A64483 /* AddTypePageView.m in Sources */,
 				C3EDF140214CA80200A64483 /* DateUtils.m in Sources */,
 				C3EDF157214F561900A64483 /* AddTypePageViewCell.m in Sources */,
+				C3859A752158A338007A39E0 /* Wallet.swift in Sources */,
 				C3588F92214A0CDC00996E1A /* StatisticViewController.m in Sources */,
 				C32C68C72152421700249A74 /* ChooseAssetsViewController.m in Sources */,
 				C3EDF143214CEC4E00A64483 /* TypeSumMoneyModel.m in Sources */,
@@ -963,10 +1046,12 @@
 				C3859A472154941A007A39E0 /* BudgetViewController.m in Sources */,
 				C376ACE9214B7C1D005D378B /* RecordDao.m in Sources */,
 				C376ACDD214B6A83005D378B /* AssetsMoneyModel.m in Sources */,
+				C3859A812158C7AA007A39E0 /* BillView.m in Sources */,
 				C376ACD0214B5A2D005D378B /* RecordTypeModel.m in Sources */,
 				C3859A5F2154EAC3007A39E0 /* AssetsDetailViewCell.m in Sources */,
 				C376ACDA214B6820005D378B /* AssetsDao.m in Sources */,
 				C3588F79214902D700996E1A /* UIScrollView+VTEmpty.m in Sources */,
+				C3859A852158C7BD007A39E0 /* ReportView.m in Sources */,
 				C32C68CF215283D000249A74 /* ConfigManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1136,8 +1221,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1EA1B438440BFA3A3C800084 /* Pods-Wallet.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GDKG5KV62T;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1150,6 +1237,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.evan.Wallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Wallet/Wallet-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1158,8 +1248,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA553738447CCD9FF921C36A /* Pods-Wallet.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GDKG5KV62T;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1172,6 +1264,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.evan.Wallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Wallet/Wallet-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1179,6 +1273,7 @@
 		C3BFAC7C2149014300326BD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GDKG5KV62T;
@@ -1198,6 +1293,7 @@
 		C3BFAC7D2149014300326BD3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GDKG5KV62T;
@@ -1217,6 +1313,7 @@
 		C3BFAC7F2149014300326BD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GDKG5KV62T;
 				INFOPLIST_FILE = WalletUITests/Info.plist;
@@ -1235,6 +1332,7 @@
 		C3BFAC802149014300326BD3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GDKG5KV62T;
 				INFOPLIST_FILE = WalletUITests/Info.plist;

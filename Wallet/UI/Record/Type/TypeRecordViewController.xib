@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TypeRecordViewController">
+            <connections>
+                <outlet property="moneyView" destination="vgv-FT-f56" id="4hB-A7-csg"/>
+                <outlet property="timeView" destination="3Gh-n9-xuV" id="M4f-5p-d8S"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yjZ-Yv-hSf">
+                    <rect key="frame" x="25" y="25" width="325" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="f0L-8B-ria"/>
+                    </constraints>
+                    <segments>
+                        <segment title="按时间"/>
+                        <segment title="按金额"/>
+                    </segments>
+                    <color key="tintColor" red="0.58431372550000005" green="0.46274509800000002" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="typeChanged:" destination="-1" eventType="valueChanged" id="aY1-ya-LuZ"/>
+                    </connections>
+                </segmentedControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Gh-n9-xuV" userLabel="Type Time Record View" customClass="TypeRecordView">
+                    <rect key="frame" x="0.0" y="68" width="375" height="599"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgv-FT-f56" userLabel="Type Money Record View" customClass="TypeRecordView">
+                    <rect key="frame" x="0.0" y="68" width="375" height="599"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vgv-FT-f56" firstAttribute="top" secondItem="3Gh-n9-xuV" secondAttribute="top" id="1ag-7m-2Mv"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="3Gh-n9-xuV" secondAttribute="bottom" id="7XA-fV-qUu"/>
+                <constraint firstItem="3Gh-n9-xuV" firstAttribute="top" secondItem="yjZ-Yv-hSf" secondAttribute="bottom" constant="10" id="8RB-rw-dlV"/>
+                <constraint firstItem="vgv-FT-f56" firstAttribute="leading" secondItem="3Gh-n9-xuV" secondAttribute="leading" id="BKI-Vl-Skz"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="yjZ-Yv-hSf" secondAttribute="trailing" constant="25" id="Ke4-0I-tr6"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="3Gh-n9-xuV" secondAttribute="trailing" id="LiJ-Yu-wkH"/>
+                <constraint firstItem="yjZ-Yv-hSf" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="25" id="Zyf-Sm-ASn"/>
+                <constraint firstItem="vgv-FT-f56" firstAttribute="trailing" secondItem="3Gh-n9-xuV" secondAttribute="trailing" id="avp-iJ-e62"/>
+                <constraint firstItem="yjZ-Yv-hSf" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="5" id="bTa-hH-frG"/>
+                <constraint firstItem="vgv-FT-f56" firstAttribute="bottom" secondItem="3Gh-n9-xuV" secondAttribute="bottom" id="vio-Y8-Lm7"/>
+                <constraint firstItem="3Gh-n9-xuV" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="zrn-EE-gon"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>
