@@ -88,17 +88,17 @@
 
 + (BOOL)initRecordTypes {
     NSMutableArray *arr = [NSMutableArray array];
-    [arr addObject:[self recordTypeModel:@"餐饮" withImgName:@"type_eat" withType:RecordTypeOutlay withRanking:@(0)]];
-    [arr addObject:[self recordTypeModel:@"日用" withImgName:@"type_calendar" withType:RecordTypeOutlay withRanking:@(1)]];
-    [arr addObject:[self recordTypeModel:@"电子产品" withImgName:@"type_3c" withType:RecordTypeOutlay withRanking:@(2)]];
-    [arr addObject:[self recordTypeModel:@"衣服" withImgName:@"type_clothes" withType:RecordTypeOutlay withRanking:@(3)]];
-    [arr addObject:[self recordTypeModel:@"医疗" withImgName:@"type_pill" withType:RecordTypeOutlay withRanking:@(4)]];
-    [arr addObject:[self recordTypeModel:@"零食" withImgName:@"type_candy" withType:RecordTypeOutlay withRanking:@(5)]];
-    [arr addObject:[self recordTypeModel:@"礼物" withImgName:@"type_humanity" withType:RecordTypeOutlay withRanking:@(6)]];
-    [arr addObject:[self recordTypeModel:@"宠物" withImgName:@"type_pet" withType:RecordTypeOutlay withRanking:@(7)]];
+    [arr addObject:[self recordTypeModel:NSLocalizedString(@"type_eat", nil) withImgName:@"type_eat" withType:RecordTypeOutlay withRanking:@(0)]];
+    [arr addObject:[self recordTypeModel:NSLocalizedString(@"type_calendar", nil) withImgName:@"type_calendar" withType:RecordTypeOutlay withRanking:@(1)]];
+    [arr addObject:[self recordTypeModel:NSLocalizedString(@"type_3c", nil) withImgName:@"type_3c" withType:RecordTypeOutlay withRanking:@(2)]];
+    [arr addObject:[self recordTypeModel:NSLocalizedString(@"type_clothes", nil) withImgName:@"type_clothes" withType:RecordTypeOutlay withRanking:@(3)]];
+    [arr addObject:[self recordTypeModel:NSLocalizedString(@"type_pill", nil) withImgName:@"type_pill" withType:RecordTypeOutlay withRanking:@(4)]];
+    [arr addObject:[self recordTypeModel:NSLocalizedString(@"type_candy", nil) withImgName:@"type_candy" withType:RecordTypeOutlay withRanking:@(5)]];
+    [arr addObject:[self recordTypeModel:NSLocalizedString(@"type_humanity", nil) withImgName:@"type_humanity" withType:RecordTypeOutlay withRanking:@(6)]];
+    [arr addObject:[self recordTypeModel:NSLocalizedString(@"type_pet", nil) withImgName:@"type_pet" withType:RecordTypeOutlay withRanking:@(7)]];
     
-    [arr addObject:[self recordTypeModel:@"薪资" withImgName:@"type_salary" withType:RecordTypeIncome withRanking:@(0)]];
-    [arr addObject:[self recordTypeModel:@"兼职" withImgName:@"type_pluralism" withType:RecordTypeIncome withRanking:@(1)]];
+    [arr addObject:[self recordTypeModel:NSLocalizedString(@"type_salary", nil) withImgName:@"type_salary" withType:RecordTypeIncome withRanking:@(0)]];
+    [arr addObject:[self recordTypeModel:NSLocalizedString(@"type_pluralism", nil) withImgName:@"type_pluralism" withType:RecordTypeIncome withRanking:@(1)]];
     
     return [self insertRecordTypes:arr];
 }

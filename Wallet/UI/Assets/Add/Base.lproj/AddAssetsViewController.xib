@@ -68,8 +68,10 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="yjA-ty-XXu" firstAttribute="top" secondItem="me1-BK-dda" secondAttribute="bottom" constant="30" id="7IY-tj-25T"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ah9-SY-XCj" secondAttribute="trailing" constant="20" symbolic="YES" id="8Ef-k1-1qE"/>
                 <constraint firstItem="rtv-BI-l61" firstAttribute="trailing" secondItem="ceL-f9-7ZA" secondAttribute="trailing" id="CKV-xn-7DU"/>
                 <constraint firstItem="ah9-SY-XCj" firstAttribute="top" secondItem="yjA-ty-XXu" secondAttribute="bottom" constant="30" id="Jbb-gc-pWO"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yjA-ty-XXu" secondAttribute="trailing" constant="20" symbolic="YES" id="P0h-VC-KCs"/>
                 <constraint firstItem="dN6-D0-ftZ" firstAttribute="centerY" secondItem="me1-BK-dda" secondAttribute="centerY" id="PLN-QV-cKz"/>
                 <constraint firstItem="dN6-D0-ftZ" firstAttribute="leading" secondItem="me1-BK-dda" secondAttribute="trailing" constant="15" id="U4U-p0-NsT"/>
                 <constraint firstItem="me1-BK-dda" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="30" id="bNa-zo-dgI"/>

@@ -31,14 +31,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIBarButtonItem *saveItem = [[UIBarButtonItem alloc] initWithTitle:@"保存" style:UIBarButtonItemStyleDone target:self action:@selector(save)];
+    UIBarButtonItem *saveItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"text_save", nil) style:UIBarButtonItemStyleDone target:self action:@selector(save)];
     self.navigationItem.rightBarButtonItem = saveItem;
     
     if (self.model) {
         if (self.model.type == RecordTypeOutlay) {
-            self.title = @"修改支出类型";
+            self.title = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"text_modify", nil), NSLocalizedString(@"text_outlay_type", nil)];
         } else {
-            self.title = @"修改收入类型";
+            self.title = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"text_modify", nil), NSLocalizedString(@"text_income_type", nil)];
         }
         self.type = self.model.type;
         for (NSInteger i = 0; i < self.dataArray.count; i++) {
@@ -50,9 +50,9 @@
         }
     } else {
         if (self.type == RecordTypeOutlay) {
-            self.title = @"添加支出类型";
+            self.title = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"text_add", nil), NSLocalizedString(@"text_outlay_type", nil)];
         } else {
-            self.title = @"添加收入类型";
+            self.title = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"text_add", nil), NSLocalizedString(@"text_income_type", nil)];
         }
     }
     [self updateTypeImage];
@@ -84,7 +84,7 @@
 - (void)save {
     NSString *name = [self.typeField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     if (name.length == 0) {
-        [self showHUDInView:self.view justWithText:@"请输入类型名称" disMissAfterDelay:2];
+        [self showHUDInView:self.view justWithText:NSLocalizedString(@"hint_enter_type_name", nil) disMissAfterDelay:2];
     } else {
         if (self.model) {//修改
             RecordTypeModel *newModel = [RecordTypeModel recordTypeWithModel:self.model];
@@ -110,7 +110,7 @@
                         }
                         [RecordTypeDao deleteRecordType:self.model];
                     } else {
-                        [self showHUDInView:self.view justWithText:[NSString stringWithFormat:@"%@ 类型已存在", name] disMissAfterDelay:2];
+                        [self showHUDInView:self.view justWithText:[NSString stringWithFormat:@"%@ %@", name, NSLocalizedString(@"toast_type_is_exist", nil)] disMissAfterDelay:2];
                         return;
                     }
                 } else {
@@ -130,7 +130,7 @@
                     [RecordTypeDao updateRecordTypes:[NSMutableArray arrayWithObject:dbModel]];
                     [self.navigationController popViewControllerAnimated:YES];
                 } else {
-                    [self showHUDInView:self.view justWithText:[NSString stringWithFormat:@"%@ 类型已经存在", name] disMissAfterDelay:2];
+                    [self showHUDInView:self.view justWithText:[NSString stringWithFormat:@"%@ %@", name, NSLocalizedString(@"toast_type_is_exist", nil)] disMissAfterDelay:2];
                 }
             } else {//不存在直接新增
                 dbModel = [RecordTypeModel new];

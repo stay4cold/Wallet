@@ -1,0 +1,6 @@
+
+/* Class = "UISegmentedControl"; LZn-f3-QUG.segmentTitles[0] = "账单"; ObjectID = "LZn-f3-QUG"; */
+"LZn-f3-QUG.segmentTitles[0]" = "Bill";
+
+/* Class = "UISegmentedControl"; LZn-f3-QUG.segmentTitles[1] = "报表"; ObjectID = "LZn-f3-QUG"; */
+"LZn-f3-QUG.segmentTitles[1]" = "Reports";

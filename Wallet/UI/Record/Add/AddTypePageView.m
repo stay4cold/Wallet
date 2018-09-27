@@ -93,7 +93,7 @@
     }
     if (self.dataArray.count > 0) {
         RecordTypeModel *setting = [RecordTypeModel new];
-        setting.name = @"设置";
+        setting.name = NSLocalizedString(@"text_setting", nil);
         setting.img_name = @"type_item_setting";
         setting.type = self.type;
         setting.setting = YES;
@@ -113,7 +113,7 @@
             if (!exist) {
                 RecordTypeModel *rm = [self.dataArray objectAtIndex:0];
                 self.checkID = rm.ID;
-                [self showHUDInView:self.viewForLastBaselineLayout justWithText:@"该记录的类型已经被删除，已默认选择了第一个类型" disMissAfterDelay:2];
+                [self showHUDInView:self.viewForLastBaselineLayout justWithText:NSLocalizedString(@"text_tip_type_delete", nil) disMissAfterDelay:2];
             }
         } else {
             RecordTypeModel *rm = [self.dataArray objectAtIndex:0];

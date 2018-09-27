@@ -55,12 +55,12 @@
     if (_type == 0) {//转账
         self.dataArray = [AssetsTransferRecordDao getTransferRecordsById:_assetsID];
         if (self.dataArray.count == 0) {
-            self.customViewForVTEmpty = [self emptyLabel:@"没有转账记录"];
+            self.customViewForVTEmpty = [self emptyLabel:NSLocalizedString(@"text_transfer_record_no", nil)];
         }
     } else {//修改
         self.dataArray = [AssetsModifyRecordDao getAssetsRecordsById:_assetsID];
         if (self.dataArray.count == 0) {
-            self.customViewForVTEmpty = [self emptyLabel:@"没有修改记录"];
+            self.customViewForVTEmpty = [self emptyLabel:NSLocalizedString(@"text_adjust_record_no", nil)];
         }
     }
     [self reloadData];

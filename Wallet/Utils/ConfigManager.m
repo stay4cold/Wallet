@@ -39,16 +39,12 @@ static NSString *const kSymbol = @"symbol";
 }
 
 + (NSArray<NSString *> *)getSymbol {
-    return @[
-             @"人民币(¥)",
-             @"港币(HK$)",
-             @"澳门币(MOP$)",
-             @"新台币(NT$)",
-             @"美元($)",
-             @"欧元(€)",
-             @"英镑(£)",
-             @"货币(¤)",
-             @"不显示"];
+    NSMutableArray *arr = [NSMutableArray array];
+    for (NSInteger i = 0; i < 9; i++) {
+        NSString *name = [NSString stringWithFormat:@"symbol%ld", i];
+        [arr addObject:NSLocalizedString(name, nil)];
+    }
+    return arr;
 }
 
 + (NSArray<NSString *> *)getSimpleSymbol {

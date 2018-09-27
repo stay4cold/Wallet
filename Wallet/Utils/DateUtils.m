@@ -191,9 +191,9 @@
     NSCalendar *calendar = [NSCalendar currentCalendar];
     
     if ([calendar isDateInToday:date]) {
-        return @"今天";
+        return NSLocalizedString(@"text_today", nil);
     } else if ([calendar isDateInYesterday:date]) {
-        return @"昨天";
+        return NSLocalizedString(@"text_yesterday", nil);
     } else if ([calendar isDate:date equalToDate:[NSDate date] toUnitGranularity:NSCalendarUnitYear]) {
         return [self stringForDate:date format:[self getMonthDayFormatter]];
     } else {

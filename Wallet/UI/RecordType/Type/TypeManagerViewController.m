@@ -27,7 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"分类管理";
+    self.title = NSLocalizedString(@"text_type_manage", nil);
     self.navigationItem.rightBarButtonItem = self.orderItem;
 }
 
@@ -44,22 +44,20 @@
 
 - (IBAction)addType:(id)sender {
     AddTypeViewController *avc = [AddTypeViewController new];
-    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:nil action:nil];
-    avc.navigationItem.backBarButtonItem = backItem;
     avc.type = self.typeControl.selectedSegmentIndex;
     [self.navigationController pushViewController:avc animated:YES];
 }
 
 - (UIBarButtonItem *)orderItem {
     if (!_orderItem) {
-        _orderItem = [[UIBarButtonItem alloc] initWithTitle:@"排序" style:UIBarButtonItemStyleDone target:self action:@selector(order)];
+        _orderItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"text_sort", nil) style:UIBarButtonItemStyleDone target:self action:@selector(order)];
     }
     return _orderItem;
 }
 
 - (UIBarButtonItem *)saveItem {
     if (!_saveItem) {
-        _saveItem = [[UIBarButtonItem alloc] initWithTitle:@"保存" style:UIBarButtonItemStyleDone target:self action:@selector(save)];
+        _saveItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"text_save", nil) style:UIBarButtonItemStyleDone target:self action:@selector(save)];
     }
     return _saveItem;
 }

@@ -1,0 +1,27 @@
+
+/* Class = "UIButton"; normalTitle = "完成"; ObjectID = "69X-SL-tY2"; */
+"69X-SL-tY2.normalTitle" = "OK";
+
+/* Class = "UILabel"; text = "备注"; ObjectID = "7el-4i-OZf"; */
+"7el-4i-OZf.text" = "remark";
+
+/* Class = "UILabel"; text = "备注"; ObjectID = "8Hz-aN-P1o"; */
+"8Hz-aN-P1o.text" = "remark";
+
+/* Class = "UIButton"; normalTitle = "今天"; ObjectID = "BUd-4r-VSF"; */
+"BUd-4r-VSF.normalTitle" = "today";
+
+/* Class = "UILabel"; text = "支付宝"; ObjectID = "EAu-uP-kh6"; */
+"EAu-uP-kh6.text" = "支付宝";
+
+/* Class = "UILabel"; text = "选择转出账户"; ObjectID = "Qoe-sa-xEb"; */
+"Qoe-sa-xEb.text" = "account from";
+
+/* Class = "UILabel"; text = "支付宝"; ObjectID = "b8i-mp-6cc"; */
+"b8i-mp-6cc.text" = "支付宝";
+
+/* Class = "UITextField"; placeholder = "输入备注"; ObjectID = "nmX-SN-gfn"; */
+"nmX-SN-gfn.placeholder" = "input remark";
+
+/* Class = "UILabel"; text = "选择转入账户"; ObjectID = "udE-Sn-zZs"; */
+"udE-Sn-zZs.text" = "account to";

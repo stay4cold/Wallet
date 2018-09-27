@@ -20,11 +20,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"选择银行";
+    self.title = NSLocalizedString(@"text_choose_bank", nil);
     
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([TypeTableViewCell class]) bundle:nil] forCellReuseIdentifier:@"cell"];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"确定" style:UIBarButtonItemStyleDone target:self action:@selector(confirm)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"text_affirm", nil) style:UIBarButtonItemStyleDone target:self action:@selector(confirm)];
 }
 
 - (void)confirm {

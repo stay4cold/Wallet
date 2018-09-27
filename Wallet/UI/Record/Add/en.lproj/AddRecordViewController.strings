@@ -1,0 +1,18 @@
+
+/* Class = "UITextField"; placeholder = "输入备注"; ObjectID = "9Dj-JM-pU4"; */
+"9Dj-JM-pU4.placeholder" = "Enter the remark";
+
+/* Class = "UISegmentedControl"; Xud-Aw-18L.segmentTitles[0] = "支出"; ObjectID = "Xud-Aw-18L"; */
+"Xud-Aw-18L.segmentTitles[0]" = "outlay";
+
+/* Class = "UISegmentedControl"; Xud-Aw-18L.segmentTitles[1] = "收入"; ObjectID = "Xud-Aw-18L"; */
+"Xud-Aw-18L.segmentTitles[1]" = "income";
+
+/* Class = "UILabel"; text = "支付宝"; ObjectID = "XvO-X5-UIB"; */
+"XvO-X5-UIB.text" = "Alipay";
+
+/* Class = "UIButton"; normalTitle = "09-04"; ObjectID = "kdB-MG-HcI"; */
+"kdB-MG-HcI.normalTitle" = "09-04";
+
+/* Class = "UIButton"; normalTitle = "完成"; ObjectID = "uh1-wO-Wp4"; */
+"uh1-wO-Wp4.normalTitle" = "OK";

@@ -46,7 +46,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"设置";
+    self.title = NSLocalizedString(@"text_setting", nil);
     
     self.tableView.estimatedRowHeight = 70;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
@@ -104,19 +104,19 @@
 - (NSMutableArray *)dataArray {
     if (!_dataArray) {
         _dataArray = [NSMutableArray array];
-        [_dataArray addObject:[NormalItem normalTitle:@"月预算" content:[self getBudget]]];
-        [_dataArray addObject:[NormalItem normalTitle:@"资产管理" content:@"新建和修改资产账户"]];
-        [_dataArray addObject:[NormalItem normalTitle:@"货币符号" content:@"只改变货号，不转换汇率"]];
-        [_dataArray addObject:[NormalItem normalTitle:@"收支类型管理" content:@"添加、修改和排序"]];
-        [_dataArray addObject:[CheckItem itemTitle:@"快速记账" content:@"打开APP直接记账" check:[ConfigManager isFast]]];
-        [_dataArray addObject:[NormalItem normalTitle:@"连续记账" content:@"长按首页添加按钮，连续记账"]];
+        [_dataArray addObject:[NormalItem normalTitle:NSLocalizedString(@"text_monty_budget", nil) content:[self getBudget]]];
+        [_dataArray addObject:[NormalItem normalTitle:NSLocalizedString(@"text_assets_manager", nil) content:NSLocalizedString(@"text_assets_manager_content", nil)]];
+        [_dataArray addObject:[NormalItem normalTitle:NSLocalizedString(@"text_title_symbol", nil) content:NSLocalizedString(@"text_content_symbol", nil)]];
+        [_dataArray addObject:[NormalItem normalTitle:NSLocalizedString(@"text_setting_type_manage", nil) content:NSLocalizedString(@"text_setting_type_manage_content", nil)]];
+        [_dataArray addObject:[CheckItem itemTitle:NSLocalizedString(@"text_fast_accounting", nil) content:NSLocalizedString(@"text_fast_tip", nil) check:[ConfigManager isFast]]];
+        [_dataArray addObject:[NormalItem normalTitle:NSLocalizedString(@"text_successive_record", nil) content:NSLocalizedString(@"text_successive_record_tip", nil)]];
     }
     return _dataArray;
 }
 
 - (NSString *)getBudget {
     if ([ConfigManager getBudget] == 0) {
-        return @"未设置";
+        return NSLocalizedString(@"text_no_setting", nil);
     } else {
         return [NSString stringWithFormat:@"%@%@", [ConfigManager getCurrentSymbol], [DecimalUtils formatNum:[NSString stringWithFormat:@"%ld", ConfigManager.getBudget]]];
     }
@@ -124,7 +124,7 @@
 
 - (void)showBudget {
     WS(ws);
-    UIAlertController *ac = [UIAlertController alertControllerWithTitle:@"设置预算" message:nil preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *ac = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"text_set_budget", nil) message:nil preferredStyle:UIAlertControllerStyleAlert];
     [ac addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
         NSInteger budget = [ConfigManager getBudget];
         if (budget != 0) {
@@ -133,12 +133,12 @@
         textField.keyboardType = UIKeyboardTypeNumberPad;
     }];
     
-    [ac addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    [ac addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"text_affirm", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [ConfigManager setBudget:[ac.textFields[0].text integerValue]];
         ws.dataArray = nil;
         [ws.tableView reloadData];
     }]];
-    [ac addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
+    [ac addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"text_cancel", nil) style:UIAlertActionStyleCancel handler:nil]];
     [self presentViewController:ac animated:YES completion:nil];
 }
 

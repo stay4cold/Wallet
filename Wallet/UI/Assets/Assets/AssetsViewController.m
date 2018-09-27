@@ -49,12 +49,12 @@
     if (symbol.length != 0) {
         symbol = [NSString stringWithFormat:@"(%@)", symbol];
     }
-    self.netLabel.text = [NSString stringWithFormat:@"净资产%@", symbol];
+    self.netLabel.text = [NSString stringWithFormat:@"%@%@", NSLocalizedString(@"text_assets", nil), symbol];
     
     AssetsMoneyModel *assetsMoney = [AssetsDao getAssetsMoney];
     self.netMoneyLabel.text = [DecimalUtils fen2Yuan:assetsMoney.netAssets];
-    self.totalLabel.text = [NSString stringWithFormat:@"总资产 %@", [DecimalUtils fen2Yuan:assetsMoney.allAssets]];
-    self.negLabel.text = [NSString stringWithFormat:@"负资产 %@", [DecimalUtils fen2Yuan:assetsMoney.liabilityAssets]];
+    self.totalLabel.text = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"text_assets_all", nil), [DecimalUtils fen2Yuan:assetsMoney.allAssets]];
+    self.negLabel.text = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"text_assets_liabilities", nil), [DecimalUtils fen2Yuan:assetsMoney.liabilityAssets]];
     
     self.dataArray = [AssetsDao getAllAssets];
     if (self.dataArray.count == 0) {
@@ -75,7 +75,7 @@
     if (!_emptyLabel) {
         _emptyLabel = [UILabel new];
         _emptyLabel.numberOfLines = 0;
-        _emptyLabel.text = @"还没有资产";
+        _emptyLabel.text = NSLocalizedString(@"text_assets_no_account", nil);
         _emptyLabel.textColor = [UIColor grayColor];
         _emptyLabel.textAlignment = NSTextAlignmentCenter;
         _emptyLabel.font = [UIFont systemFontOfSize:16];
@@ -105,7 +105,7 @@
     if (self.dataArray.count == 0) {
         return nil;
     }
-    return @"资产账户";
+    return NSLocalizedString(@"text_assets_account", nil);
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {

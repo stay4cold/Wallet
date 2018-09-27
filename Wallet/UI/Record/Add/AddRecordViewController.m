@@ -13,8 +13,6 @@
 #import "RecordDao.h"
 #import "ChooseAssetsViewController.h"
 
-static NSString *const kNoAccount = @"不选择账户";
-
 @interface AddRecordViewController () <KeyboardViewDelegate, ChooseAssetsDelegate, UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *typeControl;
@@ -31,6 +29,7 @@ static NSString *const kNoAccount = @"不选择账户";
 @property (nonatomic, strong) NSDate *currentDate;
 @property (nonatomic, strong) AssetsModel *assets;
 @property (nonatomic, strong) AssetsModel *oldAssets;
+@property (nonatomic, copy) NSString *noAccount;
 
 @end
 
@@ -40,13 +39,13 @@ static NSString *const kNoAccount = @"不选择账户";
     [super viewDidLoad];
     
     if (self.isSuccessive) {
-        self.title = @"记一笔(连续)";
+        self.title = NSLocalizedString(@"text_add_record_successive", nil);
     } else {
-        self.title = @"记一笔";
+        self.title = NSLocalizedString(@"text_add_record", nil);
     }
     
     if (self.recordWithType) {
-        self.title = @"修改";
+        self.title = NSLocalizedString(@"text_modify_record", nil);
     }
     
     self.keyboardView.delegate = self;
@@ -63,7 +62,7 @@ static NSString *const kNoAccount = @"不选择账户";
             self.incomeTypePageView.hidden = NO;
         }
         if (self.recordWithType.assets_id == nil || [self.recordWithType.assets_id integerValue] == AssetsTypeNo) {
-            [self configAssetsName:kNoAccount withImg:nil];
+            [self configAssetsName:self.noAccount withImg:nil];
         } else {
             [self configAssetsByID:self.recordWithType.assets_id];
         }
@@ -71,7 +70,7 @@ static NSString *const kNoAccount = @"不选择账户";
         self.currentDate = [NSDate date];
         NSNumber *assetsId = [ConfigManager getAssetsId];
         if ([assetsId isEqual:[NSNumber numberWithInt:-1]]) {
-            [self configAssetsName:kNoAccount withImg:nil];
+            [self configAssetsName:self.noAccount withImg:nil];
         } else {
             [self configAssetsByID:assetsId];
         }
@@ -101,6 +100,13 @@ static NSString *const kNoAccount = @"不选择账户";
     self.datePicker.datePickerMode = UIDatePickerModeDate;
     self.datePicker.maximumDate = [NSDate date];//设置最大日期
     self.pickerView.hidden = NO;
+}
+
+- (NSString *)noAccount {
+    if (!_noAccount) {
+        _noAccount = NSLocalizedString(@"text_no_choose_account", nil);
+    }
+    return _noAccount;
 }
 
 //选择Assets
@@ -136,7 +142,7 @@ static NSString *const kNoAccount = @"不选择账户";
         }
         [self configAssetsName:assets.name withImg:assets.img_name];
     } else {
-        [self configAssetsName:kNoAccount withImg:nil];
+        [self configAssetsName:self.noAccount withImg:nil];
     }
 }
 
@@ -151,7 +157,7 @@ static NSString *const kNoAccount = @"不选择账户";
 
 - (void)keyboardView:(KeyboardView *)keyboard confirm:(NSString *)text {
     if (text.length == 0) {
-        [self showHUDInView:self.view justWithText:@"请输入金额" disMissAfterDelay:2];
+        [self showHUDInView:self.view justWithText:NSLocalizedString(@"hint_enter_money", nil) disMissAfterDelay:2];
     } else {
         if (self.recordWithType) {
             [self updateRecord:text];
@@ -167,7 +173,7 @@ static NSString *const kNoAccount = @"不选择账户";
     self.assets = assets;
     if (assets.type == AssetsTypeNo) {
         self.assets = nil;
-        [self configAssetsName:kNoAccount withImg:nil];
+        [self configAssetsName:self.noAccount withImg:nil];
     } else {
         [self configAssetsName:assets.name withImg:assets.img_name];
     }
@@ -176,7 +182,7 @@ static NSString *const kNoAccount = @"不选择账户";
 #pragma mark - private method
 
 - (void)insertRecord:(NSString *)money {
-    [self showHUDInView:self.view WithText:@"正在更新..."];
+    [self showHUDInView:self.view WithText:NSLocalizedString(@"text_update", nil)];
     RecordModel *record = [RecordModel new];
     record.money = [DecimalUtils yuan2Fen:money];
     record.remark = self.remarkField.text;
@@ -190,9 +196,9 @@ static NSString *const kNoAccount = @"不选择账户";
     BOOL state = [RecordDao insertRecord:record];
     if (state) {
         [ConfigManager setAssetsId:record.assets_id];
-        [self showHUDInView:self.view justWithText:@"记账成功" disMissAfterDelay:2];
+        [self showHUDInView:self.view justWithText:NSLocalizedString(@"toast_save_assets_success", nil) disMissAfterDelay:2];
     } else {
-        [self showHUDInView:self.view justWithText:@"记账失败" disMissAfterDelay:2];
+        [self showHUDInView:self.view justWithText:NSLocalizedString(@"toast_save_assets_fail", nil) disMissAfterDelay:2];
     }
     if (self.isSuccessive) {
         self.keyboardView.text = @"";
@@ -203,7 +209,7 @@ static NSString *const kNoAccount = @"不选择账户";
 }
 
 - (void)updateRecord:(NSString *)money {
-    [self showHUDInView:self.view WithText:@"正在更新..."];
+    [self showHUDInView:self.view WithText:NSLocalizedString(@"text_update", nil)];
     self.recordWithType.money = [DecimalUtils yuan2Fen:money];
     self.recordWithType.remark = self.remarkField.text;
     if (self.recordWithType.remark.length == 0) {

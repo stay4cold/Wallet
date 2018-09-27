@@ -15,7 +15,7 @@
 - (NSString *)stringForValue:(double)value axis:(ChartAxisBase *)axis {
     NSInteger v = (int)value;
     if (v >= 0) {
-        return [NSString stringWithFormat:@"%ld日", v];
+        return [NSString stringWithFormat:@"%ld%@", v, NSLocalizedString(@"day", nil)];
     } else {
         return @"";
     }
@@ -115,19 +115,23 @@
     NSMutableArray *monthSum = [RecordDao getMonthOfYearSumMoneyFrom:[DateUtils monthStartForYear:self.year month:self.month] to:[DateUtils monthEndForYear:self.year month:self.month]];
     NSDecimalNumber *outlay = NSDecimalNumber.zero;
     NSDecimalNumber *income = NSDecimalNumber.zero;
+    self.outlayBtn.hidden = YES;
+    self.incomeBtn.hidden = YES;
     for (MonthSumMoneyModel *ms in monthSum) {
         if (ms.type == RecordTypeOutlay) {
             outlay = ms.sumMoney;
-            [self.outlayBtn setTitle:[NSString stringWithFormat:@"支出 %@%@", [ConfigManager getCurrentSymbol], [DecimalUtils fen2Yuan:outlay]] forState:UIControlStateNormal];
+            [self.outlayBtn setTitle:[NSString stringWithFormat:@"%@ %@%@", NSLocalizedString(@"text_outlay", nil), [ConfigManager getCurrentSymbol], [DecimalUtils fen2Yuan:outlay]] forState:UIControlStateNormal];
+            self.outlayBtn.hidden = NO;
         } else {
             income = ms.sumMoney;
-            [self.incomeBtn setTitle:[NSString stringWithFormat:@"收入 %@%@", [ConfigManager getCurrentSymbol], [DecimalUtils fen2Yuan:income]] forState:UIControlStateNormal];
+            [self.incomeBtn setTitle:[NSString stringWithFormat:@"%@ %@%@", NSLocalizedString(@"text_income", nil), [ConfigManager getCurrentSymbol], [DecimalUtils fen2Yuan:income]] forState:UIControlStateNormal];
+            self.incomeBtn.hidden = NO;
         }
     }
     
     if ([income compare:NSDecimalNumber.zero] == NSOrderedDescending) {
         self.overageLabel.hidden = NO;
-        self.overageLabel.text = [NSString stringWithFormat:@"结余 %@%@", [ConfigManager getCurrentSymbol], [DecimalUtils fen2Yuan:[income decimalNumberBySubtracting:outlay]]];
+        self.overageLabel.text = [NSString stringWithFormat:@"%@ %@%@", NSLocalizedString(@"text_overage", nil), [ConfigManager getCurrentSymbol], [DecimalUtils fen2Yuan:[income decimalNumberBySubtracting:outlay]]];
     } else {
         self.overageLabel.hidden = YES;
     }
@@ -238,13 +242,13 @@
 - (NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
     WS(ws);
     RecordWithTypeModel *record = [[self.dataArray objectAtIndex:indexPath.section].records objectAtIndex:indexPath.row];
-    UITableViewRowAction *delete = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"删除" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
-        UIAlertController *ac = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"%@(%@%@)", record.recordTypes[0].name,[ConfigManager getCurrentSymbol], [DecimalUtils fen2Yuan:record.money]] message:@"确定删除该记录？" preferredStyle:UIAlertControllerStyleAlert];
-        [ac addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UITableViewRowAction *delete = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:NSLocalizedString(@"text_delete", nil) handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        UIAlertController *ac = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"%@(%@%@)", record.recordTypes[0].name,[ConfigManager getCurrentSymbol], [DecimalUtils fen2Yuan:record.money]] message:NSLocalizedString(@"text_delete_record_note", nil) preferredStyle:UIAlertControllerStyleAlert];
+        [ac addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"text_affirm", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             [RecordDao deleteRecord:record];
             [ws updateData];
         }]];
-        [ac addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
+        [ac addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"text_cancel", nil) style:UIAlertActionStyleCancel handler:nil]];
         [[ws controller] presentViewController:ac animated:YES completion:nil];
     }];
     return @[delete];

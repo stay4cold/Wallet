@@ -11,19 +11,19 @@
 @implementation BankCreator
 
 + (NSMutableArray<BankModel *> *)getAllBankItems {
-    NSArray *source = @[@[@"招商银行", @"bank_zhaoshang"],
-                        @[@"工商银行", @"bank_icbc"],
-                        @[@"农业银行", @"bank_abchina"],
-                        @[@"中国银行", @"bank_boc"],
-                        @[@"建设银行", @"bank_ccb"],
-                        @[@"平安银行", @"bank_pingan"],
-                        @[@"交通银行", @"bank_bankcomm"],
-                        @[@"中信银行", @"bank_citicbank"],
-                        @[@"兴业银行", @"bank_cib"],
-                        @[@"光大银行", @"bank_cebbank"],
-                        @[@"民生银行", @"bank_cmbc"],
-                        @[@"邮政储蓄银行", @"bank_chinapost"],
-                        @[@"其它银行", @"assets_card"]
+    NSArray *source = @[@[NSLocalizedString(@"text_bank_zhaoshang", nil), @"bank_zhaoshang"],
+                        @[NSLocalizedString(@"text_bank_icbc", nil), @"bank_icbc"],
+                        @[NSLocalizedString(@"text_bank_abchina", nil), @"bank_abchina"],
+                        @[NSLocalizedString(@"text_bank_boc", nil), @"bank_boc"],
+                        @[NSLocalizedString(@"text_bank_ccb", nil), @"bank_ccb"],
+                        @[NSLocalizedString(@"text_bank_pingan", nil), @"bank_pingan"],
+                        @[NSLocalizedString(@"text_bank_bankcomm", nil), @"bank_bankcomm"],
+                        @[NSLocalizedString(@"text_bank_citicbank", nil), @"bank_citicbank"],
+                        @[NSLocalizedString(@"text_bank_cib", nil), @"bank_cib"],
+                        @[NSLocalizedString(@"text_bank_cebbank", nil), @"bank_cebbank"],
+                        @[NSLocalizedString(@"text_bank_cmbc", nil), @"bank_cmbc"],
+                        @[NSLocalizedString(@"text_bank_chinapost", nil), @"bank_chinapost"],
+                        @[NSLocalizedString(@"text_assets_card", nil), @"assets_card"]
                         ];
     NSMutableArray *tArr = [NSMutableArray array];
     for (NSArray *arr in source) {

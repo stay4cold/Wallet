@@ -26,7 +26,7 @@
 - (void)setTransferModel:(AssetsTransferRecordWithAssetsModel *)transferModel {
     _transferModel = transferModel;
     self.typeImageView.image = [UIImage imageNamed:@"ic_transform"];
-    self.nameLabel.text = @"转账";
+    self.nameLabel.text = NSLocalizedString(@"text_transfer", nil);
     self.remarkLabel.text = _transferModel.remark;
     self.subLabel.text = [NSString stringWithFormat:@"%@ ➡ %@", _transferModel.assetsNameFrom, _transferModel.assetsNameTo];
     self.moneyLabel.text = [DecimalUtils fen2Yuan:_transferModel.money];
@@ -36,7 +36,7 @@
 - (void)setModifyModel:(AssetsModifyRecordModel *)modifyModel {
     _modifyModel = modifyModel;
     self.typeImageView.image = [UIImage imageNamed:@"ic_balance"];
-    self.nameLabel.text = @"余额调整";
+    self.nameLabel.text = NSLocalizedString(@"text_assets_adjust", nil);
     self.remarkLabel.hidden = YES;
     self.subLabel.text = [NSString stringWithFormat:@"%@ ➡ %@", [DecimalUtils fen2Yuan:_modifyModel.money_before], [DecimalUtils fen2Yuan:_modifyModel.money]];
     self.moneyLabel.hidden = YES;

@@ -26,7 +26,7 @@
     self.nameLabel.text = _model.typeName;
     self.moneyLabel.text = [NSString stringWithFormat:@"%@%@", [ConfigManager getCurrentSymbol], [DecimalUtils fen2Yuan:_model.typeSumMoney]];
     self.moneyLabel.textColor = _model.type == RecordTypeOutlay ? ColorOutlay : ColorIncome;
-    self.countLabel.text = [NSString stringWithFormat:@"%ld笔", _model.count];
+    self.countLabel.text = [NSString stringWithFormat:@"%ld%@", _model.count, NSLocalizedString(@"text_unit_account", nil)];
     NSDecimalNumberHandler *handler = [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode:NSRoundDown scale:0 raiseOnExactness:NO raiseOnOverflow:NO raiseOnUnderflow:NO raiseOnDivideByZero:YES];
     NSDecimalNumber *offset = [self.max decimalNumberByDividingBy:[NSDecimalNumber decimalNumberWithString:@"10"] withBehavior:handler];
     CGFloat ratio = [[_model.typeSumMoney decimalNumberByAdding:offset] decimalNumberByDividingBy:[self.max decimalNumberByAdding:offset]].floatValue;

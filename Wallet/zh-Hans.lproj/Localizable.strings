@@ -1,0 +1,297 @@
+/* 
+  Localizable.strings
+  Wallet
+
+  Created by 王成浩 on 2018/9/27.
+  Copyright © 2018年 evan. All rights reserved.
+*/
+
+"toast_add_record_fail" = "记账失败，请重试";
+"toast_modify_record_fail" = "记录修改失败";
+"toast_sort_fail" = "排序失败";
+"toast_least_one_type" = "请至少保留一个类型";
+"toast_delete_fail" = "删除失败";
+"toast_type_img_fail" = "类型图片获取失败";
+"toast_type_save_fail" = "类型保存失败";
+"toast_type_is_exist" = "类型已经存在";
+"toast_record_delete_fail" = "记录删除失败";
+"toast_current_sum_money_fail" = "本月支出收入总数获取失败";
+"toast_records_fail" = "获取记录列表失败";
+"toast_init_types_fail" = "初始化类型数据失败";
+"toast_get_types_fail" = "获取类型数据失败";
+"toast_get_statistics_fail" = "获取统计数据失败";
+"toast_get_month_summary_fail" = "获取该月汇总数据失败";
+"toast_get_type_summary_fail" = "获取类型汇总数据失败";
+"toast_not_install_email" = "您的手机没有安装邮件应用";
+"toast_not_install_alipay" = "谢谢，您没有安装支付宝客户端";
+"toast_is_not_writable_external" = "备份失败，外部存储不可用";
+"toast_restore_fail" = "恢复备份失败";
+"toast_restore_success" = "恢复备份成功";
+"toast_backup_list_fail" = "备份文件列表获取失败";
+"toast_open_auto_backup" = "自动备份已关闭，设置界面可重新打开";
+"toast_backup_success" = "备份成功";
+"toast_backup_fail" = "备份失败";
+"toast_success_record" = "记账成功";
+"toast_get_review_fail" = "获取回顾数据失败";
+"toast_get_review_sum_money_fail" = "获取回顾汇总数据失败";
+"toast_move_backup_files_success" = "备份文件夹修改并迁移成功";
+"toast_move_backup_files_fail" = "修改失败";
+"toast_save_assets_success" = "保存成功";
+"toast_save_assets_fail" = "保存失败";
+"toast_choose_account" = "请选择不同账户";
+"toast_date_null" = "日期为空，请重新进入界面后尝试";
+"toast_transfer_fail" = "转账失败";
+"toast_submit_now" = "正在提交，请稍等..";
+
+// 首页
+"text_widget_today_outlay" = "今日支出";
+"text_widget_month_outlay" = "本月支出";
+"text_widget_month_budget" = "剩余月预算";
+"text_month_outlay" = "本月支出";
+"text_month_income" = "本月收入";
+"text_month_remaining_budget" = "剩余预算";
+"text_assets" = "净资产";
+"text_net_assets" = "设置资产";
+"text_home_footer_tip" = "统计页面可以查看往月记录";
+"text_current_month_empty_tip" = "本月未开始记账\n\n点击加号，开始记账";
+"shortcuts_add_record" = "记一笔";
+"shortcuts_statistics" = "历史统计";
+"text_storage" = "开启存储权限";
+"text_storage_content" = "为了自动备份您的记账数据，需要开启存储权限。";
+"text_storage_permission_tip" = "备份相关操作需要存储权限，去设置界面开启权限";
+"text_tip_backup_fail" = "自动备份失败";
+
+// 记一笔
+"text_add_record" = "记一笔";
+"text_add_record_successive" = "记一笔（连续）";
+"text_modify_record" = "修改";
+"text_outlay" = "支出";
+"text_income" = "收入";
+"text_today" = "今天";
+"text_yesterday" = "昨天";
+"hint_enter_money" = "输入金额";
+"hint_enter_remark" = "输入备注";
+"text_tip_type_delete" = "该记录的类型已经被删除，已默认选择了第一个类型";
+"text_know" = "我知道了";
+"type_eat" = "餐饮";
+"type_clothes" = "衣服";
+"type_humanity" = "礼物";
+"type_candy" = "零食";
+"type_3c" = "电子产品";
+"type_pet" = "宠物";
+"type_pill" = "医疗";
+"type_calendar" = "日用";
+"type_pluralism" = "兼职";
+"type_salary" = "薪资";
+
+// 分类管理
+"text_type_manage" = "分类管理";
+"text_delete" = "删除";
+"text_delete_type_note" = "删除该分类后，将无法在记账页选择该分类，该分类下原有账单仍保持不变";
+"text_delete_record_note" = "确定删除该记录？";
+"text_affirm_delete" = "删除";
+"text_affirm" = "确定";
+"text_cancel" = "取消";
+
+// 排序
+"text_sort" = "排序";
+"text_drag_sort" = "长按拖动排序";
+"text_done" = "完成";
+
+// 添加/修改类型
+"hint_enter_type_name" = "请输入类型名称";
+"text_add" = "添加";
+"text_modify" = "修改";
+"text_outlay_type" = "支出类型";
+"text_income_type" = "收入类型";
+"text_save" = "保存";
+
+// 统计
+"text_order" = "账单";
+"text_reports" = "报表";
+"text_overage" = "结余";
+"text_day" = "日";
+"text_unit_account" = "笔";
+"text_choose_month" = "选择月份";
+"text_sort_time" = "按时间";
+"text_sort_money" = "按金额";
+"text_empty_tip" = "每一笔账单，都是生活的点滴";
+"text_small_tip" = "注：小于1.9%不显示";
+
+// 回顾
+"text_review" = "回顾";
+"text_choose_year" = "选择年份";
+"text_year" = "年";
+"text_month" = "月";
+
+// 设置
+"text_setting" = "设置";
+"text_money" = "记账";
+"text_no_setting" = "未设置";
+"text_monty_budget" = "月预算";
+"text_set_budget" = "设置预算";
+"hint_enter_budget" = "请输入预算";
+"hint_enter_assets" = "请输入资产";
+"text_assets_manager" = "资产管理";
+"text_assets_manager_content" = "新建和修改资产账户";
+"text_title_symbol" = "货币符号";
+"text_set_symbol" = "选择货币符号";
+"text_content_symbol" = "只改变货号，不转换汇率";
+"text_setting_type_manage" = "收支类型管理";
+"text_setting_type_manage_content" = "添加、修改和排序";
+"text_fast_accounting" = "快速记账";
+"text_fast_tip" = "打开APP直接记账";
+"text_successive_record" = "连续记账";
+"text_successive_record_tip" = "长按首页添加按钮，连续记账";
+"text_backup" = "本地备份";
+"text_go_backup" = "立即备份";
+//"text_backup_save" formatted="true" = "备份文件将保存到%1$s";
+//"text_restore" = "恢复备份";
+//"text_restore_content" formatted="true" = "备份文件将从%1$s读取";
+//"text_restore_tip" = "备份文件名带有Auto字样表示是自动备份的文件，带有User表示是点击立即备份按钮手动备份的文件。";
+//"text_list_restore" = "以下是备份文件，点击恢复：";
+//"text_auto_backup" = "自动备份";
+//"text_auto_backup_content" = "数据有改变自动备份（建议开启）";
+//"text_cloud_backup" = "云备份";
+//"text_cloud_backup_title" = "云盘备份";
+//"text_cloud_backup_content" = "WebDAV";
+//"text_about_and_more" = "关于 | 更多";
+//"text_about_content" = "了解我们的设计理念";
+//<string-array name="symbol" = "
+"symbol0" = "人民币(¥)";
+"symbol1" = "港币(HK$)";
+"symbol2" = "澳门币(MOP$)";
+"symbol3" = "新台币(NT$)";
+"symbol4" = "美元($)";
+"symbol5" = "欧元(€)";
+"symbol6" = "英镑(£)";
+"symbol7" = "货币(¤)";
+"symbol8" = "不显示";
+//</string-array = "
+//<string-array name="simple_symbol" = "
+//<item = "¥</item = "
+//<item = "HK$</item = "
+//<item = "MOP$</item = "
+//<item = "NT$</item = "
+//<item = "$</item = "
+//<item = "€</item = "
+//<item = "£</item = "
+//<item = "¤</item = "
+//<item / = "
+//</string-array = "
+//
+//// 关于
+//"text_about" = "关于";
+//"text_slogan" = "简单、纯粹的记账应用";
+//"text_about_Introduction" = "简介";
+//"text_about_detail" = "　　一款轻量级的记账工具。\n\n　　这是我第一个用心的作品，起源于从小到大的一个「不可思议」（钱到底花在了哪儿），工作以后尤为明显。于是「那样记账」诞生了，目的是让大家以最简单、直接的方式来记账，让这个「不可思议」不再不可思议，慢慢建立起良好的消费习惯。\n\n　　没有任何多余的权限，没有广告，没有用户系统，不保存用户任何信息，只是单纯的记录收支情况。\n\n　　「那样记账」名称取自一个人名字「娜」的谐音。";
+//"text_dev_designer" = "设计和开发";
+//"text_designer" = "总体设计";
+//"text_launcher_designer" = "启动图标设计";
+//"text_developer_designer" = "开发和部分设计";
+//"text_links" = "链接";
+//"text_score" = "评分";
+//"text_donate" = "捐赠作者";
+//"text_contact_author" formatted="true" = "联系作者： %1$s \n\n更多帮助：%2$s \n\n本应用已开源，欢迎贡献代码。\n开源地址：%3$s\n\n*本应用遵循《Android绿色应用公约》\n %4$s";
+//"text_license" = "开源许可证";
+//"text_privacy_policy" = "隐私政策";
+//"text_display" = "外观";
+//"text_theme" = "主题";
+//"text_theme_dark" = "暗色主题";
+//"text_theme_light" = "亮色主题";
+//
+//// 云备份
+//"text_webdav" = "WebDAV云盘";
+//"text_webdav_url" = "WebDAV地址";
+//"text_webdav_account" = "WebDAV授权账号";
+//"text_webdav_password" = "WebDAV授权密码";
+//"text_webdav_help" = "坚果云授权教程";
+//"text_tip_auth_fail" = "授权账号或密码不正确";
+//"text_error" = "出错了";
+//"text_restore_fail_rollback" = "恢复失败，已回滚至恢复前状态，点击确定按钮重启应用。";
+//"text_backup_file_not_exist" = "备份文件不存在";
+//"text_saving_psw" = "正在加密保存密码&#8230;";
+//"text_url_illegal" = "WebDAV地址不合法";
+//"text_config_webdav" = "请先配置WebDAV";
+//"text_auto_backup_mode_title" = "自动备份模式";
+//"text_auto_backup_mode" = "选择自动备份模式";
+//"text_auto_backup_success" = "云备份成功！";
+//"text_auto_backup_fail" = "云备份失败！";
+//<string-array name="text_cloud_auto_backup_mode" = "
+//<item = "不自动备份</item = "
+//<item = "打开应用时备份</item = "
+//<item = "退出应用时备份</item = "
+//</string-array = "
+//
+//// 实验室
+//"text_other_setting" = "实验室";
+//"text_local_backup_path" = "本地备份文件夹";
+//"text_local_backup_path_tip" = "重新选择备份文件夹后，原有的备份文件夹会被迁移到新文件夹下";
+//"text_choose" = "选择";
+//"text_folder_empty" = "没有子目录了";
+
+// 添加
+"text_new_assets" = "添加资产";
+"text_account" = "资产";
+"text_invest" = "投资";
+"text_add_assets" = "新建资产账户";
+"text_edit_assets" = "修改资产账户";
+"text_choose_bank" = "选择银行";
+"text_choose_account" = "选择账户";
+"text_no_choose_account" = "不选择账户";
+"text_no_choose_account_tip" = "仅计入收支账单";
+"text_new_choose_account" = "新建账户";
+"hint_assets_name" = "请输入账户名称";
+"text_remark" = "备注：";
+"hint_remark" = "可不填";
+"text_balance" = "余额：";
+"hint_balance" = "精确到小数点后两位";
+"text_bank_zhaoshang" = "招商银行";
+"text_bank_icbc" = "工商银行";
+"text_bank_abchina" = "农业银行";
+"text_bank_boc" = "中国银行";
+"text_bank_ccb" = "建设银行";
+"text_bank_pingan" = "平安银行";
+"text_bank_bankcomm" = "交通银行";
+"text_bank_citicbank" = "中信银行";
+"text_bank_cib" = "兴业银行";
+"text_bank_cebbank" = "光大银行";
+"text_bank_cmbc" = "民生银行";
+"text_bank_chinapost" = "邮政储蓄银行";
+"text_assets_card" = "其他银行";
+"text_assets_type_cash" = "现金";
+"text_assets_type_bank_card" = "银行卡";
+"text_assets_type_alipay" = "支付宝";
+"text_assets_type_wechat" = "微信钱包";
+"text_assets_type_jd" = "京东钱包";
+"text_assets_type_rice_card" = "饭卡";
+"text_assets_type_bus_card" = "公交卡";
+"text_assets_type_other" = "其他账户";
+"text_assets_type_monetary" = "货币基金";
+"text_assets_type_funding" = "基金";
+"text_assets_type_stock" = "股票";
+"text_assets_type_other_financial" = "其他理财";
+
+// 资产详情
+"text_assets_detail" = "资产详情";
+"text_assets_account" = "资产账户";
+"text_assets_no_account" = "还没有资产";
+"text_assets_balance" = "账户余额";
+"text_tip_delete_assets" = "确定要删除该资产吗，不会删除该资产下的现有收支记录";
+
+// 资产
+"text_assets_all" = "总资产";
+"text_assets_liabilities" = "负资产";
+"text_assets_adjust" = "余额调整";
+"text_assets_transfer" = "转账";
+"text_adjust_record" = "修改记录";
+"text_adjust_record_no" = "没有修改记录";
+"text_transfer_record_no" = "没有转账记录";
+"text_transfer" = "转账";
+"text_choose_out_account" = "选择转出账户";
+"text_choose_in_account" = "选择转入账户";
+"text_choose_account" = "请先选择账户";
+
+"text_return" = "返回";
+"text_update" = "正在更新...";
+"text_amount_hint" = "请输入正确的金额";

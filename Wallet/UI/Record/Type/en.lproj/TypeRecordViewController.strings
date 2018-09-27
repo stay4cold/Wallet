@@ -1,0 +1,6 @@
+
+/* Class = "UISegmentedControl"; yjZ-Yv-hSf.segmentTitles[0] = "按时间"; ObjectID = "yjZ-Yv-hSf"; */
+"yjZ-Yv-hSf.segmentTitles[0]" = "By time";
+
+/* Class = "UISegmentedControl"; yjZ-Yv-hSf.segmentTitles[1] = "按金额"; ObjectID = "yjZ-Yv-hSf"; */
+"yjZ-Yv-hSf.segmentTitles[1]" = "By amount";

@@ -83,19 +83,19 @@
 + (NSMutableArray<AssetsTypeModel *> *)getAllAssetsByType:(AssetsType)type {
     NSMutableArray *arr = [NSMutableArray array];
     if (type == AssetsTypeNormal) {
-        [arr addObject:[AssetsTypeModel assetsWithName:@"现金" imgName:@"assets_wallet" type:1]];
-        [arr addObject:[AssetsTypeModel assetsWithName:@"银行卡" imgName:@"assets_card" type:2]];
-        [arr addObject:[AssetsTypeModel assetsWithName:@"支付宝" imgName:@"assets_alipay" type:3]];
-        [arr addObject:[AssetsTypeModel assetsWithName:@"微信钱包" imgName:@"assets_wechat" type:4]];
-        [arr addObject:[AssetsTypeModel assetsWithName:@"京东钱包" imgName:@"assets_jd" type:5]];
-        [arr addObject:[AssetsTypeModel assetsWithName:@"饭卡" imgName:@"assets_rice_card" type:6]];
-        [arr addObject:[AssetsTypeModel assetsWithName:@"公交卡" imgName:@"assets_bus_card" type:7]];
-        [arr addObject:[AssetsTypeModel assetsWithName:@"其他账户" imgName:@"assets_other" type:8]];
+        [arr addObject:[AssetsTypeModel assetsWithName:NSLocalizedString(@"text_assets_type_cash", nil) imgName:@"assets_wallet" type:1]];
+        [arr addObject:[AssetsTypeModel assetsWithName:NSLocalizedString(@"text_assets_type_bank_card", nil) imgName:@"assets_card" type:2]];
+        [arr addObject:[AssetsTypeModel assetsWithName:NSLocalizedString(@"text_assets_type_alipay", nil) imgName:@"assets_alipay" type:3]];
+        [arr addObject:[AssetsTypeModel assetsWithName:NSLocalizedString(@"text_assets_type_wechat", nil) imgName:@"assets_wechat" type:4]];
+        [arr addObject:[AssetsTypeModel assetsWithName:NSLocalizedString(@"text_assets_type_jd", nil) imgName:@"assets_jd" type:5]];
+        [arr addObject:[AssetsTypeModel assetsWithName:NSLocalizedString(@"text_assets_type_rice_card", nil) imgName:@"assets_rice_card" type:6]];
+        [arr addObject:[AssetsTypeModel assetsWithName:NSLocalizedString(@"text_assets_type_bus_card", nil) imgName:@"assets_bus_card" type:7]];
+        [arr addObject:[AssetsTypeModel assetsWithName:NSLocalizedString(@"text_assets_type_other", nil) imgName:@"assets_other" type:8]];
     } else {
-        [arr addObject:[AssetsTypeModel assetsWithName:@"货币基金" imgName:@"assets_monetary" type:9]];
-        [arr addObject:[AssetsTypeModel assetsWithName:@"基金" imgName:@"assets_funding" type:10]];
-        [arr addObject:[AssetsTypeModel assetsWithName:@"股票" imgName:@"assets_stock" type:11]];
-        [arr addObject:[AssetsTypeModel assetsWithName:@"其他账户" imgName:@"assets_other" type:12]];
+        [arr addObject:[AssetsTypeModel assetsWithName:NSLocalizedString(@"text_assets_type_monetary", nil) imgName:@"assets_monetary" type:9]];
+        [arr addObject:[AssetsTypeModel assetsWithName:NSLocalizedString(@"text_assets_type_funding", nil) imgName:@"assets_funding" type:10]];
+        [arr addObject:[AssetsTypeModel assetsWithName:NSLocalizedString(@"text_assets_type_stock", nil) imgName:@"assets_stock" type:11]];
+        [arr addObject:[AssetsTypeModel assetsWithName:NSLocalizedString(@"text_assets_type_other_financial", nil) imgName:@"assets_other" type:12]];
     }
     return arr;
 }

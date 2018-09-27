@@ -20,9 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"选择货币符号";
+    self.title = NSLocalizedString(@"text_set_symbol", nil);
     
-     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"确定" style:UIBarButtonItemStyleDone target:self action:@selector(confirm)];
+     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"text_affirm", nil) style:UIBarButtonItemStyleDone target:self action:@selector(confirm)];
     self.tableView.tableFooterView = [UIView new];
     self.selectIndex = [[ConfigManager getSimpleSymbol] indexOfObject:[ConfigManager getCurrentSymbol]] ;
 }

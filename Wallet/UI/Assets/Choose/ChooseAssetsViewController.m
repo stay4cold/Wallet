@@ -22,9 +22,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"选择账户";
+    self.title = NSLocalizedString(@"text_choose_account", nil);
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"确定" style:UIBarButtonItemStyleDone target:self action:@selector(confirm)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"text_affirm", nil) style:UIBarButtonItemStyleDone target:self action:@selector(confirm)];
     self.tableView.tableFooterView = [UIView new];
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([ChooseAssetsViewCell class]) bundle:nil] forCellReuseIdentifier:@"cell"];
 }
@@ -68,8 +68,8 @@
     if (!_noAssets) {
         _noAssets = [AssetsModel new];
         _noAssets.ID = [NSNumber numberWithInt:AssetsTypeNo];
-        _noAssets.name = @"不选择账户";
-        _noAssets.remark = @"仅计入收支账单";
+        _noAssets.name = NSLocalizedString(@"text_no_choose_account", nil);
+        _noAssets.remark = NSLocalizedString(@"text_no_choose_account_tip", nil);
         _noAssets.img_name = @"ic_no_account";
     }
     return _noAssets;
@@ -79,7 +79,7 @@
     if (!_addAssets) {
         _addAssets = [AssetsModel new];
         _addAssets.ID = [NSNumber numberWithInt:AssetsTypeAdd];
-        _addAssets.name = @"新建账户";
+        _addAssets.name = NSLocalizedString(@"text_new_choose_account", nil);
         _addAssets.img_name = @"ic_add_account";
     }
     return _addAssets;

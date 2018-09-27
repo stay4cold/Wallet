@@ -28,17 +28,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"保存" style:UIBarButtonItemStyleDone target:self action:@selector(save)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"text_save", nil) style:UIBarButtonItemStyleDone target:self action:@selector(save)];
     
     if (self.assetsTypeModel) {//新建
-        self.title = @"新建资产账户";
+        self.title = NSLocalizedString(@"text_add_assets", nil);
         self.typeImageView.image = [UIImage imageNamed:self.assetsTypeModel.imgName];
         self.nameField.text = self.assetsTypeModel.name;
         if (self.assetsTypeModel.type == 2) {
             [self.typeImageView addGestureRecognizer:self.tapGesture];
         }
     } else if (self.assetsModel) {//修改
-        self.title = @"修改资产账户";
+        self.title = NSLocalizedString(@"text_edit_assets", nil);
         self.typeImageView.image = [UIImage imageNamed:self.assetsModel.img_name];
         self.nameField.text = self.assetsModel.name;
         self.remarkField.text = self.assetsModel.remark;
@@ -65,7 +65,7 @@
 - (void)save {
     NSString *name = [self.nameField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     if (name.length == 0) {
-        [self showHUDInView:self.view justWithText:@"请输入资产名称" disMissAfterDelay:2];
+        [self showHUDInView:self.view justWithText:NSLocalizedString(@"hint_assets_name", nil) disMissAfterDelay:2];
         return;
     }
     NSString *remarkName = [self.remarkField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];

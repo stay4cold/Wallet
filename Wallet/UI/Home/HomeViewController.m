@@ -46,7 +46,7 @@ static NSString *kCellId = @"cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"账本";
+    self.title = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"settings"] style:UIBarButtonItemStyleDone target:self action:@selector(toSettingController)];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"statistics"] style:UIBarButtonItemStyleDone target:self action:@selector(toStatisticController)];
@@ -91,10 +91,10 @@ static NSString *kCellId = @"cell";
     if (symbol.length != 0) {
         symbol = [NSString stringWithFormat:@"(%@)", symbol];
     }
-     self.expendTitleLabel.text = [NSString stringWithFormat:@"本月支出%@", symbol];
-    self.budgetTitleLabel.text = [NSString stringWithFormat:@"剩余预算%@", symbol];
-    self.incomeTitleLabel.text = [NSString stringWithFormat:@"本月收入%@", symbol];
-    self.propertyTitleLabel.text = [NSString stringWithFormat:@"净资产%@", symbol];
+     self.expendTitleLabel.text = [NSString stringWithFormat:@"%@%@", NSLocalizedString(@"text_widget_month_outlay", nil), symbol];
+    self.budgetTitleLabel.text = [NSString stringWithFormat:@"%@%@", NSLocalizedString(@"text_month_remaining_budget", nil), symbol];
+    self.incomeTitleLabel.text = [NSString stringWithFormat:@"%@%@", NSLocalizedString(@"text_month_income", nil), symbol];
+    self.propertyTitleLabel.text = [NSString stringWithFormat:@"%@%@", NSLocalizedString(@"text_assets", nil), symbol];
     NSDecimalNumber *outlaySum = [NSDecimalNumber zero];
     NSDecimalNumber *incomeSum = [NSDecimalNumber zero];
     for (SumMoneyModel *sumMoney in [self currentMonthSumMoney]) {
@@ -106,7 +106,7 @@ static NSString *kCellId = @"cell";
     }
     self.expendLabel.text = [DecimalUtils fen2Yuan:outlaySum];
     if ([ConfigManager getBudget] == 0) {
-        self.budgetLabel.text = @"设置预算";
+        self.budgetLabel.text = NSLocalizedString(@"text_set_budget", nil);
         self.budgetLabel.font = [UIFont systemFontOfSize:22];
     } else {
         NSDecimalNumber *budget = [NSDecimalNumber decimalNumberWithString:[NSString stringWithFormat:@"%ld", [ConfigManager getBudget]]];
@@ -127,7 +127,7 @@ static NSString *kCellId = @"cell";
         footerLabel.font = [UIFont systemFontOfSize:14];
         footerLabel.textColor = MainTextHintColor;
         footerLabel.textAlignment = NSTextAlignmentCenter;
-        footerLabel.text = @"统计页面可以查看往月记录";
+        footerLabel.text = NSLocalizedString(@"text_home_footer_tip", nil);
         _footerView = footerLabel;
     }
     return _footerView;
@@ -137,7 +137,7 @@ static NSString *kCellId = @"cell";
     if (!_emptyLabel) {
         _emptyLabel = [UILabel new];
         _emptyLabel.numberOfLines = 0;
-        _emptyLabel.text = @"本月未开始记账\n\n点击加号，开始记账";
+        _emptyLabel.text = NSLocalizedString(@"text_current_month_empty_tip", nil);
         _emptyLabel.textColor = [UIColor grayColor];
         _emptyLabel.textAlignment = NSTextAlignmentCenter;
         _emptyLabel.font = [UIFont systemFontOfSize:16];
@@ -231,13 +231,13 @@ static NSString *kCellId = @"cell";
 - (NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
     WS(ws);
     RecordWithTypeModel *record = [[self.dataArray objectAtIndex:indexPath.section].records objectAtIndex:indexPath.row];
-    UITableViewRowAction *delete = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"删除" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
-        UIAlertController *ac = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"%@(%@%@)", record.recordTypes[0].name,[ConfigManager getCurrentSymbol], [DecimalUtils fen2Yuan:record.money]] message:@"确定删除该记录？" preferredStyle:UIAlertControllerStyleAlert];
-        [ac addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UITableViewRowAction *delete = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:NSLocalizedString(@"text_delete", nil) handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        UIAlertController *ac = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"%@(%@%@)", record.recordTypes[0].name,[ConfigManager getCurrentSymbol], [DecimalUtils fen2Yuan:record.money]] message:NSLocalizedString(@"text_delete_record_note", nil) preferredStyle:UIAlertControllerStyleAlert];
+        [ac addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"text_affirm", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             [RecordDao deleteRecord:record];
             [ws update];
         }]];
-        [ac addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
+        [ac addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"text_cancel", nil) style:UIAlertActionStyleCancel handler:nil]];
         [ws presentViewController:ac animated:YES completion:nil];
     }];
     return @[delete];

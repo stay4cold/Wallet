@@ -49,15 +49,15 @@
 
 - (void)deleteRecordTypeAtIndexPath:(NSIndexPath *)indexPath {
     if (self.dataArray.count < 2) {
-        [self showHUDInView:self justWithText:@"请至少保留一个类型" disMissAfterDelay:2];
+        [self showHUDInView:self justWithText:NSLocalizedString(@"toast_least_one_type", nil) disMissAfterDelay:2];
         return;
     }
     RecordTypeModel *model = [RecordTypeModel recordTypeWithModel:[self.dataArray objectAtIndex:indexPath.row]];
     
     WS(ws);
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"删除 %@?", model.name] message:@"删除该分类后，将无法在记账页选择该分类，该分类下原有账单仍保持不变" preferredStyle:UIAlertControllerStyleAlert];
-    [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
-    [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"%@ %@?", NSLocalizedString(@"text_delete", nil), model.name] message:NSLocalizedString(@"text_delete_type_note", nil) preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"text_cancel", nil) style:UIAlertActionStyleCancel handler:nil]];
+    [alert addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"text_affirm", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         if ([RecordDao getRecordCountWithTypeId:model.ID] > 0) {
             model.state = RecordStateDeleted;
             [RecordTypeDao updateRecordTypes:[NSMutableArray arrayWithObject:model]];
@@ -99,7 +99,7 @@
 
 - (NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
     WS(ws);
-    UITableViewRowAction *del = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"删除" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+    UITableViewRowAction *del = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:NSLocalizedString(@"text_delete", nil) handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
         [ws deleteRecordTypeAtIndexPath:indexPath];
     }];
     return @[del];

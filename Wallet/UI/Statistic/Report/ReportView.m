@@ -62,7 +62,7 @@
         _chartView = [[PieChartView alloc] initWithFrame:CGRectMake(0, 0, self.width, 180)];
         _chartView.chartDescription.enabled = YES;
         _chartView.chartDescription.textColor = [UIColor colorWithHexString:@"737373"];
-        _chartView.chartDescription.text = @"注：小于1.9%不显示";
+        _chartView.chartDescription.text = NSLocalizedString(@"text_small_tip", nil);
         _chartView.noDataText = @"";
         _chartView.usePercentValuesEnabled = YES;
         _chartView.drawHoleEnabled = YES;
@@ -92,16 +92,16 @@
     for (MonthSumMoneyModel *ms in monthSum) {
         if (ms.type == RecordTypeOutlay) {
             outlay = ms.sumMoney;
-            [self.outlayBtn setTitle:[NSString stringWithFormat:@"支出 %@%@", [ConfigManager getCurrentSymbol], [DecimalUtils fen2Yuan:outlay]] forState:UIControlStateNormal];
+            [self.outlayBtn setTitle:[NSString stringWithFormat:@"%@ %@%@", NSLocalizedString(@"text_outlay", nil), [ConfigManager getCurrentSymbol], [DecimalUtils fen2Yuan:outlay]] forState:UIControlStateNormal];
         } else {
             income = ms.sumMoney;
-            [self.incomeBtn setTitle:[NSString stringWithFormat:@"收入 %@%@", [ConfigManager getCurrentSymbol], [DecimalUtils fen2Yuan:income]] forState:UIControlStateNormal];
+            [self.incomeBtn setTitle:[NSString stringWithFormat:@"%@ %@%@", NSLocalizedString(@"text_income", nil), [ConfigManager getCurrentSymbol], [DecimalUtils fen2Yuan:income]] forState:UIControlStateNormal];
         }
     }
     
     if ([income compare:NSDecimalNumber.zero] == NSOrderedDescending) {
         self.overageLabel.hidden = NO;
-        self.overageLabel.text = [NSString stringWithFormat:@"结余 %@%@", [ConfigManager getCurrentSymbol], [DecimalUtils fen2Yuan:[income decimalNumberBySubtracting:outlay]]];
+        self.overageLabel.text = [NSString stringWithFormat:@"%@ %@%@", NSLocalizedString(@"text_overage", nil), [ConfigManager getCurrentSymbol], [DecimalUtils fen2Yuan:[income decimalNumberBySubtracting:outlay]]];
     } else {
         self.overageLabel.hidden = YES;
     }

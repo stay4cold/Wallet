@@ -1,0 +1,6 @@
+
+/* Class = "UISegmentedControl"; Ses-CW-5Qu.segmentTitles[0] = "支出"; ObjectID = "Ses-CW-5Qu"; */
+"Ses-CW-5Qu.segmentTitles[0]" = "Pay";
+
+/* Class = "UISegmentedControl"; Ses-CW-5Qu.segmentTitles[1] = "收入"; ObjectID = "Ses-CW-5Qu"; */
+"Ses-CW-5Qu.segmentTitles[1]" = "Earn";

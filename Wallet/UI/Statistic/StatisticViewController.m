@@ -26,9 +26,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"历史统计";
+    self.title = NSLocalizedString(@"shortcuts_statistics", nil);
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"回顾" style:UIBarButtonItemStyleDone target:self action:@selector(toReviewController)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"text_review", nil) style:UIBarButtonItemStyleDone target:self action:@selector(toReviewController)];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

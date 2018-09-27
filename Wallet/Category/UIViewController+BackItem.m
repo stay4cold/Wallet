@@ -19,7 +19,7 @@
 
 - (void)evan_viewDidLoad {
     [self evan_viewDidLoad];
-    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:nil action:nil];
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"text_return", nil) style:UIBarButtonItemStyleDone target:nil action:nil];
 }
 
 @end

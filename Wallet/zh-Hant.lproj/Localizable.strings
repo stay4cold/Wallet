@@ -1,0 +1,298 @@
+/* 
+  Localizable.strings
+  Wallet
+
+  Created by 王成浩 on 2018/9/27.
+  Copyright © 2018年 evan. All rights reserved.
+*/
+
+"toast_add_record_fail" = "記賬失敗，請重試";
+"toast_modify_record_fail" = "記錄修改失敗";
+"toast_sort_fail" = "排序失敗";
+"toast_least_one_type" = "請至少保留一個類型";
+"toast_delete_fail" = "刪除失敗";
+"toast_type_img_fail" = "類型圖片獲取失敗";
+"toast_type_save_fail" = "類型保存失敗";
+"toast_type_is_exist" = "類型已經存在";
+"toast_record_delete_fail" = "記錄刪除失敗";
+"toast_current_sum_money_fail" = "本月支出收入總數獲取失敗";
+"toast_records_fail" = "獲取記錄列表失敗";
+"toast_init_types_fail" = "初始化類型數據失敗";
+"toast_get_types_fail" = "獲取類型數據失敗";
+"toast_get_statistics_fail" = "獲取統計數據失敗";
+"toast_get_month_summary_fail" = "獲取該月匯總數據失敗";
+"toast_get_type_summary_fail" = "獲取類型匯總數據失敗";
+"toast_not_install_email" = "您的手機沒有安裝郵件應用";
+"toast_not_install_alipay" = "謝謝，您沒有安裝支付寶客戶端";
+"toast_is_not_writable_external" = "備份失敗，外部存儲不可用";
+"toast_restore_fail" = "恢復備份失敗";
+"toast_restore_success" = "恢復備份成功";
+"toast_backup_list_fail" = "備份文件列表獲取失敗";
+"toast_open_auto_backup" = "自動備份已關閉，設置界面可重新打開";
+"toast_backup_success" = "備份成功";
+"toast_backup_fail" = "備份失敗";
+"toast_success_record" = "記賬成功";
+"toast_get_review_fail" = "獲取回顧數據失敗";
+"toast_get_review_sum_money_fail" = "獲取回顧匯總數據失敗";
+"toast_move_backup_files_success" = "備份文件夾修改並遷移成功";
+"toast_move_backup_files_fail" = "修改文件夾失敗";
+"toast_save_assets_success" = "保存成功";
+"toast_save_assets_fail" = "保存失敗";
+"toast_choose_account" = "請選擇不同賬戶";
+"toast_date_null" = "日期為空，請重新進入界面後嘗試";
+"toast_transfer_fail" = "轉賬失敗";
+"toast_submit_now" = "正在提交，請稍等..";
+
+// 首页
+"text_widget_today_outlay" = "今日支出";
+"text_widget_month_outlay" = "本月支出";
+"text_widget_month_budget" = "剩餘月預算";
+"text_month_outlay" = "本月支出";
+"text_month_income" = "本月收入";
+"text_month_remaining_budget" = "剩餘預算";
+"text_assets" = "淨資產";
+"text_net_assets" = "調整資產";
+"text_home_footer_tip" = "統計頁面可以查看往月記錄";
+"text_current_month_empty_tip" = "本月未開始記賬\n\n點擊加號，開始記賬";
+"shortcuts_add_record" = "記一筆";
+"shortcuts_statistics" = "歷史統計";
+"text_storage" = "開啟存儲權限";
+"text_storage_content" = "為了自動備份您的記賬數據，需要開啟存儲權限。";
+"text_storage_permission_tip" = "備份相關操作需要存儲權限，去設置界面開啟權限";
+"text_tip_backup_fail" = "自動備份失敗";
+
+// 记一笔
+"text_add_record" = "記一筆";
+"text_add_record_successive" = "記一筆（連續）";
+"text_modify_record" = "修改";
+"text_outlay" = "支出";
+"text_income" = "收入";
+"text_today" = "今天";
+"text_yesterday" = "昨天";
+"hint_enter_money" = "輸入金額";
+"hint_enter_remark" = "輸入備註";
+"text_tip_type_delete" = "該記錄的類型已經被刪除，已默認選擇了第一個類型";
+"text_know" = "我知道了";
+"type_eat" = "餐飲";
+"type_clothes" = "衣服";
+"type_humanity" = "禮物";
+"type_candy" = "零食";
+"type_3c" = "電子產品";
+"type_pet" = "寵物";
+"type_pill" = "醫療";
+"type_calendar" = "日用";
+"type_pluralism" = "兼職";
+"type_salary" = "薪資";
+
+// 分类管理
+"text_type_manage" = "分類管理";
+"text_delete" = "刪除";
+"text_delete_type_note" = "刪除該分類後，將無法在記賬頁選擇該分類，該分類下原有賬單仍保持不變";
+"text_delete_record_note" = "確定刪除該記錄？";
+"text_affirm_delete" = "刪除";
+"text_affirm" = "確定";
+"text_cancel" = "取消";
+
+// 排序
+"text_sort" = "排序";
+"text_drag_sort" = "長按拖動排序";
+"text_done" = "完成";
+
+// 添加/修改类型
+"hint_enter_type_name" = "請輸入類型名稱";
+"text_add" = "添加";
+"text_modify" = "修改";
+"text_outlay_type" = "支出類型";
+"text_income_type" = "收入類型";
+"text_save" = "保存";
+
+// 统计
+"text_order" = "賬單";
+"text_reports" = "報表";
+"text_overage" = "結餘";
+"text_day" = "日";
+"text_unit_account" = "筆";
+"text_choose_month" = "選擇月份";
+"text_sort_time" = "按時間";
+"text_sort_money" = "按金額";
+"text_empty_tip" = "每一筆賬單，都是生活的點滴";
+"text_small_tip" = "注：小於1.9%不顯示";
+
+// 回顾
+"text_review" = "回顧";
+"text_choose_year" = "選擇年份";
+"text_year" = "年";
+"text_month" = "月";
+
+// 设置
+"text_setting" = "設置";
+"text_money" = "記賬";
+"text_no_setting" = "未設置";
+"text_monty_budget" = "月預算";
+"text_set_budget" = "設置預算";
+"hint_enter_budget" = "請輸入預算";
+"hint_enter_assets" = "請輸入資產";
+"text_assets_manager" = "資產管理";
+"text_assets_manager_content" = "新建和修改資產賬戶";
+"text_title_symbol" = "貨幣符號";
+"text_set_symbol" = "選擇貨幣符號";
+"text_content_symbol" = "只改變貨號，不轉換匯率";
+"text_setting_type_manage" = "收支類型管理";
+"text_setting_type_manage_content" = "添加、修改和排序";
+"text_fast_accounting" = "快速記帳";
+"text_fast_tip" = "打開APP直接記賬";
+"text_successive_record" = "連續記賬";
+"text_successive_record_tip" = "長按首頁添加按鈕，連續記賬";
+"text_backup" = "本地備份";
+"text_go_backup" = "立即備份";
+//"text_backup_save" formatted="true" = "備份文件將保存到%1$s";
+//"text_restore" = "恢復備份";
+//"text_restore_content" formatted="true" = "備份文件將從%1$s讀取";
+//"text_restore_tip" = "備份文件名帶有Auto字樣表示是自動備份的文件，帶有User表示是點擊立即備份按鈕手動備份的文件。";
+//"text_list_restore" = "以下是備份文件，點擊恢復：";
+//"text_auto_backup" = "自動備份";
+//"text_auto_backup_content" = "數據有改變自動備份（建議開啟）";
+//"text_cloud_backup" = "雲備份";
+//"text_cloud_backup_title" = "雲盤備份";
+//"text_cloud_backup_content" = "WebDAV";
+//"text_about_and_more" = "關於 | 更多";
+//"text_about_content" = "了解我們的設計理念";
+//<string-array name="symbol" = "
+"symbol0" = "人民幣(¥)";
+"symbol1" = "港幣(HK$)";
+"symbol2" = "澳門幣(MOP$)";
+"symbol3" = "新台幣(NT$)";
+"symbol4" = "美元($)";
+"symbol5" = "歐元(€)";
+"symbol6" = "英鎊(£)";
+"symbol7" = "貨幣(¤)";
+"symbol8" = "不顯示";
+//</string-array = "
+//<string-array name="simple_symbol" = "
+//<item = "¥</item = "
+//<item = "HK$</item = "
+//<item = "MOP$</item = "
+//<item = "NT$</item = "
+//<item = "$</item = "
+//<item = "€</item = "
+//<item = "£</item = "
+//<item = "¤</item = "
+//<item / = "
+//</string-array = "
+//
+//// 关于
+//"text_about" = "關於";
+//"text_slogan" = "簡單，純粹的記賬應用";
+//"text_about_Introduction" = "介紹";
+//"text_about_detail" = "　　一款輕量級的記賬工具。\n\n　　這是我第一個用心的作品，起源於從小到大的一個「不可思議」（錢到底花在了哪兒），工作以後尤為明顯。於是「那樣記賬」誕生了，目的是讓大家以最簡單、直接的方式來記賬，讓這個「不可思議」不再不可思議，慢慢建立起良好的消費習慣。\n\n　　沒有任何多餘的權限，沒有廣告，沒有用戶系統，不保存用戶任何信息，只是單純的記錄收支情況。\n\n　　「那樣記賬」名稱取自一個人名字「娜」的諧音。";
+//"text_dev_designer" = "設計和開發";
+//"text_designer" = "總體設計";
+//"text_launcher_designer" = "啟動圖標設計";
+//"text_developer_designer" = "開發和部分設計";
+//"text_links" = "更多";
+//"text_score" = "評分";
+//"text_donate" = "捐贈作者";
+//"text_contact_author" formatted="true" = "聯繫作者： %1$s \n\n更多幫助：%2$s \n\n本應用已開源，歡迎貢獻代碼。\n開源地址：%3$s\n\n*本應用遵循《Android綠色應用公約》\n %4$s";
+//"text_license" = "開源許可證";
+//"text_privacy_policy" = "隱私政策";
+//"text_display" = "外觀";
+//"text_theme" = "主題";
+//"text_theme_dark" = "暗色主題";
+//"text_theme_light" = "亮色主題";
+//
+//// 云备份
+//"text_webdav" = "WebDAV雲盤";
+//"text_webdav_url" = "WebDAV地址";
+//"text_webdav_account" = "WebDAV授權賬號";
+//"text_webdav_password" = "WebDAV授權密碼";
+//"text_webdav_help" = "堅果雲授權教程";
+//"text_tip_auth_fail" = "授權賬號或密碼不正確";
+//"text_error" = "出錯了";
+//"text_restore_fail_rollback" = "恢復失敗，已回滾至恢復前狀態，點擊確定按鈕重啟應用。";
+//"text_backup_file_not_exist" = "備份文件不存在";
+//"text_saving_psw" = "正在加密保存密碼&#8230;";
+//"text_url_illegal" = "WebDAV地址不合法";
+//"text_config_webdav" = "請先配置WebDAV";
+//"text_auto_backup_mode_title" = "自動備份模式";
+//"text_auto_backup_mode" = "選擇自動備份模式";
+//"text_auto_backup_success" = "雲備份成功";
+//"text_auto_backup_fail" = "雲備份失敗！";
+//<string-array name="text_cloud_auto_backup_mode" = "
+//<item = "不自動備份</item = "
+//<item = "打開應用時備份</item = "
+//<item = "退出應用時備份</item = "
+//</string-array = "
+//
+//// 实验室
+//"text_other_setting" = "實驗室";
+//"text_local_backup_path" = "本地備份文件夾";
+//"text_local_backup_path_tip" = "重新選擇備份文件夾後，原有的備份文件夾會被遷移到新文件夾下";
+//"text_choose" = "選擇";
+//"text_folder_empty" = "沒有子目錄了";
+
+// 添加
+"text_new_assets" = "添加資產";
+"text_account" = "資產";
+"text_invest" = "投資";
+"text_add_assets" = "新建資產賬戶";
+"text_edit_assets" = "修改資產賬戶";
+"text_choose_bank" = "選擇銀行";
+"text_choose_account" = "選擇賬戶";
+"text_no_choose_account" = "不選擇賬戶";
+"text_no_choose_account_tip" = "僅計入收支賬單";
+"text_new_choose_account" = "新建賬戶";
+"hint_assets_name" = "請輸入賬戶名稱";
+"text_remark" = "備註：";
+"hint_remark" = "可不填";
+"text_balance" = "餘額：";
+"hint_balance" = "精確到小數點後兩位";
+"text_bank_zhaoshang" = "招商银行";
+"text_bank_icbc" = "工商银行";
+"text_bank_abchina" = "农业银行";
+"text_bank_boc" = "中国银行";
+"text_bank_ccb" = "建设银行";
+"text_bank_pingan" = "平安银行";
+"text_bank_bankcomm" = "交通银行";
+"text_bank_citicbank" = "中信银行";
+"text_bank_cib" = "兴业银行";
+"text_bank_cebbank" = "光大银行";
+"text_bank_cmbc" = "民生银行";
+"text_bank_chinapost" = "邮政储蓄银行";
+"text_assets_card" = "其他銀行";
+"text_assets_type_cash" = "现金";
+"text_assets_type_bank_card" = "银行卡";
+"text_assets_type_alipay" = "支付宝";
+"text_assets_type_wechat" = "微信钱包";
+"text_assets_type_jd" = "京东钱包";
+"text_assets_type_rice_card" = "饭卡";
+"text_assets_type_bus_card" = "公交卡";
+"text_assets_type_other" = "其他账户";
+"text_assets_type_monetary" = "货币基金";
+"text_assets_type_funding" = "基金";
+"text_assets_type_stock" = "股票";
+"text_assets_type_other_financial" = "其他理财";
+
+// 资产详情
+"text_assets_detail" = "資產詳情";
+"text_assets_account" = "資產賬戶";
+"text_assets_no_account" = "還沒有資產";
+"text_assets_balance" = "賬戶餘額";
+"text_tip_delete_assets" = "確定要刪除該資產嗎，不會刪除該資產下的現有收支記錄";
+
+// 资产
+"text_assets_all" = "總資產";
+"text_assets_liabilities" = "負資產";
+"text_assets_adjust" = "餘額調整";
+"text_assets_transfer" = "轉賬";
+"text_adjust_record" = "修改記錄";
+"text_adjust_record_no" = "沒有修改記錄";
+"text_transfer_record_no" = "沒有轉賬記錄";
+"text_transfer" = "轉賬";
+"text_choose_out_account" = "選擇轉出賬戶";
+"text_choose_in_account" = "選擇轉入賬戶";
+"text_choose_account" = "請先選擇賬戶";
+
+"text_return" = "返回";
+"text_update" = "正在更新...";
+"text_amount_hint" = "請輸入正確的金額";
+

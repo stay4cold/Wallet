@@ -30,7 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"资产详情";
+    self.title = NSLocalizedString(@"text_assets_detail", nil);
     
     UIBarButtonItem *deleteItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"ic_delete"] style:UIBarButtonItemStyleDone target:self action:@selector(delete)];
     UIBarButtonItem *editItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"ic_edit"] style:UIBarButtonItemStyleDone target:self action:@selector(modify)];
@@ -64,7 +64,7 @@
     if (moneyTitle.length != 0) {
         moneyTitle = [NSString stringWithFormat:@"(%@)", moneyTitle];
     }
-    self.moneyTitleLabel.text = [NSString stringWithFormat:@"账户余额%@", moneyTitle];
+    self.moneyTitleLabel.text = [NSString stringWithFormat:@"%@%@", NSLocalizedString(@"text_assets_balance", nil), moneyTitle];
     self.moneyLabel.text = [DecimalUtils fen2Yuan:self.assets.money];
     [self.transferView setAssetsID:self.assets.ID withType:0];
     [self.modifyView setAssetsID:self.assets.ID withType:1];
@@ -78,12 +78,12 @@
 
 - (void)delete {
     WS(ws);
-    UIAlertController *ac = [UIAlertController alertControllerWithTitle:@"删除?" message:@"确定要删除该资产吗，不会删除该资产下的现有收支记录" preferredStyle:UIAlertControllerStyleAlert];
-    [ac addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertController *ac = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"text_delete", nil) message:NSLocalizedString(@"text_tip_delete_assets", nil) preferredStyle:UIAlertControllerStyleAlert];
+    [ac addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"text_affirm", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [AssetsDao deleteAssets:ws.assets];
         [ws.navigationController popViewControllerAnimated:YES];
     }]];
-    [ac addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
+    [ac addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"text_cancel", nil) style:UIAlertActionStyleCancel handler:nil]];
     [self presentViewController:ac animated:YES completion:nil];
 }
 

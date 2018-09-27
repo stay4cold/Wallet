@@ -47,7 +47,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"转账";
+    self.title = NSLocalizedString(@"text_assets_transfer", nil);
     
     [self.outerView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(chooseOuterAsset)]];
     [self.innerView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(chooseInnerAsset)]];
@@ -118,11 +118,11 @@
 
 - (void)keyboardView:(KeyboardView *)keyboard confirm:(NSString *)text {
     if (!self.outerAssets || !self.innerAssets) {
-        [self showHUDInView:self.view justWithText:@"请先选择账户" disMissAfterDelay:2];
+        [self showHUDInView:self.view justWithText:NSLocalizedString(@"text_choose_account", nil) disMissAfterDelay:2];
         return;
     }
     if ([self.innerAssets.ID isEqual:self.outerAssets.ID]) {
-        [self showHUDInView:self.view justWithText:@"请选择不同的账户" disMissAfterDelay:2];
+        [self showHUDInView:self.view justWithText:NSLocalizedString(@"toast_choose_account", nil) disMissAfterDelay:2];
         return;
     }
     AssetsTransferRecordModel *model = [AssetsTransferRecordModel new];

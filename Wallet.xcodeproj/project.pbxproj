@@ -20,13 +20,11 @@
 		C3588F822149F1C400996E1A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3588F802149F1C400996E1A /* HomeViewController.xib */; };
 		C3588F852149F48D00996E1A /* UIColor+HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = C3588F842149F48D00996E1A /* UIColor+HexColors.m */; };
 		C3588F92214A0CDC00996E1A /* StatisticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3588F90214A0CDC00996E1A /* StatisticViewController.m */; };
-		C3588F93214A0CDC00996E1A /* StatisticViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3588F91214A0CDC00996E1A /* StatisticViewController.xib */; };
 		C3588F97214A0E7000996E1A /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3588F95214A0E7000996E1A /* HomeTableViewCell.m */; };
 		C3588F98214A0E7000996E1A /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3588F96214A0E7000996E1A /* HomeTableViewCell.xib */; };
 		C376ACB7214A54BF005D378B /* ReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C376ACB5214A54BF005D378B /* ReviewViewController.m */; };
 		C376ACB8214A54BF005D378B /* ReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C376ACB6214A54BF005D378B /* ReviewViewController.xib */; };
 		C376ACBD214A62D4005D378B /* AddRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C376ACBB214A62D4005D378B /* AddRecordViewController.m */; };
-		C376ACBE214A62D4005D378B /* AddRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C376ACBC214A62D4005D378B /* AddRecordViewController.xib */; };
 		C376ACC4214B5616005D378B /* RecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C376ACC3214B5616005D378B /* RecordModel.m */; };
 		C376ACC7214B57B2005D378B /* DaySumMoneyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C376ACC6214B57B2005D378B /* DaySumMoneyModel.m */; };
 		C376ACCA214B586F005D378B /* MonthSumMoneyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C376ACC9214B586F005D378B /* MonthSumMoneyModel.m */; };
@@ -53,12 +51,10 @@
 		C3859A502154D599007A39E0 /* AssetsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859A4F2154D599007A39E0 /* AssetsViewCell.xib */; };
 		C3859A532154D5EF007A39E0 /* AssetsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A522154D5EF007A39E0 /* AssetsViewCell.m */; };
 		C3859A572154DFED007A39E0 /* AssetsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A552154DFED007A39E0 /* AssetsDetailViewController.m */; };
-		C3859A582154DFED007A39E0 /* AssetsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859A562154DFED007A39E0 /* AssetsDetailViewController.xib */; };
 		C3859A5B2154E8ED007A39E0 /* AssetsDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A5A2154E8ED007A39E0 /* AssetsDetailView.m */; };
 		C3859A5F2154EAC3007A39E0 /* AssetsDetailViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A5D2154EAC3007A39E0 /* AssetsDetailViewCell.m */; };
 		C3859A602154EAC3007A39E0 /* AssetsDetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859A5E2154EAC3007A39E0 /* AssetsDetailViewCell.xib */; };
 		C3859A6521566563007A39E0 /* TransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A6321566563007A39E0 /* TransferViewController.m */; };
-		C3859A6621566563007A39E0 /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859A6421566563007A39E0 /* TransferViewController.xib */; };
 		C3859A6C21588673007A39E0 /* UIViewController+BackItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A6B21588673007A39E0 /* UIViewController+BackItem.m */; };
 		C3859A752158A338007A39E0 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3859A742158A338007A39E0 /* Wallet.swift */; };
 		C3859A812158C7AA007A39E0 /* BillView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A802158C7AA007A39E0 /* BillView.m */; };
@@ -69,8 +65,20 @@
 		C3859A92215B3796007A39E0 /* ReportViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859A90215B3796007A39E0 /* ReportViewCell.xib */; };
 		C3859A95215B69EB007A39E0 /* PercentFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A94215B69EB007A39E0 /* PercentFormatter.m */; };
 		C3859A9A215B72B4007A39E0 /* TypeRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A98215B72B4007A39E0 /* TypeRecordViewController.m */; };
-		C3859A9B215B72B4007A39E0 /* TypeRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859A99215B72B4007A39E0 /* TypeRecordViewController.xib */; };
 		C3859A9E215B7AE9007A39E0 /* TypeRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859A9D215B7AE9007A39E0 /* TypeRecordView.m */; };
+		C3859AA8215CAE06007A39E0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3859AAA215CAE06007A39E0 /* InfoPlist.strings */; };
+		C3859AAF215CAF1C007A39E0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3859AB1215CAF1C007A39E0 /* Localizable.strings */; };
+		C3859AB4215CC396007A39E0 /* TypeManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859AB6215CC396007A39E0 /* TypeManagerViewController.xib */; };
+		C3859ABD215CC4C4007A39E0 /* AddTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859ABF215CC4C4007A39E0 /* AddTypeViewController.xib */; };
+		C3859AC6215CCB93007A39E0 /* TypeRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859AC8215CCB93007A39E0 /* TypeRecordViewController.xib */; };
+		C3859ADC215CCFC1007A39E0 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859ADE215CCFC1007A39E0 /* KeyboardView.xib */; };
+		C3859AE4215CD05F007A39E0 /* AddRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859AE6215CD05F007A39E0 /* AddRecordViewController.xib */; };
+		C3859AED215CD24F007A39E0 /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859AEF215CD24F007A39E0 /* TransferViewController.xib */; };
+		C3859AF6215CD454007A39E0 /* AssetsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859AF8215CD454007A39E0 /* AssetsDetailViewController.xib */; };
+		C3859AFF215CD8B1007A39E0 /* AddAssetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859B01215CD8B1007A39E0 /* AddAssetsViewController.xib */; };
+		C3859B08215CD9B2007A39E0 /* AllAssetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859B0A215CD9B2007A39E0 /* AllAssetsViewController.xib */; };
+		C3859B11215D0A9D007A39E0 /* StatisticViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3859B13215D0A9D007A39E0 /* StatisticViewController.xib */; };
+		C3859B1D215D0E26007A39E0 /* Api.m in Sources */ = {isa = PBXBuildFile; fileRef = C3859B1C215D0E26007A39E0 /* Api.m */; };
 		C3BFAC512149014200326BD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BFAC502149014200326BD3 /* AppDelegate.m */; };
 		C3BFAC572149014200326BD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3BFAC552149014200326BD3 /* Main.storyboard */; };
 		C3BFAC592149014300326BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3BFAC582149014300326BD3 /* Assets.xcassets */; };
@@ -83,24 +91,19 @@
 		C3EDF147214CF8F100A64483 /* AddTypePageItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF145214CF8F100A64483 /* AddTypePageItemViewCell.m */; };
 		C3EDF148214CF8F100A64483 /* AddTypePageItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EDF146214CF8F100A64483 /* AddTypePageItemViewCell.xib */; };
 		C3EDF14B214D44AE00A64483 /* KeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF14A214D44AE00A64483 /* KeyboardView.m */; };
-		C3EDF14D214D58F700A64483 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EDF14C214D58F700A64483 /* KeyboardView.xib */; };
 		C3EDF153214F4E4D00A64483 /* AddTypePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF152214F4E4D00A64483 /* AddTypePageView.m */; };
 		C3EDF157214F561900A64483 /* AddTypePageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF155214F561900A64483 /* AddTypePageViewCell.m */; };
 		C3EDF164214FA2A700A64483 /* TypeManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF162214FA2A700A64483 /* TypeManagerViewController.m */; };
-		C3EDF165214FA2A700A64483 /* TypeManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EDF163214FA2A700A64483 /* TypeManagerViewController.xib */; };
 		C3EDF1682150942E00A64483 /* TypeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF1672150942E00A64483 /* TypeTableView.m */; };
 		C3EDF16C2150953400A64483 /* TypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF16A2150953400A64483 /* TypeTableViewCell.m */; };
 		C3EDF16D2150953400A64483 /* TypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EDF16B2150953400A64483 /* TypeTableViewCell.xib */; };
 		C3EDF1712150A44900A64483 /* AddTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF16F2150A44900A64483 /* AddTypeViewController.m */; };
-		C3EDF1722150A44900A64483 /* AddTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EDF1702150A44900A64483 /* AddTypeViewController.xib */; };
 		C3EDF1762150B07A00A64483 /* AddTypeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF1742150B07A00A64483 /* AddTypeViewCell.m */; };
 		C3EDF1772150B07A00A64483 /* AddTypeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EDF1752150B07A00A64483 /* AddTypeViewCell.xib */; };
 		C3EDF17F2150FAD600A64483 /* AllAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF17D2150FAD600A64483 /* AllAssetsViewController.m */; };
-		C3EDF1802150FAD600A64483 /* AllAssetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EDF17E2150FAD600A64483 /* AllAssetsViewController.xib */; };
 		C3EDF1832150FF6C00A64483 /* AssetsListView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF1822150FF6C00A64483 /* AssetsListView.m */; };
 		C3EDF18621513E6900A64483 /* AssetsTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF18521513E6900A64483 /* AssetsTypeModel.m */; };
 		C3EDF18B2151D51300A64483 /* AddAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF1892151D51300A64483 /* AddAssetsViewController.m */; };
-		C3EDF18C2151D51300A64483 /* AddAssetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EDF18A2151D51300A64483 /* AddAssetsViewController.xib */; };
 		C3EDF18F2152005200A64483 /* BankModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF18E2152005200A64483 /* BankModel.m */; };
 		C3EDF192215200BC00A64483 /* BankCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF191215200BC00A64483 /* BankCreator.m */; };
 		C3EDF1962152042B00A64483 /* BankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDF1952152042B00A64483 /* BankViewController.m */; };
@@ -151,7 +154,6 @@
 		C3588F872149F56700996E1A /* WalletMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletMacro.h; sourceTree = "<group>"; };
 		C3588F8F214A0CDC00996E1A /* StatisticViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatisticViewController.h; sourceTree = "<group>"; };
 		C3588F90214A0CDC00996E1A /* StatisticViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatisticViewController.m; sourceTree = "<group>"; };
-		C3588F91214A0CDC00996E1A /* StatisticViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticViewController.xib; sourceTree = "<group>"; };
 		C3588F94214A0E7000996E1A /* HomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
 		C3588F95214A0E7000996E1A /* HomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
 		C3588F96214A0E7000996E1A /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
@@ -160,7 +162,6 @@
 		C376ACB6214A54BF005D378B /* ReviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewViewController.xib; sourceTree = "<group>"; };
 		C376ACBA214A62D4005D378B /* AddRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddRecordViewController.h; sourceTree = "<group>"; };
 		C376ACBB214A62D4005D378B /* AddRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddRecordViewController.m; sourceTree = "<group>"; };
-		C376ACBC214A62D4005D378B /* AddRecordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddRecordViewController.xib; sourceTree = "<group>"; };
 		C376ACBF214B4C59005D378B /* WalletEnumHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletEnumHeader.h; sourceTree = "<group>"; };
 		C376ACC2214B5616005D378B /* RecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordModel.h; sourceTree = "<group>"; };
 		C376ACC3214B5616005D378B /* RecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordModel.m; sourceTree = "<group>"; };
@@ -211,7 +212,6 @@
 		C3859A522154D5EF007A39E0 /* AssetsViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetsViewCell.m; sourceTree = "<group>"; };
 		C3859A542154DFED007A39E0 /* AssetsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetsDetailViewController.h; sourceTree = "<group>"; };
 		C3859A552154DFED007A39E0 /* AssetsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetsDetailViewController.m; sourceTree = "<group>"; };
-		C3859A562154DFED007A39E0 /* AssetsDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetsDetailViewController.xib; sourceTree = "<group>"; };
 		C3859A592154E8ED007A39E0 /* AssetsDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetsDetailView.h; sourceTree = "<group>"; };
 		C3859A5A2154E8ED007A39E0 /* AssetsDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetsDetailView.m; sourceTree = "<group>"; };
 		C3859A5C2154EAC3007A39E0 /* AssetsDetailViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetsDetailViewCell.h; sourceTree = "<group>"; };
@@ -219,7 +219,6 @@
 		C3859A5E2154EAC3007A39E0 /* AssetsDetailViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetsDetailViewCell.xib; sourceTree = "<group>"; };
 		C3859A6221566563007A39E0 /* TransferViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferViewController.h; sourceTree = "<group>"; };
 		C3859A6321566563007A39E0 /* TransferViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransferViewController.m; sourceTree = "<group>"; };
-		C3859A6421566563007A39E0 /* TransferViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
 		C3859A6A21588673007A39E0 /* UIViewController+BackItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackItem.h"; sourceTree = "<group>"; };
 		C3859A6B21588673007A39E0 /* UIViewController+BackItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackItem.m"; sourceTree = "<group>"; };
 		C3859A732158A338007A39E0 /* Wallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wallet-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -237,9 +236,60 @@
 		C3859A94215B69EB007A39E0 /* PercentFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PercentFormatter.m; sourceTree = "<group>"; };
 		C3859A97215B72B4007A39E0 /* TypeRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeRecordViewController.h; sourceTree = "<group>"; };
 		C3859A98215B72B4007A39E0 /* TypeRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypeRecordViewController.m; sourceTree = "<group>"; };
-		C3859A99215B72B4007A39E0 /* TypeRecordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeRecordViewController.xib; sourceTree = "<group>"; };
 		C3859A9C215B7AE9007A39E0 /* TypeRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeRecordView.h; sourceTree = "<group>"; };
 		C3859A9D215B7AE9007A39E0 /* TypeRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypeRecordView.m; sourceTree = "<group>"; };
+		C3859AA2215CAD13007A39E0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		C3859AA3215CAD13007A39E0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		C3859AA4215CAD80007A39E0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		C3859AA5215CAD80007A39E0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		C3859AA9215CAE06007A39E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3859AAB215CAE09007A39E0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		C3859AAC215CAE0B007A39E0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		C3859AB0215CAF1C007A39E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C3859AB2215CAF1E007A39E0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C3859AB3215CAF20007A39E0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C3859AB5215CC396007A39E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TypeManagerViewController.xib; sourceTree = "<group>"; };
+		C3859AB8215CC399007A39E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TypeManagerViewController.strings; sourceTree = "<group>"; };
+		C3859ABA215CC39E007A39E0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/TypeManagerViewController.strings"; sourceTree = "<group>"; };
+		C3859ABC215CC3A0007A39E0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/TypeManagerViewController.strings"; sourceTree = "<group>"; };
+		C3859ABE215CC4C4007A39E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AddTypeViewController.xib; sourceTree = "<group>"; };
+		C3859AC1215CC4CA007A39E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AddTypeViewController.strings; sourceTree = "<group>"; };
+		C3859AC3215CC4CC007A39E0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/AddTypeViewController.strings"; sourceTree = "<group>"; };
+		C3859AC5215CC4CD007A39E0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/AddTypeViewController.strings"; sourceTree = "<group>"; };
+		C3859AC7215CCB93007A39E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TypeRecordViewController.xib; sourceTree = "<group>"; };
+		C3859ACA215CCB96007A39E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TypeRecordViewController.strings; sourceTree = "<group>"; };
+		C3859ACC215CCB98007A39E0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/TypeRecordViewController.strings"; sourceTree = "<group>"; };
+		C3859ACE215CCB9A007A39E0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/TypeRecordViewController.strings"; sourceTree = "<group>"; };
+		C3859ADD215CCFC1007A39E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/KeyboardView.xib; sourceTree = "<group>"; };
+		C3859AE0215CCFC4007A39E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/KeyboardView.strings; sourceTree = "<group>"; };
+		C3859AE1215CCFCF007A39E0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/KeyboardView.strings"; sourceTree = "<group>"; };
+		C3859AE3215CCFD1007A39E0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/KeyboardView.strings"; sourceTree = "<group>"; };
+		C3859AE5215CD05F007A39E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AddRecordViewController.xib; sourceTree = "<group>"; };
+		C3859AE8215CD061007A39E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AddRecordViewController.strings; sourceTree = "<group>"; };
+		C3859AEA215CD063007A39E0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/AddRecordViewController.strings"; sourceTree = "<group>"; };
+		C3859AEC215CD065007A39E0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/AddRecordViewController.strings"; sourceTree = "<group>"; };
+		C3859AEE215CD24F007A39E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TransferViewController.xib; sourceTree = "<group>"; };
+		C3859AF1215CD252007A39E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TransferViewController.strings; sourceTree = "<group>"; };
+		C3859AF3215CD254007A39E0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/TransferViewController.strings"; sourceTree = "<group>"; };
+		C3859AF5215CD256007A39E0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/TransferViewController.strings"; sourceTree = "<group>"; };
+		C3859AF7215CD454007A39E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AssetsDetailViewController.xib; sourceTree = "<group>"; };
+		C3859AFA215CD457007A39E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AssetsDetailViewController.strings; sourceTree = "<group>"; };
+		C3859AFC215CD458007A39E0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/AssetsDetailViewController.strings"; sourceTree = "<group>"; };
+		C3859AFE215CD45A007A39E0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/AssetsDetailViewController.strings"; sourceTree = "<group>"; };
+		C3859B00215CD8B1007A39E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AddAssetsViewController.xib; sourceTree = "<group>"; };
+		C3859B03215CD8B3007A39E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AddAssetsViewController.strings; sourceTree = "<group>"; };
+		C3859B05215CD8B6007A39E0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/AddAssetsViewController.strings"; sourceTree = "<group>"; };
+		C3859B07215CD8B8007A39E0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/AddAssetsViewController.strings"; sourceTree = "<group>"; };
+		C3859B09215CD9B2007A39E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AllAssetsViewController.xib; sourceTree = "<group>"; };
+		C3859B0C215CD9B5007A39E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AllAssetsViewController.strings; sourceTree = "<group>"; };
+		C3859B0E215CD9B7007A39E0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/AllAssetsViewController.strings"; sourceTree = "<group>"; };
+		C3859B10215CD9B8007A39E0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/AllAssetsViewController.strings"; sourceTree = "<group>"; };
+		C3859B12215D0A9D007A39E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/StatisticViewController.xib; sourceTree = "<group>"; };
+		C3859B15215D0AA1007A39E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/StatisticViewController.strings; sourceTree = "<group>"; };
+		C3859B17215D0AA3007A39E0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/StatisticViewController.strings"; sourceTree = "<group>"; };
+		C3859B19215D0AA5007A39E0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/StatisticViewController.strings"; sourceTree = "<group>"; };
+		C3859B1B215D0E26007A39E0 /* Api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Api.h; sourceTree = "<group>"; };
+		C3859B1C215D0E26007A39E0 /* Api.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Api.m; sourceTree = "<group>"; };
 		C3BFAC4C2149014200326BD3 /* Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BFAC4F2149014200326BD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3BFAC502149014200326BD3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -263,14 +313,12 @@
 		C3EDF146214CF8F100A64483 /* AddTypePageItemViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTypePageItemViewCell.xib; sourceTree = "<group>"; };
 		C3EDF149214D44AE00A64483 /* KeyboardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardView.h; sourceTree = "<group>"; };
 		C3EDF14A214D44AE00A64483 /* KeyboardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardView.m; sourceTree = "<group>"; };
-		C3EDF14C214D58F700A64483 /* KeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
 		C3EDF151214F4E4D00A64483 /* AddTypePageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTypePageView.h; sourceTree = "<group>"; };
 		C3EDF152214F4E4D00A64483 /* AddTypePageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddTypePageView.m; sourceTree = "<group>"; };
 		C3EDF154214F561900A64483 /* AddTypePageViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTypePageViewCell.h; sourceTree = "<group>"; };
 		C3EDF155214F561900A64483 /* AddTypePageViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddTypePageViewCell.m; sourceTree = "<group>"; };
 		C3EDF161214FA2A700A64483 /* TypeManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeManagerViewController.h; sourceTree = "<group>"; };
 		C3EDF162214FA2A700A64483 /* TypeManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypeManagerViewController.m; sourceTree = "<group>"; };
-		C3EDF163214FA2A700A64483 /* TypeManagerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeManagerViewController.xib; sourceTree = "<group>"; };
 		C3EDF1662150942E00A64483 /* TypeTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeTableView.h; sourceTree = "<group>"; };
 		C3EDF1672150942E00A64483 /* TypeTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypeTableView.m; sourceTree = "<group>"; };
 		C3EDF1692150953400A64483 /* TypeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeTableViewCell.h; sourceTree = "<group>"; };
@@ -278,20 +326,17 @@
 		C3EDF16B2150953400A64483 /* TypeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeTableViewCell.xib; sourceTree = "<group>"; };
 		C3EDF16E2150A44900A64483 /* AddTypeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTypeViewController.h; sourceTree = "<group>"; };
 		C3EDF16F2150A44900A64483 /* AddTypeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddTypeViewController.m; sourceTree = "<group>"; };
-		C3EDF1702150A44900A64483 /* AddTypeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTypeViewController.xib; sourceTree = "<group>"; };
 		C3EDF1732150B07A00A64483 /* AddTypeViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTypeViewCell.h; sourceTree = "<group>"; };
 		C3EDF1742150B07A00A64483 /* AddTypeViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddTypeViewCell.m; sourceTree = "<group>"; };
 		C3EDF1752150B07A00A64483 /* AddTypeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTypeViewCell.xib; sourceTree = "<group>"; };
 		C3EDF17C2150FAD600A64483 /* AllAssetsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllAssetsViewController.h; sourceTree = "<group>"; };
 		C3EDF17D2150FAD600A64483 /* AllAssetsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllAssetsViewController.m; sourceTree = "<group>"; };
-		C3EDF17E2150FAD600A64483 /* AllAssetsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllAssetsViewController.xib; sourceTree = "<group>"; };
 		C3EDF1812150FF6C00A64483 /* AssetsListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetsListView.h; sourceTree = "<group>"; };
 		C3EDF1822150FF6C00A64483 /* AssetsListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetsListView.m; sourceTree = "<group>"; };
 		C3EDF18421513E6900A64483 /* AssetsTypeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetsTypeModel.h; sourceTree = "<group>"; };
 		C3EDF18521513E6900A64483 /* AssetsTypeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetsTypeModel.m; sourceTree = "<group>"; };
 		C3EDF1882151D51300A64483 /* AddAssetsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddAssetsViewController.h; sourceTree = "<group>"; };
 		C3EDF1892151D51300A64483 /* AddAssetsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddAssetsViewController.m; sourceTree = "<group>"; };
-		C3EDF18A2151D51300A64483 /* AddAssetsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAssetsViewController.xib; sourceTree = "<group>"; };
 		C3EDF18D2152005200A64483 /* BankModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankModel.h; sourceTree = "<group>"; };
 		C3EDF18E2152005200A64483 /* BankModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankModel.m; sourceTree = "<group>"; };
 		C3EDF190215200BC00A64483 /* BankCreator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankCreator.h; sourceTree = "<group>"; };
@@ -407,7 +452,7 @@
 				C3859A7E2158C631007A39E0 /* Bill */,
 				C3588F8F214A0CDC00996E1A /* StatisticViewController.h */,
 				C3588F90214A0CDC00996E1A /* StatisticViewController.m */,
-				C3588F91214A0CDC00996E1A /* StatisticViewController.xib */,
+				C3859B13215D0A9D007A39E0 /* StatisticViewController.xib */,
 			);
 			path = Statistic;
 			sourceTree = "<group>";
@@ -425,15 +470,15 @@
 		C376ACB9214A62BF005D378B /* Add */ = {
 			isa = PBXGroup;
 			children = (
+				C3859ADE215CCFC1007A39E0 /* KeyboardView.xib */,
 				C376ACBA214A62D4005D378B /* AddRecordViewController.h */,
 				C376ACBB214A62D4005D378B /* AddRecordViewController.m */,
-				C376ACBC214A62D4005D378B /* AddRecordViewController.xib */,
+				C3859AE6215CD05F007A39E0 /* AddRecordViewController.xib */,
 				C3EDF144214CF8F100A64483 /* AddTypePageItemViewCell.h */,
 				C3EDF145214CF8F100A64483 /* AddTypePageItemViewCell.m */,
 				C3EDF146214CF8F100A64483 /* AddTypePageItemViewCell.xib */,
 				C3EDF149214D44AE00A64483 /* KeyboardView.h */,
 				C3EDF14A214D44AE00A64483 /* KeyboardView.m */,
-				C3EDF14C214D58F700A64483 /* KeyboardView.xib */,
 				C3EDF151214F4E4D00A64483 /* AddTypePageView.h */,
 				C3EDF152214F4E4D00A64483 /* AddTypePageView.m */,
 				C3EDF154214F561900A64483 /* AddTypePageViewCell.h */,
@@ -527,7 +572,7 @@
 			children = (
 				C3859A542154DFED007A39E0 /* AssetsDetailViewController.h */,
 				C3859A552154DFED007A39E0 /* AssetsDetailViewController.m */,
-				C3859A562154DFED007A39E0 /* AssetsDetailViewController.xib */,
+				C3859AF8215CD454007A39E0 /* AssetsDetailViewController.xib */,
 				C3859A592154E8ED007A39E0 /* AssetsDetailView.h */,
 				C3859A5A2154E8ED007A39E0 /* AssetsDetailView.m */,
 				C3859A5C2154EAC3007A39E0 /* AssetsDetailViewCell.h */,
@@ -555,7 +600,7 @@
 			children = (
 				C3859A6221566563007A39E0 /* TransferViewController.h */,
 				C3859A6321566563007A39E0 /* TransferViewController.m */,
-				C3859A6421566563007A39E0 /* TransferViewController.xib */,
+				C3859AEF215CD24F007A39E0 /* TransferViewController.xib */,
 			);
 			path = Transfer;
 			sourceTree = "<group>";
@@ -590,11 +635,20 @@
 			children = (
 				C3859A97215B72B4007A39E0 /* TypeRecordViewController.h */,
 				C3859A98215B72B4007A39E0 /* TypeRecordViewController.m */,
-				C3859A99215B72B4007A39E0 /* TypeRecordViewController.xib */,
+				C3859AC8215CCB93007A39E0 /* TypeRecordViewController.xib */,
 				C3859A9C215B7AE9007A39E0 /* TypeRecordView.h */,
 				C3859A9D215B7AE9007A39E0 /* TypeRecordView.m */,
 			);
 			path = Type;
+			sourceTree = "<group>";
+		};
+		C3859B1A215D0E07007A39E0 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				C3859B1B215D0E26007A39E0 /* Api.h */,
+				C3859B1C215D0E26007A39E0 /* Api.m */,
+			);
+			path = Net;
 			sourceTree = "<group>";
 		};
 		C3BFAC432149014200326BD3 = {
@@ -622,6 +676,7 @@
 		C3BFAC4E2149014200326BD3 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				C3859B1A215D0E07007A39E0 /* Net */,
 				C3EDF13D214CA7E300A64483 /* Utils */,
 				C376ACD7214B6804005D378B /* Dao */,
 				C376ACC1214B55D8005D378B /* UI */,
@@ -633,6 +688,8 @@
 				C3BFAC582149014300326BD3 /* Assets.xcassets */,
 				C3BFAC5A2149014300326BD3 /* LaunchScreen.storyboard */,
 				C3BFAC5D2149014300326BD3 /* Info.plist */,
+				C3859AAA215CAE06007A39E0 /* InfoPlist.strings */,
+				C3859AB1215CAF1C007A39E0 /* Localizable.strings */,
 				C3BFAC5E2149014300326BD3 /* main.m */,
 				C3588F7C2149066B00996E1A /* PrefixHeader.pch */,
 				C3588F872149F56700996E1A /* WalletMacro.h */,
@@ -688,7 +745,7 @@
 			children = (
 				C3EDF161214FA2A700A64483 /* TypeManagerViewController.h */,
 				C3EDF162214FA2A700A64483 /* TypeManagerViewController.m */,
-				C3EDF163214FA2A700A64483 /* TypeManagerViewController.xib */,
+				C3859AB6215CC396007A39E0 /* TypeManagerViewController.xib */,
 				C3EDF1662150942E00A64483 /* TypeTableView.h */,
 				C3EDF1672150942E00A64483 /* TypeTableView.m */,
 				C3EDF1692150953400A64483 /* TypeTableViewCell.h */,
@@ -712,7 +769,7 @@
 			children = (
 				C3EDF16E2150A44900A64483 /* AddTypeViewController.h */,
 				C3EDF16F2150A44900A64483 /* AddTypeViewController.m */,
-				C3EDF1702150A44900A64483 /* AddTypeViewController.xib */,
+				C3859ABF215CC4C4007A39E0 /* AddTypeViewController.xib */,
 				C3EDF1732150B07A00A64483 /* AddTypeViewCell.h */,
 				C3EDF1742150B07A00A64483 /* AddTypeViewCell.m */,
 				C3EDF1752150B07A00A64483 /* AddTypeViewCell.xib */,
@@ -739,7 +796,7 @@
 			children = (
 				C3EDF17C2150FAD600A64483 /* AllAssetsViewController.h */,
 				C3EDF17D2150FAD600A64483 /* AllAssetsViewController.m */,
-				C3EDF17E2150FAD600A64483 /* AllAssetsViewController.xib */,
+				C3859B0A215CD9B2007A39E0 /* AllAssetsViewController.xib */,
 				C3EDF1812150FF6C00A64483 /* AssetsListView.h */,
 				C3EDF1822150FF6C00A64483 /* AssetsListView.m */,
 			);
@@ -751,7 +808,7 @@
 			children = (
 				C3EDF1882151D51300A64483 /* AddAssetsViewController.h */,
 				C3EDF1892151D51300A64483 /* AddAssetsViewController.m */,
-				C3EDF18A2151D51300A64483 /* AddAssetsViewController.xib */,
+				C3859B01215CD8B1007A39E0 /* AddAssetsViewController.xib */,
 			);
 			path = Add;
 			sourceTree = "<group>";
@@ -855,6 +912,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = C3BFAC432149014200326BD3;
 			productRefGroup = C3BFAC4D2149014200326BD3 /* Products */;
@@ -874,29 +933,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3859A602154EAC3007A39E0 /* AssetsDetailViewCell.xib in Resources */,
+				C3859AA8215CAE06007A39E0 /* InfoPlist.strings in Resources */,
 				C3BFAC5C2149014300326BD3 /* LaunchScreen.storyboard in Resources */,
 				C3859A92215B3796007A39E0 /* ReportViewCell.xib in Resources */,
 				C3588F98214A0E7000996E1A /* HomeTableViewCell.xib in Resources */,
+				C3859ADC215CCFC1007A39E0 /* KeyboardView.xib in Resources */,
 				C3859A872159C425007A39E0 /* BillView.xib in Resources */,
 				C3859A4E21549C09007A39E0 /* AssetsViewController.xib in Resources */,
 				C32C68C9215243E000249A74 /* ChooseAssetsViewCell.xib in Resources */,
-				C3EDF14D214D58F700A64483 /* KeyboardView.xib in Resources */,
 				C3EDF148214CF8F100A64483 /* AddTypePageItemViewCell.xib in Resources */,
-				C3859A582154DFED007A39E0 /* AssetsDetailViewController.xib in Resources */,
+				C3859AF6215CD454007A39E0 /* AssetsDetailViewController.xib in Resources */,
 				C376ACB8214A54BF005D378B /* ReviewViewController.xib in Resources */,
-				C3859A6621566563007A39E0 /* TransferViewController.xib in Resources */,
-				C3588F93214A0CDC00996E1A /* StatisticViewController.xib in Resources */,
+				C3859AED215CD24F007A39E0 /* TransferViewController.xib in Resources */,
+				C3859B11215D0A9D007A39E0 /* StatisticViewController.xib in Resources */,
 				C3859A8D215B34C3007A39E0 /* ReportView.xib in Resources */,
-				C3EDF1802150FAD600A64483 /* AllAssetsViewController.xib in Resources */,
-				C376ACBE214A62D4005D378B /* AddRecordViewController.xib in Resources */,
-				C3EDF1722150A44900A64483 /* AddTypeViewController.xib in Resources */,
-				C3EDF18C2151D51300A64483 /* AddAssetsViewController.xib in Resources */,
+				C3859B08215CD9B2007A39E0 /* AllAssetsViewController.xib in Resources */,
+				C3859AE4215CD05F007A39E0 /* AddRecordViewController.xib in Resources */,
+				C3859ABD215CC4C4007A39E0 /* AddTypeViewController.xib in Resources */,
+				C3859AFF215CD8B1007A39E0 /* AddAssetsViewController.xib in Resources */,
 				C3BFAC592149014300326BD3 /* Assets.xcassets in Resources */,
 				C3EDF16D2150953400A64483 /* TypeTableViewCell.xib in Resources */,
 				C3EDF1772150B07A00A64483 /* AddTypeViewCell.xib in Resources */,
+				C3859AAF215CAF1C007A39E0 /* Localizable.strings in Resources */,
 				C3BFAC572149014200326BD3 /* Main.storyboard in Resources */,
-				C3859A9B215B72B4007A39E0 /* TypeRecordViewController.xib in Resources */,
-				C3EDF165214FA2A700A64483 /* TypeManagerViewController.xib in Resources */,
+				C3859AC6215CCB93007A39E0 /* TypeRecordViewController.xib in Resources */,
+				C3859AB4215CC396007A39E0 /* TypeManagerViewController.xib in Resources */,
 				C3588F822149F1C400996E1A /* HomeViewController.xib in Resources */,
 				C3859A502154D599007A39E0 /* AssetsViewCell.xib in Resources */,
 				C3859A3821547EB7007A39E0 /* SettingNormalViewCell.xib in Resources */,
@@ -1051,6 +1112,7 @@
 				C3859A5F2154EAC3007A39E0 /* AssetsDetailViewCell.m in Sources */,
 				C376ACDA214B6820005D378B /* AssetsDao.m in Sources */,
 				C3588F79214902D700996E1A /* UIScrollView+VTEmpty.m in Sources */,
+				C3859B1D215D0E26007A39E0 /* Api.m in Sources */,
 				C3859A852158C7BD007A39E0 /* ReportView.m in Sources */,
 				C32C68CF215283D000249A74 /* ConfigManager.m in Sources */,
 			);
@@ -1088,10 +1150,142 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		C3859AAA215CAE06007A39E0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3859AA9215CAE06007A39E0 /* en */,
+				C3859AAB215CAE09007A39E0 /* zh-Hans */,
+				C3859AAC215CAE0B007A39E0 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C3859AB1215CAF1C007A39E0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3859AB0215CAF1C007A39E0 /* en */,
+				C3859AB2215CAF1E007A39E0 /* zh-Hans */,
+				C3859AB3215CAF20007A39E0 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		C3859AB6215CC396007A39E0 /* TypeManagerViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3859AB5215CC396007A39E0 /* Base */,
+				C3859AB8215CC399007A39E0 /* en */,
+				C3859ABA215CC39E007A39E0 /* zh-Hans */,
+				C3859ABC215CC3A0007A39E0 /* zh-Hant */,
+			);
+			name = TypeManagerViewController.xib;
+			sourceTree = "<group>";
+		};
+		C3859ABF215CC4C4007A39E0 /* AddTypeViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3859ABE215CC4C4007A39E0 /* Base */,
+				C3859AC1215CC4CA007A39E0 /* en */,
+				C3859AC3215CC4CC007A39E0 /* zh-Hans */,
+				C3859AC5215CC4CD007A39E0 /* zh-Hant */,
+			);
+			name = AddTypeViewController.xib;
+			sourceTree = "<group>";
+		};
+		C3859AC8215CCB93007A39E0 /* TypeRecordViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3859AC7215CCB93007A39E0 /* Base */,
+				C3859ACA215CCB96007A39E0 /* en */,
+				C3859ACC215CCB98007A39E0 /* zh-Hans */,
+				C3859ACE215CCB9A007A39E0 /* zh-Hant */,
+			);
+			name = TypeRecordViewController.xib;
+			sourceTree = "<group>";
+		};
+		C3859ADE215CCFC1007A39E0 /* KeyboardView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3859ADD215CCFC1007A39E0 /* Base */,
+				C3859AE0215CCFC4007A39E0 /* en */,
+				C3859AE1215CCFCF007A39E0 /* zh-Hans */,
+				C3859AE3215CCFD1007A39E0 /* zh-Hant */,
+			);
+			name = KeyboardView.xib;
+			sourceTree = "<group>";
+		};
+		C3859AE6215CD05F007A39E0 /* AddRecordViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3859AE5215CD05F007A39E0 /* Base */,
+				C3859AE8215CD061007A39E0 /* en */,
+				C3859AEA215CD063007A39E0 /* zh-Hans */,
+				C3859AEC215CD065007A39E0 /* zh-Hant */,
+			);
+			name = AddRecordViewController.xib;
+			sourceTree = "<group>";
+		};
+		C3859AEF215CD24F007A39E0 /* TransferViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3859AEE215CD24F007A39E0 /* Base */,
+				C3859AF1215CD252007A39E0 /* en */,
+				C3859AF3215CD254007A39E0 /* zh-Hans */,
+				C3859AF5215CD256007A39E0 /* zh-Hant */,
+			);
+			name = TransferViewController.xib;
+			sourceTree = "<group>";
+		};
+		C3859AF8215CD454007A39E0 /* AssetsDetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3859AF7215CD454007A39E0 /* Base */,
+				C3859AFA215CD457007A39E0 /* en */,
+				C3859AFC215CD458007A39E0 /* zh-Hans */,
+				C3859AFE215CD45A007A39E0 /* zh-Hant */,
+			);
+			name = AssetsDetailViewController.xib;
+			sourceTree = "<group>";
+		};
+		C3859B01215CD8B1007A39E0 /* AddAssetsViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3859B00215CD8B1007A39E0 /* Base */,
+				C3859B03215CD8B3007A39E0 /* en */,
+				C3859B05215CD8B6007A39E0 /* zh-Hans */,
+				C3859B07215CD8B8007A39E0 /* zh-Hant */,
+			);
+			name = AddAssetsViewController.xib;
+			sourceTree = "<group>";
+		};
+		C3859B0A215CD9B2007A39E0 /* AllAssetsViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3859B09215CD9B2007A39E0 /* Base */,
+				C3859B0C215CD9B5007A39E0 /* en */,
+				C3859B0E215CD9B7007A39E0 /* zh-Hans */,
+				C3859B10215CD9B8007A39E0 /* zh-Hant */,
+			);
+			name = AllAssetsViewController.xib;
+			sourceTree = "<group>";
+		};
+		C3859B13215D0A9D007A39E0 /* StatisticViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3859B12215D0A9D007A39E0 /* Base */,
+				C3859B15215D0AA1007A39E0 /* en */,
+				C3859B17215D0AA3007A39E0 /* zh-Hans */,
+				C3859B19215D0AA5007A39E0 /* zh-Hant */,
+			);
+			name = StatisticViewController.xib;
+			sourceTree = "<group>";
+		};
 		C3BFAC552149014200326BD3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C3BFAC562149014200326BD3 /* Base */,
+				C3859AA2215CAD13007A39E0 /* zh-Hans */,
+				C3859AA4215CAD80007A39E0 /* zh-Hant */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1100,6 +1294,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				C3BFAC5B2149014300326BD3 /* Base */,
+				C3859AA3215CAD13007A39E0 /* zh-Hans */,
+				C3859AA5215CAD80007A39E0 /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1111,6 +1307,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1169,6 +1366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

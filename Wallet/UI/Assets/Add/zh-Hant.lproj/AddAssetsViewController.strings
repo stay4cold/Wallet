@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "余额："; ObjectID = "ah9-SY-XCj"; */
+"ah9-SY-XCj.text" = "餘額：";
+
+/* Class = "UITextField"; placeholder = "可不填"; ObjectID = "ceL-f9-7ZA"; */
+"ceL-f9-7ZA.placeholder" = "可不填";
+
+/* Class = "UITextField"; placeholder = "请输入账户名称"; ObjectID = "dN6-D0-ftZ"; */
+"dN6-D0-ftZ.placeholder" = "請輸入賬戶名稱";
+
+/* Class = "UITextField"; placeholder = "精确到小数点后两位"; ObjectID = "rtv-BI-l61"; */
+"rtv-BI-l61.placeholder" = "精確到小數點後兩位";
+
+/* Class = "UILabel"; text = "备注："; ObjectID = "yjA-ty-XXu"; */
+"yjA-ty-XXu.text" = "備註：";

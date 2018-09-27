@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"添加资产";
+    self.title = NSLocalizedString(@"text_new_assets", nil);
 }
 
 - (void)viewWillAppear:(BOOL)animated {
