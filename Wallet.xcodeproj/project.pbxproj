@@ -139,6 +139,34 @@
 		C32C68CE215283D000249A74 /* ConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigManager.m; sourceTree = "<group>"; };
 		C32C68D02153903100249A74 /* TimeRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeRecordModel.h; sourceTree = "<group>"; };
 		C32C68D12153903100249A74 /* TimeRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeRecordModel.m; sourceTree = "<group>"; };
+		C32E57A1215E15E6001A7544 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/TransferViewController.strings; sourceTree = "<group>"; };
+		C32E57A2215E15E7001A7544 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/AssetsDetailViewController.strings; sourceTree = "<group>"; };
+		C32E57A3215E15E7001A7544 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/AddAssetsViewController.strings; sourceTree = "<group>"; };
+		C32E57A4215E15E7001A7544 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/AllAssetsViewController.strings; sourceTree = "<group>"; };
+		C32E57A5215E15E7001A7544 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/AddTypeViewController.strings; sourceTree = "<group>"; };
+		C32E57A6215E15E7001A7544 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/TypeManagerViewController.strings; sourceTree = "<group>"; };
+		C32E57A7215E15E8001A7544 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/TypeRecordViewController.strings; sourceTree = "<group>"; };
+		C32E57A8215E15E8001A7544 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/KeyboardView.strings; sourceTree = "<group>"; };
+		C32E57A9215E15E8001A7544 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/AddRecordViewController.strings; sourceTree = "<group>"; };
+		C32E57AA215E15E8001A7544 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/StatisticViewController.strings; sourceTree = "<group>"; };
+		C32E57AB215E15E8001A7544 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		C32E57AC215E15E8001A7544 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		C32E57AD215E15E9001A7544 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C32E57AE215E15E9001A7544 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C32E57AF215E15F6001A7544 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/TransferViewController.strings; sourceTree = "<group>"; };
+		C32E57B0215E15F6001A7544 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/AssetsDetailViewController.strings; sourceTree = "<group>"; };
+		C32E57B1215E15F6001A7544 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/AddAssetsViewController.strings; sourceTree = "<group>"; };
+		C32E57B2215E15F6001A7544 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/AllAssetsViewController.strings; sourceTree = "<group>"; };
+		C32E57B3215E15F7001A7544 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/AddTypeViewController.strings; sourceTree = "<group>"; };
+		C32E57B4215E15F7001A7544 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/TypeManagerViewController.strings; sourceTree = "<group>"; };
+		C32E57B5215E15F7001A7544 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/TypeRecordViewController.strings; sourceTree = "<group>"; };
+		C32E57B6215E15F7001A7544 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/KeyboardView.strings; sourceTree = "<group>"; };
+		C32E57B7215E15F7001A7544 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/AddRecordViewController.strings; sourceTree = "<group>"; };
+		C32E57B8215E15F7001A7544 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/StatisticViewController.strings; sourceTree = "<group>"; };
+		C32E57B9215E15F8001A7544 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		C32E57BA215E15F8001A7544 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		C32E57BB215E15F8001A7544 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C32E57BC215E15F8001A7544 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C3588F58214902D700996E1A /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		C3588F5A214902D700996E1A /* NSObject+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HUD.h"; sourceTree = "<group>"; };
 		C3588F5C214902D700996E1A /* UIScrollView+VTEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+VTEmpty.h"; sourceTree = "<group>"; };
@@ -914,6 +942,8 @@
 				Base,
 				"zh-Hans",
 				"zh-Hant",
+				ja,
+				ko,
 			);
 			mainGroup = C3BFAC432149014200326BD3;
 			productRefGroup = C3BFAC4D2149014200326BD3 /* Products */;
@@ -1156,6 +1186,8 @@
 				C3859AA9215CAE06007A39E0 /* en */,
 				C3859AAB215CAE09007A39E0 /* zh-Hans */,
 				C3859AAC215CAE0B007A39E0 /* zh-Hant */,
+				C32E57AD215E15E9001A7544 /* ja */,
+				C32E57BB215E15F8001A7544 /* ko */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1166,6 +1198,8 @@
 				C3859AB0215CAF1C007A39E0 /* en */,
 				C3859AB2215CAF1E007A39E0 /* zh-Hans */,
 				C3859AB3215CAF20007A39E0 /* zh-Hant */,
+				C32E57AE215E15E9001A7544 /* ja */,
+				C32E57BC215E15F8001A7544 /* ko */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1177,6 +1211,8 @@
 				C3859AB8215CC399007A39E0 /* en */,
 				C3859ABA215CC39E007A39E0 /* zh-Hans */,
 				C3859ABC215CC3A0007A39E0 /* zh-Hant */,
+				C32E57A6215E15E7001A7544 /* ja */,
+				C32E57B4215E15F7001A7544 /* ko */,
 			);
 			name = TypeManagerViewController.xib;
 			sourceTree = "<group>";
@@ -1188,6 +1224,8 @@
 				C3859AC1215CC4CA007A39E0 /* en */,
 				C3859AC3215CC4CC007A39E0 /* zh-Hans */,
 				C3859AC5215CC4CD007A39E0 /* zh-Hant */,
+				C32E57A5215E15E7001A7544 /* ja */,
+				C32E57B3215E15F7001A7544 /* ko */,
 			);
 			name = AddTypeViewController.xib;
 			sourceTree = "<group>";
@@ -1199,6 +1237,8 @@
 				C3859ACA215CCB96007A39E0 /* en */,
 				C3859ACC215CCB98007A39E0 /* zh-Hans */,
 				C3859ACE215CCB9A007A39E0 /* zh-Hant */,
+				C32E57A7215E15E8001A7544 /* ja */,
+				C32E57B5215E15F7001A7544 /* ko */,
 			);
 			name = TypeRecordViewController.xib;
 			sourceTree = "<group>";
@@ -1210,6 +1250,8 @@
 				C3859AE0215CCFC4007A39E0 /* en */,
 				C3859AE1215CCFCF007A39E0 /* zh-Hans */,
 				C3859AE3215CCFD1007A39E0 /* zh-Hant */,
+				C32E57A8215E15E8001A7544 /* ja */,
+				C32E57B6215E15F7001A7544 /* ko */,
 			);
 			name = KeyboardView.xib;
 			sourceTree = "<group>";
@@ -1221,6 +1263,8 @@
 				C3859AE8215CD061007A39E0 /* en */,
 				C3859AEA215CD063007A39E0 /* zh-Hans */,
 				C3859AEC215CD065007A39E0 /* zh-Hant */,
+				C32E57A9215E15E8001A7544 /* ja */,
+				C32E57B7215E15F7001A7544 /* ko */,
 			);
 			name = AddRecordViewController.xib;
 			sourceTree = "<group>";
@@ -1232,6 +1276,8 @@
 				C3859AF1215CD252007A39E0 /* en */,
 				C3859AF3215CD254007A39E0 /* zh-Hans */,
 				C3859AF5215CD256007A39E0 /* zh-Hant */,
+				C32E57A1215E15E6001A7544 /* ja */,
+				C32E57AF215E15F6001A7544 /* ko */,
 			);
 			name = TransferViewController.xib;
 			sourceTree = "<group>";
@@ -1243,6 +1289,8 @@
 				C3859AFA215CD457007A39E0 /* en */,
 				C3859AFC215CD458007A39E0 /* zh-Hans */,
 				C3859AFE215CD45A007A39E0 /* zh-Hant */,
+				C32E57A2215E15E7001A7544 /* ja */,
+				C32E57B0215E15F6001A7544 /* ko */,
 			);
 			name = AssetsDetailViewController.xib;
 			sourceTree = "<group>";
@@ -1254,6 +1302,8 @@
 				C3859B03215CD8B3007A39E0 /* en */,
 				C3859B05215CD8B6007A39E0 /* zh-Hans */,
 				C3859B07215CD8B8007A39E0 /* zh-Hant */,
+				C32E57A3215E15E7001A7544 /* ja */,
+				C32E57B1215E15F6001A7544 /* ko */,
 			);
 			name = AddAssetsViewController.xib;
 			sourceTree = "<group>";
@@ -1265,6 +1315,8 @@
 				C3859B0C215CD9B5007A39E0 /* en */,
 				C3859B0E215CD9B7007A39E0 /* zh-Hans */,
 				C3859B10215CD9B8007A39E0 /* zh-Hant */,
+				C32E57A4215E15E7001A7544 /* ja */,
+				C32E57B2215E15F6001A7544 /* ko */,
 			);
 			name = AllAssetsViewController.xib;
 			sourceTree = "<group>";
@@ -1276,6 +1328,8 @@
 				C3859B15215D0AA1007A39E0 /* en */,
 				C3859B17215D0AA3007A39E0 /* zh-Hans */,
 				C3859B19215D0AA5007A39E0 /* zh-Hant */,
+				C32E57AA215E15E8001A7544 /* ja */,
+				C32E57B8215E15F7001A7544 /* ko */,
 			);
 			name = StatisticViewController.xib;
 			sourceTree = "<group>";
@@ -1286,6 +1340,8 @@
 				C3BFAC562149014200326BD3 /* Base */,
 				C3859AA2215CAD13007A39E0 /* zh-Hans */,
 				C3859AA4215CAD80007A39E0 /* zh-Hant */,
+				C32E57AB215E15E8001A7544 /* ja */,
+				C32E57B9215E15F8001A7544 /* ko */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1296,6 +1352,8 @@
 				C3BFAC5B2149014300326BD3 /* Base */,
 				C3859AA3215CAD13007A39E0 /* zh-Hans */,
 				C3859AA5215CAD80007A39E0 /* zh-Hant */,
+				C32E57AC215E15E8001A7544 /* ja */,
+				C32E57BA215E15F8001A7544 /* ko */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

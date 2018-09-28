@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "账户余额"; ObjectID = "24L-XC-j8x"; */
+"24L-XC-j8x.text" = "账户余额";
+
+/* Class = "UILabel"; text = "备注"; ObjectID = "Cad-Vm-JCW"; */
+"Cad-Vm-JCW.text" = "备注";
+
+/* Class = "UILabel"; text = "name"; ObjectID = "YPU-N8-azs"; */
+"YPU-N8-azs.text" = "name";
+
+/* Class = "UISegmentedControl"; fKH-Fs-Bo0.segmentTitles[0] = "转账"; ObjectID = "fKH-Fs-Bo0"; */
+"fKH-Fs-Bo0.segmentTitles[0]" = "转账";
+
+/* Class = "UISegmentedControl"; fKH-Fs-Bo0.segmentTitles[1] = "修改"; ObjectID = "fKH-Fs-Bo0"; */
+"fKH-Fs-Bo0.segmentTitles[1]" = "修改";
+
+/* Class = "UILabel"; text = "1000"; ObjectID = "k9f-Fh-w4X"; */
+"k9f-Fh-w4X.text" = "1000";

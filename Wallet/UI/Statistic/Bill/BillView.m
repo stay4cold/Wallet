@@ -65,6 +65,13 @@
     }];
     self.tableView.tableHeaderView = self.chartView;
     self.tableView.tableFooterView = [UIView new];
+    self.tableView.emptyDataSetSource = self.tableView;
+    self.tableView.emptyDataSetDelegate = self.tableView;
+    UILabel *label = [UILabel new];
+    label.text = NSLocalizedString(@"text_empty_tip", nil);
+    label.textColor = [UIColor colorWithHexString:@"737373"];
+    label.textAlignment = NSTextAlignmentCenter;
+    self.tableView.customViewForVTEmpty = label;
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([HomeTableViewCell class]) bundle:nil] forCellReuseIdentifier:@"cell"];
     [self updateData];
 }

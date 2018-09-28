@@ -1,0 +1,299 @@
+/*
+ Localizable.strings
+ Wallet
+ 
+ Created by 王成浩 on 2018/9/27.
+ Copyright © 2018年 evan. All rights reserved.
+ */
+
+"toast_add_record_fail" = "Billing failed, please try again";
+"toast_modify_record_fail" = "Failed to modify record";
+"toast_sort_fail" = "Failed to sort";
+"toast_least_one_type" = "Please keep at least one type";
+"toast_delete_fail" = "failed to delete";
+"toast_type_img_fail" = "Failed to get type picture";
+"toast_type_save_fail" = "Failed to save the type";
+"toast_type_is_exist" = "The type already exists";
+"toast_record_delete_fail" = "Failed to delete record";
+"toast_current_sum_money_fail" = "Failed to obtain the total amount of expenditure income this month";
+"toast_records_fail" = "Failed to get list data";
+"toast_init_types_fail" = "Failed to initialize type data";
+"toast_get_types_fail" = "Failed to get type data";
+"toast_get_statistics_fail" = "Failed to get statistics";
+"toast_get_month_summary_fail" = "Failed to get summary data for the month";
+"toast_get_type_summary_fail" = "Failed to get type summary data";
+"toast_not_install_email" = "Your phone does not have a mail app installed";
+"toast_not_install_alipay" = "Thank you, you did not install Alipay application";
+"toast_is_not_writable_external" = "Backup failed, external storage is unavailable";
+"toast_restore_fail" = "Failed to restore the backup";
+"toast_restore_success" = "Restore backup success";
+"toast_backup_list_fail" = "Failed to get backup file list";
+"toast_open_auto_backup" = "Automatic backup is turned off. You can go to settings to reopen";
+"toast_backup_success" = "Backup was successful";
+"toast_backup_fail" = "Backup failed";
+"toast_success_record" = "Accounting success";
+"toast_get_review_fail" = "Failed to get review data";
+"toast_get_review_sum_money_fail" = "Failed to get review summary data";
+"toast_move_backup_files_success" = "Backup folder modified and migrated successfully";
+"toast_move_backup_files_fail" = "Failed to modify folder";
+"toast_save_assets_success" = "Saved successfully";
+"toast_save_assets_fail" = "Save failed";
+"toast_choose_account" = "Please select a different account";
+"toast_date_null" = "The date is empty, please try again after entering the interface.";
+"toast_transfer_fail" = "Transfer failed";
+"toast_submit_now" = "Submitting, please wait..";
+
+//首页
+"text_widget_today_outlay" = "Today";
+"text_widget_month_outlay" = "Month";
+"text_widget_month_budget" = "Budget";
+"text_month_outlay" = "Pay";
+"text_month_income" = "Earn";
+"text_month_remaining_budget" = "Remaining budget";
+"text_assets" = "Net assets";
+"text_net_assets" = "Adjust assets";
+"text_home_footer_tip" = "Statistics page can view previous month records";
+"text_current_month_empty_tip" = "No bookkeeping started this month\n\nClick the button to start bookkeeping";
+"shortcuts_add_record" = "add";
+"shortcuts_statistics" = "statistics";
+"text_storage" = "Storage permissions";
+"text_storage_content" = "In order to back up your accounting data automatically, you need to open the storage permission.";
+"text_storage_permission_tip" = "Backup related operations require storage permissions to set open permissions";
+"text_tip_backup_fail" = "Auto backup failed";
+
+// 记一笔
+"text_add_record" = "Record";
+"text_add_record_successive" = "Record(continuous)";
+"text_modify_record" = "modify";
+"text_outlay" = "Pay";
+"text_income" = "Earn";
+"text_today" = "today";
+"text_yesterday" = "yesterday";
+"hint_enter_money" = "Enter the amount";
+"hint_enter_remark" = "Enter a note";
+"text_tip_type_delete" = "The type of record has been deleted and the first type has been selected by default";
+"text_know" = "i see";
+"type_eat" = "food";
+"type_clothes" = "clothes";
+"type_humanity" = "gift";
+"type_candy" = "snacks";
+"type_3c" = "3c";
+"type_pet" = "pet";
+"type_pill" = "pill";
+"type_calendar" = "necessary";
+"type_pluralism" = "pluralism";
+"type_salary" = "salary";
+
+// 分类管理
+"text_type_manage" = "Management";
+"text_delete" = "delete";
+"text_delete_type_note" = "After you delete this category, you will not be able to select this category on the bookkeeping page. The original bills under this category will remain unchanged.";
+"text_delete_record_note" = "Are you sure you want to delete this record?";
+"text_affirm_delete" = "delete";
+"text_affirm" = "OK";
+"text_cancel" = "Cancel";
+
+// 排序
+"text_sort" = "sort";
+"text_drag_sort" = "Long press item to sort";
+"text_done" = "Done";
+
+// 添加/修改类型
+"hint_enter_type_name" = "Enter the type name";
+"text_add" = "Add";
+"text_modify" = "Modify";
+"text_outlay_type" = "type of pay";
+"text_income_type" = "type of earn";
+"text_save" = "save";
+
+// 统计
+"text_order" = "Bill";
+"text_reports" = "Reports";
+"text_overage" = "Lave";
+"text_day" = "day";
+"text_unit_account" = "stock";
+"text_choose_month" = "Select month";
+"text_sort_time" = "By time";
+"text_sort_money" = "By amount";
+"text_empty_tip" = "Every bill is a bit of life";
+"text_small_tip" = "Note: no less than 1.9%";
+
+// 回顾
+"text_review" = "Review";
+"text_choose_year" = "Select year";
+"text_year" = "Year";
+"text_month" = "Month";
+
+// 设置
+"text_setting" = "Setting";
+"text_money" = "Bookkeeping";
+"text_no_setting" = "No data";
+"text_monty_budget" = "Monthly budget";
+"text_set_budget" = "Set a budget";
+"hint_enter_budget" = "Enter a budget";
+"hint_enter_assets" = "Enter assets";
+"text_assets_manager" = "Asset Management";
+"text_assets_manager_content" = "Create and modify asset accounts";
+"text_title_symbol" = "Currency symbol";
+"text_set_symbol" = "Select currency symbol";
+"text_content_symbol" = "Only change the item number, do not convert the exchange rate";
+"text_setting_type_manage" = "Type management";
+"text_setting_type_manage_content" = "Add, modify, and sort";
+"text_fast_accounting" = "Quick accounting";
+"text_fast_tip" = "Open APP directly bookkeeping";
+"text_successive_record" = "Continuous accounting";
+"text_successive_record_tip" = "Long press home add button, continuous accounting";
+"text_backup" = "Local backup";
+"text_go_backup" = "Back up now";
+//"text_backup_save" formatted="true" = "Backup file will be saved to%1$s";
+//"text_restore" = "Restore";
+//"text_restore_content" formatted="true" = "Backup files will read from %1$s";
+//"text_restore_tip" = "The backup file name with automatic typeface indicates that the file is automatically backed up, with the user indicating that the file was manually backed up by clicking the Backup Now button.";
+//"text_list_restore" = "The following is the backup file, click restore:";
+//"text_auto_backup" = "Automatic backup";
+//"text_auto_backup_content" = "Data change automatic backup (recommended to open)";
+//"text_cloud_backup" = "Cloud backup";
+//"text_cloud_backup_title" = "Cloud disk backup";
+//"text_cloud_backup_content" = "WebDAV";
+//"text_about_and_more" = "About | More";
+//"text_about_content" = "Understand our design philosophy";
+//<string-array name="symbol" = "
+"symbol0" = "RMB(¥)";
+"symbol1" = "Hong Kong dollar(HK$)";
+"symbol2" = "MOP(MOP$)";
+"symbol3" = "New Taiwan dollar(NT$)";
+"symbol4" = "dollar($)";
+"symbol5" = "euro(€)";
+"symbol6" = "pound(£)";
+"symbol7" = "General purpose(¤)";
+"symbol8" = "Do not show";
+//</string-array = "
+//<string-array name="simple_symbol" = "
+//<item = "¥</item = "
+//<item = "HK$</item = "
+//<item = "MOP$</item = "
+//<item = "NT$</item = "
+//<item = "$</item = "
+//<item = "€</item = "
+//<item = "£</item = "
+//<item = "¤</item = "
+//<item / = "
+//</string-array = "
+//
+//// 关于
+//"text_about" = "about";
+//"text_slogan" = "Simple, pure accounting application";
+//"text_about_Introduction" = "Introduction";
+//"text_about_detail" = "　　A simple billing application.\n\n　　This is my first work of heart, which originated from an "incredible" from childhood to adulthood (where the money was spent), especially after work. So "ThatMoney" was born, the purpose is to let everyone in the simplest and direct way to keep accounts, so that this "incredible" is no longer incredible, and slowly establish good consumption habits.\n\n　　There are no unnecessary permissions, no advertisements, no user system, no information stored by the user, just a simple record of revenue and expenditure.\n\n　　「那样记账」名称取自一个人名字「娜」的谐音。";
+//"text_dev_designer" = "Developer &amp; Designer";
+//"text_designer" = "Designer";
+//"text_launcher_designer" = "Launcher icon design";
+//"text_developer_designer" = "Developer &amp; Designer";
+//"text_links" = "more";
+//"text_score" = "score";
+//"text_donate" = "Donate";
+//"text_contact_author" formatted="true" = "Contact author: %1$s \n\nmore help:%2$s \n\nThis application is open source and welcome to contribute code.\nOpen source Url:%3$s\n\n*Comply to "Convention of Green Apps for Android"\n %4$s";
+//"text_license" = "Open source license";
+//"text_privacy_policy" = "Privacy Policy";
+//"text_display" = "Display";
+//"text_theme" = "Theme";
+//"text_theme_dark" = "Dark theme";
+//"text_theme_light" = "Light theme";
+//
+//// 云备份
+//"text_webdav" = "WebDAV";
+//"text_webdav_url" = "WebDAV address";
+//"text_webdav_account" = "WebDAV authorized account";
+//"text_webdav_password" = "WebDAV authorization password";
+//"text_webdav_help" = "Nutstore tutorial";
+//"text_tip_auth_fail" = "Authorized account or password is incorrect";
+//"text_error" = "Error";
+//"text_restore_fail_rollback" = "The recovery failed, has been rolled back to the pre-recovery state, click the OK button to restart the application.";
+//"text_backup_file_not_exist" = "Backup file does not exist";
+//"text_saving_psw" = "Encrypting password saved&#8230;";
+//"text_url_illegal" = "WebDAV address is illegal";
+//"text_config_webdav" = "Please configure WebDAV first.";
+//"text_auto_backup_mode_title" = "Automatic backup mode";
+//"text_auto_backup_mode" = "Select backup mode";
+//"text_auto_backup_success" = "Cloud backup succeeded!";
+//"text_auto_backup_fail" = "Cloud backup failed!";
+//<string-array name="text_cloud_auto_backup_mode" = "
+//<item = "Do not automatically backup</item = "
+//<item = "when opening app</item = "
+//<item = "when exit app</item = "
+//</string-array = "
+//
+//// 实验室
+//"text_other_setting" = "Other";
+//"text_local_backup_path" = "Local backup folder";
+//"text_local_backup_path_tip" = "After re-selecting the backup folder, the original backup folder will be migrated to the new folder.";
+//"text_choose" = "select";
+//"text_folder_empty" = "This folder\'s empty!";
+
+// 添加
+"text_new_assets" = "Add assets";
+"text_account" = "assets";
+"text_invest" = "invest";
+"text_add_assets" = "Add account";
+"text_edit_assets" = "Edit account";
+"text_choose_bank" = "Choose bank";
+"text_choose_account" = "Choose account";
+"text_no_choose_account" = "Do not Choose account";
+"text_no_choose_account_tip" = "Only included in bill";
+"text_new_choose_account" = "New account";
+"hint_assets_name" = "Please enter an account name";
+"text_remark" = "Remark：";
+"hint_remark" = "Can not enter content";
+"text_balance" = "Balance：";
+"hint_balance" = "Accurate to two decimal places";
+"text_bank_zhaoshang" = "CMB";
+"text_bank_icbc" = "ICBC";
+"text_bank_abchina" = "ABC";
+"text_bank_boc" = "BOC";
+"text_bank_ccb" = "CCB";
+"text_bank_pingan" = "PINGAN";
+"text_bank_bankcomm" = "BCM";
+"text_bank_citicbank" = "CITIC";
+"text_bank_cib" = "CIB";
+"text_bank_cebbank" = "CEB";
+"text_bank_cmbc" = "CMBC";
+"text_bank_chinapost" = "PSBC";
+"text_assets_card" = "other banks";
+"text_assets_type_cash" = "cash";
+"text_assets_type_bank_card" = "back card";
+"text_assets_type_alipay" = "alipay";
+"text_assets_type_wechat" = "wechat";
+"text_assets_type_jd" = "JD wallet";
+"text_assets_type_rice_card" = "rice card";
+"text_assets_type_bus_card" = "traffic card";
+"text_assets_type_other" = "other";
+"text_assets_type_monetary" = "monetary fund";
+"text_assets_type_funding" = "funding";
+"text_assets_type_stock" = "stock";
+"text_assets_type_other_financial" = "other financial";
+
+// 资产详情
+"text_assets_detail" = "Asset details";
+"text_assets_account" = "Asset account";
+"text_assets_no_account" = "No assets yet";
+"text_assets_balance" = "Account Balance";
+"text_tip_delete_assets" = "Are you sure you want to delete the asset, and the existing revenue and expenditure records under the asset will not be deleted?";
+
+// 资产
+"text_assets_all" = "All assets";
+"text_assets_liabilities" = "liabilities";
+"text_assets_adjust" = "adjustment";
+"text_assets_transfer" = "Transfer";
+"text_adjust_record" = "record";
+"text_adjust_record_no" = "No modify record";
+"text_transfer_record_no" = "No transfer record";
+"text_transfer" = "transfer";
+"text_choose_out_account" = "account from";
+"text_choose_in_account" = "account to";
+"text_choose_account" = "please select account";
+
+"text_return" = "back";
+"text_update" = "updating...";
+"text_amount_hint" = "Please enter the amount";
+
+

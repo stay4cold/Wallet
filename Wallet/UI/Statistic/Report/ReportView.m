@@ -53,6 +53,13 @@
     }];
     self.tableView.tableFooterView = [UIView new];
     self.tableView.tableHeaderView = self.chartView;
+    self.tableView.emptyDataSetSource = self.tableView;
+    self.tableView.emptyDataSetDelegate = self.tableView;
+    UILabel *label = [UILabel new];
+    label.text = NSLocalizedString(@"text_empty_tip", nil);
+    label.textColor = [UIColor colorWithHexString:@"737373"];
+    label.textAlignment = NSTextAlignmentCenter;
+    self.tableView.customViewForVTEmpty = label;
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([ReportViewCell class]) bundle:nil] forCellReuseIdentifier:@"cell"];
     [self updateData];
 }
@@ -89,13 +96,17 @@
     NSMutableArray *monthSum = [RecordDao getMonthOfYearSumMoneyFrom:[DateUtils monthStartForYear:self.year month:self.month] to:[DateUtils monthEndForYear:self.year month:self.month]];
     NSDecimalNumber *outlay = NSDecimalNumber.zero;
     NSDecimalNumber *income = NSDecimalNumber.zero;
+    self.outlayBtn.hidden = YES;
+    self.incomeBtn.hidden = YES;
     for (MonthSumMoneyModel *ms in monthSum) {
         if (ms.type == RecordTypeOutlay) {
             outlay = ms.sumMoney;
             [self.outlayBtn setTitle:[NSString stringWithFormat:@"%@ %@%@", NSLocalizedString(@"text_outlay", nil), [ConfigManager getCurrentSymbol], [DecimalUtils fen2Yuan:outlay]] forState:UIControlStateNormal];
+            self.outlayBtn.hidden = NO;
         } else {
             income = ms.sumMoney;
             [self.incomeBtn setTitle:[NSString stringWithFormat:@"%@ %@%@", NSLocalizedString(@"text_income", nil), [ConfigManager getCurrentSymbol], [DecimalUtils fen2Yuan:income]] forState:UIControlStateNormal];
+            self.incomeBtn.hidden = NO;
         }
     }
     
