@@ -2,15 +2,11 @@
 
 ## 诞生记
 
-   仿写的一款轻量级的记账工具，练习IOS的开发流程，其中有大量的冗余code，很多的控件没有进行封装，后期会进行重构。
-   
-   Android版本请移步[Android版本下载](https://github.com/Bakumon/MoneyKeeper)
-   
-   
+   仿写的一款轻量级的记账工具[MoneyKeeper](https://github.com/Bakumon/MoneyKeeper)，练习IOS的开发流程，其中有大量的冗余code，很多的控件没有进行封装，后期会进行重构。
 
 ## 相关链接：
 
-1. [Android下载地址](https://github.com/Bakumon/MoneyKeeper)
+1. [MoneyKeeper下载地址](https://github.com/Bakumon/MoneyKeeper)
 
 ## License
 
