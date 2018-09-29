@@ -2,7 +2,7 @@
 
 ## 诞生记
 
-   仿写的一款轻量级的记账工具[MoneyKeeper](https://github.com/Bakumon/MoneyKeeper)，练习IOS的开发流程，其中有大量的冗余code，很多的控件没有进行封装，后期会进行重构。
+   一款轻量级的记账工具[MoneyKeeper](https://github.com/Bakumon/MoneyKeeper)IOS版本，练习IOS的开发流程，其中有大量的冗余code，很多的控件没有进行封装，后期会进行重构。
    
 ### 预览
 
